@@ -1,0 +1,199 @@
+@import url("colores.css");
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --azulmarino: #00304E;
+    --indigo: #006db2;
+    --darkorange: #FF8C00;
+    --orangered: #FF4500;
+    --plata: #BEBEBE;
+    --azulvolteck:#253692;
+    --azulvolteck2: #6f85c1;
+    --rojo:#d3063e;
+    --rojo2: #920c27;
+    --verdeklintek:#009f9a;
+    --verdeklintek2:#016e69;
+    --amarillopretul:#FFCD00;
+    --amarillopretul2:#E49B0F;
+}
+
+.section-foset {
+    /*border: solid rgb(0, 0, 0);*/
+    position: relative;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 1rem;
+    /*border: solid red;*/
+    position: relative;
+    top: 7rem;
+    left: -5%;
+
+}
+
+.card-container .card-wrapper {
+    position: relative;
+    max-width: 100rem;
+    width: 100%;
+    padding: 5rem;
+    /*border: solid blue;*/
+    left: -18%;
+}
+
+.card-wrapper .card-box {
+    padding: 3rem ;
+    padding-left: 15rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+
+}
+
+.card-container .card-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 .8rem .7rem var(--shadow-color);
+    padding: 1.2rem;
+
+    position: relative;
+}
+
+
+.card-slide .circle-img {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.card-slide .circle-img img {
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .9em solid var(--shadow-color);
+    outline: .6rem solid var(--plata);
+    box-shadow: 0 .5rem .5rem var(--shadow-color);
+}
+
+.card-slide .product-content {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    width: 100%;
+    height: 50rem;
+    top: 50%;
+    left: 50%;
+    
+}
+
+.product-content .logo-content{
+    float: right;
+}
+
+.product-content .logo-content img{
+    width: 25rem;
+    border-top-right-radius: 2rem;
+}
+
+.product-content .product-description{
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translate(-20%, -60%);
+    max-width: 35rem;
+}
+
+.product-description h1{
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: var(--plata);
+    text-align: center;
+
+}
+
+.product-description h2{
+    font-size: 3.5;
+    color: var(--plata);
+    font-weight: 400;
+    text-align: center;
+}
+
+.product-description p{
+    font-size: 1.5rem;
+    color: var(--plata);
+}
+
+.product-content .marcas-index {
+    position: absolute;
+    top: 88%;
+    display: flex;
+    align-items: center;
+    left: 2.1rem;
+}
+
+.product-content .marcas-index img{
+    width: 8.5rem;
+    margin-right: 1.4rem;
+}
+
+.card-box .swiper-button-next,
+.card-box .swiper-button-prev {
+    color: var(--azulmarino);
+}
+
+.card-box .swiper-button-next {
+    right: -1rem;
+}
+
+.card-box .swiper-button-prev {
+    left: 2rem;
+
+}
+
+.card-box .swiper-pagination-bullet {
+    background: rgba(0, 0, 0, .8);
+    font-size: 3rem;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+.card-container .foset-slide{
+    background: linear-gradient(to left, #00304e, #003f66, #004e7e, #005d98, #006db2);
+}
+
+.card-container .truper-slide{
+    background: linear-gradient(to left top, #ff8c00, #ff7d00, #ff6d00, #ff5b00, #ff4500);
+}
+
+.card-container .volteck-slide{
+    background: linear-gradient(to right top, #253692, #374a9f, #495dab, #5b71b6, #6f85c1);
+}
+
+.card-container .hermex-slide{
+    background: linear-gradient(to right top, #d3063e, #c20938, #b20b32, #a20c2c, #920c27);
+}
+
+.card-container .klintek-slide{
+    background: linear-gradient(to right top, #009f9a, #01928d, #018681, #017a75, #016e69);
+}
+
+.card-container .pretul-slide{
+    background: radial-gradient(circle, #ffcd00, #f9c003, #f3b306, #eca70b, #e49b0f);
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+.mostrar{
+    display: flex;
+}

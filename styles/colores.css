@@ -1,0 +1,30 @@
+:root{
+    --bgcolor: #fdfdfd;
+    --maincolor: rgb(235, 27, 27);
+    --secondarycolor: rgb(8, 2, 95);
+    --secondarycolor-light: #1224c7;
+    --textcolor: #333;
+    --auxcolor: #747272;
+    --blackcolor: #161414;
+    --shadow-color:rgba(0, 0, 0, 0.2);
+    --orangecolor:#ee7028;
+    --whitecolor:#fff;
+    --purplecolor: #E40078;
+    --pruplecolorlight:rgb(138, 43, 226);
+    --alternativecolor:#FF005A;    
+    --azulmarino: #00304E;
+    --indigo: #006db2;
+    --darkorange: #FF8C00;
+    --orangered: #FF4500;
+    --plata: #BEBEBE;
+    --azulvolteck:#253692;
+    --azulvolteck2: #6f85c1;
+    --azulfoset:#006db2;
+    --rojo:#d3063e;
+    --rojo2: #920c27;
+    --verdeklintek:#009f9a;
+    --verdeklintek2:#016e69;
+    --amarillopretul:#FFCD00;
+    --amarillopretul2:#E49B0F;
+    --naranjatruper:#ec600b;
+}

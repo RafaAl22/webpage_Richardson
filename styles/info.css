@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('colores.css');
+
+.informacion{
+    width: 100%;
+}
+
+.preguntas-btn{
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    
+}
+.tags{
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: var(--textcolor);
+    border-radius: 12px;
+    border: .1rem solid var(--secondarycolor);
+    margin-right: 1rem;
+    padding: .3rem .9rem;
+}
+
+.seleccion{
+    background-color: var(--secondarycolor);
+    color: var(--whitecolor);
+    border: .1rem solid var(--secondarycolor);
+    font-weight: 500;
+    transition: .8s ease;
+}
+/*---------------------------------------------------------------------------------*/
+.pregunta-box{
+    padding: 5rem 5rem;
+
+}
+
+.pregunta-header{
+    display: flex;
+    text-align: center;
+}
+
+.pregunta-header i{
+    font-size: 4rem;
+    margin-right: 1.5rem;
+}
+
+.pregunta{
+    width: 100%;
+    margin-top: 3rem;
+    display: bloc;
+    text-align: center;
+    border-top: .5px solid var(--shadow-color);
+    border-bottom: .5px solid var(--shadow-color);
+}
+
+.respuesta-container a i{
+    font-size: 6rem;
+    color: var(--textcolor);
+    
+}
+
+.respuesta-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.respuesta-container a{
+    transition: .3s ease;
+}
+.encabezado{
+    font-size: 2.5rem;
+    color: var(--alternativecolor);
+    font-weight: 500;
+}
+
+.respuesta{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--textcolor);
+}
+
+.rotacion{
+    transform: rotate(180deg);
+    transition: .3s ease;
+}
+
+.respuesta-container-expandir{
+    display: block;
+    text-align: start;
+    position: relative;
+}
+
+.ocultar{
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+.numeros-container .numeros-box h2{
+    font-size: 2rem;
+    color: var(--textcolor);
+    font-weight: 600;
+}
+
+.numeros-container .numeros-box h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--textcolor);
+}
+
+.numeros-container{
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.numeros-container .numeros-box{
+    margin-right: 2rem;
+    padding: 2rem 3rem;
+    align-items: center;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 .7rem 2rem var(--shadow-color);
+    transition: .5s ease;
+}
+
+.numeros-container .numeros-box:hover{
+    transform: scale(1.1);
+}
+
+.numeros-box .numeros{
+    display: flex;
+    padding: 2rem;
+}
+
+.numeros-box .numeros i{
+    font-size: 2.8rem;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.respuesta-container-expandir .lista-numeros{
+    margin-left: 2rem;
+}
+

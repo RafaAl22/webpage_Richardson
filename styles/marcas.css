@@ -1,0 +1,96 @@
+@import url("colores.css");
+
+section{
+    margin-top:5rem;
+}
+
+.section-indice{
+    background-image: url("/src/Marcas/portada-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.marcas-container{
+    position: relative;
+    border-radius: 20px;
+    margin-top: 25%;
+    margin-left: 1rem;
+    display: block;
+    background: var(--bgcolor);
+}
+
+.marcas-container .marcas-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.marcas-box .marcas a img{
+    width: 28rem;
+    padding: 5px;
+    transition: .3s ease;
+
+
+}
+
+.marcas a img:hover{
+    transform: scale(1.3);
+}
+
+.section-truper{
+    background-image: url("/src/Marcas/TRUPER_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.section-pretul{
+    background-image: url("/src/Marcas/TRUPER_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.section-klintek{
+    background-image: url("/src/Marcas/KLINTEK_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.section-foset{
+    background-image: url("/src/Marcas/FOSET_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.section-hermex{
+    background-image: url("/src/Marcas/HRMEX_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.section-volteck{
+    background-image: url("/src/Marcas/VOLTECK_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.section-fiero{
+    background-image: url("/src/Marcas/FIERO_portada.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+
+
+
+
+

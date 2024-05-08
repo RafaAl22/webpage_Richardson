@@ -1,0 +1,72 @@
+@import url(/styles/colores.css);
+
+.categoria-section h1{
+    position: relative;
+    font-size: 3.1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--textcolor);
+    top: -7rem;
+}
+
+.categoria-section{
+    height: 140rem;
+    position: relative;
+}
+
+.categoria-container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    column-gap: 1.5rem;
+    row-gap: 6rem;
+    
+}
+
+.categoria{
+    width: auto;
+    height: 22rem;
+    justify-content: center;
+    display: block;
+    border-radius: 2rem;
+    transition: .3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.categoria:hover{
+    transition: .1s ease;
+    background: var(--shadow-color);
+}
+
+.categoria:hover img{
+    transform: scale(1.3);
+}
+
+.icono-box{
+    position: relative;
+    text-align: center;
+    
+}
+
+.icono-box img{
+    object-fit: cover;
+    width: 12rem;
+    padding: 2rem;
+    transition: .5s ease;
+    border-radius: 2rem;
+}
+
+.descripcion-categoria {
+    position: relative;
+    text-align: center;
+    top: 2rem;
+}
+
+.descripcion-categoria h2{
+    font-size: 2rem;
+    color: var(--textcolor);
+    font-weight: 600;
+}
+

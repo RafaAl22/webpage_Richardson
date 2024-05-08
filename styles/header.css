@@ -1,0 +1,187 @@
+@import url("colores.css");
+
+.header {
+    background: var(--azulvolteck);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    margin-bottom: 3rem;
+}
+
+.banner-superior{
+    display: flex;
+
+}
+
+.banner {
+    display: block;
+    justify-content: space-between;
+    background: var(--bgcolor);
+}
+
+
+.navbar {
+    display: flex;
+    margin: 0;
+
+}
+
+.navbar ul{
+    position: relative;
+    left: 50%;
+
+    transform: translate(-50%);
+    list-style: none;
+    overflow: hidden; 
+    
+}
+
+.navbar ul li {
+    
+    float: left;
+    font-weight: 400;
+    margin-left: 0;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.navbar ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+    display: flex; 
+    padding: 2rem;
+    color: var(--whitecolor);
+    text-decoration: none;
+    transition: .9s ease;
+    -webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+}
+
+
+
+.navbar ul li:hover{
+    background:#E68FAC;
+}
+
+.header.sticky {
+    background: var(--rojo);
+    box-shadow: 0 1.1rem 1rem var(--shadow-color);
+    margin-left: 3%;
+    margin-top: 3rem;
+    width: 95%;
+    border-radius: 2rem;
+    align-items: center;
+    padding: 0;
+}
+
+.header.sticky .navbar a {
+    color: var(--whitecolor);
+    padding: 1.3rem;
+}
+
+.header.sticky .navbar::after{
+    transition: 1s ease-out;
+}
+
+.header.sticky .navbar ul li a.active {
+    color: var(--textcolor);
+}
+
+.header.sticky .navbar ul li a::before {
+    opacity: .7;
+}
+
+.navbar ul li a.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    height: 0.2rem;
+    /*background-color: var(--secondarycolor);*/
+}
+
+.logo-container {
+    margin-right: 0;
+    cursor: default;
+    float: left;
+    display: flex;
+}
+
+.logo-container img {
+    width: 35rem;
+    height: 100%;
+    border-radius: 25px;
+    margin-left: 5rem;
+}
+
+.banner .info-container {
+    display: flex;
+    margin-left: 45%; 
+    padding: 0 4rem;
+    align-items: center;
+    float: right;
+}
+
+.banner .info-container i{
+    font-size: 8rem;
+    color: var(--textcolor);
+}
+
+.banner .texto-container{
+    margin-left: 1rem;
+}
+
+.banner .texto-container h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--textcolor);
+}
+.navbar ul li a:hover {
+    color: var(--textcolor);
+}
+
+.banner-marcas{
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+}
+
+.item-marcas {
+    display: inline-flex;
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-marcas .marca img{
+    width: 22rem;
+    padding: 0 3rem;
+    justify-content: center;
+    transition: .5s ease;
+
+}
+
+.item-marcas .marca img:hover{
+    transform: scale(1.1);
+}
+
+.lema-container{
+    margin-top: 2rem;
+    max-width: 10rem;
+}
+
+.lema-container img{
+    width: 55rem;
+}
+
+

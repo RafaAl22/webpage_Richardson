@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('colores.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+/*para realizar boton flotante*/
+.btn-flotante i{
+    border-radius: 50%;
+    font-size: 7rem;
+    /* Cambiar el tamaño de la tipografia */
+    color: var(--azulvolteck);
+    /* Color del texto */
+    background: var(--whitecolor);
+    /* Color de fondo */
+    
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante i:hover {
+    color: var(--secondarycolor);
+    /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+html{
+
+    font-size: 62.5%;
+
+}
+
+
+span{
+    color: var(--secondarycolor);
+    font-weight: 400;
+}
+
+h2{
+    color: var(--maincolor);
+    font-size: 3.3rem;
+    font-weight: 400;
+}
+
+h3{
+    font-style:normal;
+    color: var(--textcolor);
+    font-size: 2.3rem;
+}
+
+p{
+    font-style: normal;
+    color: var(--textcolor);
+    font-size: 1.5rem;
+}
+
+.btn{
+    margin-left: 40%;
+    padding:1rem 1rem;
+    background: var(--secondarycolor);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.7rem;
+    color: var(--bgcolor);
+    letter-spacing: .5rem;
+    font-weight: 300;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 2rem 7% 1rem;
+    margin-top: 10%;
+
+}
+
