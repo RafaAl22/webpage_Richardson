@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/info.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Información al Usuario</title>
+</head>
+
+<body>
+    <header class="header">
+        
+        <navbar class="navbar">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="marcas.html">Productos Truper</a></li>
+                <li><a href="#">Catálogo de Productos</a></li>
+                <li><a href="nosotros.html" >¿Quiénes Somos?</a></li>
+                <li><a href="informacion.html" class="active">Información al Usuario</a></li>
+            </ul>
+        </navbar>
+    </header>
+
+    <section class="informacion">
+        <div class="preguntas-container">
+            <div class="preguntas-btn">
+                <div class="tags-container">
+                    <a href="#" class="tags seleccion" id="t1">Todos</a>
+                    <a href="#" class="tags" id="t2">Tiendas y horarios de atención</a>
+                    <a href="#" class="tags" id="t3">Números telefónicos</a>
+                    <a href="#" class="tags" id="t4">Atención a través de WhatsApp</a>
+                    <a href="#" class="tags" id="t5">Reclamos y Devoluciones</a>
+                </div>
+            </div>
+
+            <!-- DIRECCION DE TIENDAS Y HORARIOS-->
+            <div class="pregunta-box" id="p1">
+                <div class="pregunta-header">
+                    <i class='bx bx-store-alt'></i>
+                    <h1 class="encabezado">Tiendas y Horarios de atención</h1>                   
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">Nuestras Tiendas y Horarios</h2>
+                        <a href="#" id="flecha"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="1">
+                        <h2 class="respuesta">Si deseas saber nuestro horario de atención y dirección de nuestras tiendas,
+                            presiona <a href="tiendas.html">aquí.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--LINEAS TELEFONICAS-->
+            <div class="pregunta-box" id="p2">
+                <div class="pregunta-header">
+                    <i class='bx bx-phone-call' ></i>
+                    <h1 class="encabezado">Nuestras líneas telefónicas</h1>                   
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">Nos puedes llamar a los siguientes numeros...</h2>
+                        <a href="#1" id="flecha2"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="2">
+                        <div class="numeros-container">
+                            <div class="numeros-box">
+                                <h2>Sucursal Norte</h2>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i></a>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i></a>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                            </div>
+                            <div class="numeros-box">
+                                <h2>Sucursal Sur</h2>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                            </div>
+                            <div class="numeros-box">
+                                <h2>Sucursal León</h2>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                            </div>
+                            <div class="numeros-box">
+                                <h2>Centro de Distribución CEDIS</h2>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                                <div class="numeros">
+                                    <i class='bx bx-phone' ></i>
+                                    <h3>+505 2222 2222</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--NUMEROS DE WHATSAPP-->
+            <div class="pregunta-box" id="p3">
+                <div class="pregunta-header">
+                    <i class='bx bx-message-square-dots' ></i>
+                    <h1 class="encabezado">Acerca de nuestros contactos en WhatsApp</h1>                   
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">¿Cuál es el contacto en WhatsApp de Ferretería Richardson?</h2>
+                        <a href="#3" id="flecha3"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="3">
+                        <h2 class="respuesta">En Ferretería Richardson contamos con tres sucursales comerciales en las cuales tenemos vendedores de piso dispuestos a ayudarte, 
+                            <ul class="lista-numeros">
+                                <li><i class='bx bxl-whatsapp'></i> Vendedor Sucursal Norte: <a href="">+505 8888 8888</a></li>
+                                <li><i class='bx bxl-whatsapp'></i> Vendedor Sucursal Sur: <a href="">+505 8888 8888</a></li>
+                                <li><i class='bx bxl-whatsapp'></i> Vendedor Sucursal León: <a href="">+505 8888 8888</a></li>
+                            </ul>
+                        </h2>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">¿Cómo puedo cotizar los productos de mi interés?</h2>
+                        <a href="#4" id="flecha4"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="4">
+                        <h2 class="respuesta">Para cotizar sobre el producto que deseas, solo basta con que revises nuestro catálogo de productos, guardes el código interno del 
+                            producto y des click en cualquiera de los números que se describen arriba, proporciones el código previamente obtenido y lo faclites al agente vendedor 
+                            que te esté atendiendo.
+                        </h2>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">¿Puedo realizar compras a través de los números de WhatsApp?</h2>
+                        <a href="#5" id="flecha5"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="5">
+                        <h2 class="respuesta">Claro que si, solo le pides al agente vendedor que te genere una proforma sobre el o los productos que deseas adquirir y después solo es
+                            cuestión en ponerse de acuerdo para el día en que te presentarás a la sucursal más cercana para terminar de efectuar tu compra.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--RECLAMOS Y DEVOLUCIONES-->
+            <div class="pregunta-box" id="p4">
+                <div class="pregunta-header">
+                    <i class='bx bx-user-voice' ></i>
+                    <h1 class="encabezado">Reclamos y Devoluciones</h1>                   
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">Reglamento para aceptar el reclamo por un producto defectuoso</h2>
+                        <a href="#6" id="flecha6"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="6">
+                        <h2 class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloremque modi necessitatibus corporis quis dignissimos voluptatibus voluptate nihil a, eos nisi omnis! Quis dolor maiores dolore.
+                        </h2>
+                    </div>
+                </div>
+                <div class="pregunta">
+                    <div class="respuesta-container">
+                        <h2 class="respuesta">Términos de garantía que ofrece Ferretería Richardson</h2>
+                        <a href="#7" id="flecha7"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    <div class="respuesta-container-expandir ocultar" id="7">
+                        <h2 class="respuesta">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloremque modi necessitatibus corporis quis dignissimos voluptatibus voluptate nihil a, eos nisi omnis! Quis dolor maiores dolore.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <a href="#" class="btn-flotante" id="btn5"><i class='bx bxs-chevron-up-circle'></i></a>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="box-information">
+                <div class="footer-logo">
+                    <img src="/src/Empresa/lema_Richardson.png" alt="">
+                </div>
+                <h1>Más información sobre la ferretería</h1>
+                <p>
+                    Fundada en 1954, una tradición nicaragüense, 70 años sirviéndoles.
+                </p>
+            </div>
+            <div class="box-socials">
+                <h1>Síguenos</h1>
+                <div class="socials-details">
+                    <a href="https://www.facebook.com/FerreteriaRichardsonSA?locale=es_LA" target="_blank"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/ferreteriarichardsonoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/ferreteria-richardson-sa-50a1681a6" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="box-contact">
+                <h1>Visítanos</h1>
+                <div class="contact-details">
+                    <div class="sucursal-box">
+                        <div class="box">
+                            <h2><i class='bx bxs-map'></i>Sucursal Norte</h2>
+                            <h3>Kilómetro 4.5 Carrtera Norte, <br>contiguo a La Prensa</h3>
+                        </div>
+                        <div class="box">
+                            <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
+                            <h3>2249-2308 / 2249-3777</h3>
+                        </div>
+                        <div class="box">
+                            <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
+                            <h3>asistente.ventas1@gruporichardson.com.ni</h3>
+                        </div>
+                    </div>
+                    <div class="sucursal-box">
+                        <div class="box">
+                            <h2><i class='bx bxs-map'></i>Sucursal Sur</h2>
+                            <h3>Contiguo al Banco Central, <br>By Pass Sur</h3>
+                        </div>
+                        <div class="box">
+                            <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
+                            <h3>2265-3111 / 2265-2453</h3>
+                        </div>
+                        <div class="box">
+                            <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
+                            <h3>asistente.ventas2@gruporichardson.com.ni</h3>
+                        </div>
+                    </div>
+                    <div class="sucursal-box">
+                        <div class="box">
+                            <h2><i class='bx bxs-map'></i>Sucursal León</h2>
+                            <h3>León, esquina de los bancos, <br>1/2 cuadra al Norte</h3>
+                        </div>
+                        <div class="box">
+                            <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
+                            <h3>2311-3950 / 2311-5087</h3>
+                        </div>
+                        <div class="box">
+                            <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
+                            <h3>asistente.ventas3@gruporichardson.com.ni</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>Derechos de autor &copy; 2024, Grupo Richardson S.A | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!--Custom JS-->
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/info.js"></script>
+</body>
+
+</html>
