@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="COLOR" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.11 9.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6720;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_44" data-name="Grupo 44">
+    <path id="Trazado_5" data-name="Trazado 5" class="cls-1" d="m0,1.99h5.45v1.23h-1.95v4.67h-1.54V3.22H0v-1.23"/>
+    <path id="Trazado_6" data-name="Trazado 6" class="cls-1" d="m15.13,7.89h-.35c-1.1-.09-1.62-.53-1.62-.53-.62-.45-.62-1.37-.62-1.37V1.99h1.5v3.74s-.12,1.06,1.17,1.06h.12c1.3,0,1.17-1.06,1.17-1.06V1.99h1.5v4.01s0,.92-.62,1.37c0,0-.52.44-1.62.53h-.65"/>
+    <path id="Trazado_7" data-name="Trazado 7" class="cls-1" d="m9.24,3.22h-1.51v4.67h-1.54V1.99h3.7s1.9,0,1.9,1.91c0,0,.14,1.42-1.22,1.88l1.8,2.12h-1.75l-2.67-3.23h1.38s.82,0,.82-.71v-.16s.04-.57-.8-.57h-.1"/>
+    <path id="Trazado_8" data-name="Trazado 8" class="cls-1" d="m22.59,5.89h-2.11v2.01h-1.54V1.99h3.7s1.9,0,1.9,1.91c0,0,.14,1.42-1.22,1.88-.23.08-.48.12-.73.11m-2.11-1.22h1.59s.82,0,.82-.71v-.16s.04-.57-.8-.57h-.1s-1.51,0-1.51,0v1.45Z"/>
+    <path id="Trazado_9" data-name="Trazado 9" class="cls-1" d="m33.99,3.22h-1.51v4.67h-1.54V1.99h3.7s1.9,0,1.9,1.91c0,0,.14,1.42-1.22,1.88l1.8,2.12h-1.75l-2.67-3.23h1.38s.82,0,.82-.71v-.16s.04-.57-.8-.57h-.1"/>
+    <path id="Trazado_10" data-name="Trazado 10" class="cls-1" d="m25.16,1.99h4.98v1.24h-3.46v1.1h2.66v1.22h-2.66v1.1h3.46v1.24h-4.98V1.99"/>
+  </g>
+</svg>
