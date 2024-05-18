@@ -1,5 +1,6 @@
 @import url("colores.css");
 
+
 .header {
     background: var(--azulvolteck);
     width: 100%;
@@ -17,20 +18,28 @@
 
 .banner-superior{
     display: flex;
-
+    
 }
 
 .banner {
     display: block;
     justify-content: space-between;
     background: var(--bgcolor);
+    position: relative;
+    top: 7rem;
+    background-image: url(/src/Empresa/portada-Richardson.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 35rem;
 }
 
 
 .navbar {
     display: flex;
     margin: 0;
-
+    position: relative;
 }
 
 .navbar ul{
@@ -158,9 +167,14 @@
     display: inline-flex;
     margin-top: 3rem;
     width: 100%;
+    max-width: 100%;
     height: auto;
     justify-content: space-between;
     align-items: center;
+    background: var(--whitecolor);
+    border-radius: 3.5rem;
+    bottom: -10rem;
+    position: relative;
 }
 
 .item-marcas .marca img{
@@ -181,7 +195,8 @@
 }
 
 .lema-container img{
-    width: 55rem;
+    width: 35rem;
+    display: none;
 }
 
 
