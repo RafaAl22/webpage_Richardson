@@ -37,32 +37,28 @@
 
 .card-container .card-wrapper {
     position: relative;
-    max-width: 100rem;
+    max-width: 120rem;
     width: 100%;
     padding: 5rem;
-    /*border: solid blue;*/
-    left: -18%;
+
+    left: -15%;
 }
 
 .card-wrapper .card-box {
-    padding: 3rem ;
-    padding-left: 15rem;
+    padding-top: 1rem;
+    padding-left: 17rem;
     border-radius: 2rem;
-    overflow: hidden;
-
-
 }
 
 .card-container .card-slide {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     width: 100%;
     border-radius: 2rem;
     box-shadow: 0 .8rem .7rem var(--shadow-color);
     padding: 1.2rem;
-
+    
     position: relative;
 }
 
@@ -77,8 +73,8 @@
 }
 
 .card-slide .circle-img img {
-    width: 27rem;
-    height: 27rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     object-fit: cover;
     border: .9em solid var(--shadow-color);
@@ -115,22 +111,22 @@
 }
 
 .product-description h1{
-    font-size: 2.9rem;
+    font-size: 3.5rem;
     font-weight: 600;
     color: var(--plata);
     text-align: center;
-
+    position: relative;
 }
 
 .product-description h2{
-    font-size: 3.5;
+    font-size: 3.9;
     color: var(--plata);
     font-weight: 400;
     text-align: center;
 }
 
 .product-description p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--plata);
 }
 
@@ -139,11 +135,12 @@
     top: 88%;
     display: flex;
     align-items: center;
-    left: 2.1rem;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .product-content .marcas-index img{
-    width: 8.5rem;
+    width: 11rem;
     margin-right: 1.4rem;
 }
 
