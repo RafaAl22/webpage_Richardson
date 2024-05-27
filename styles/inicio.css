@@ -1,0 +1,288 @@
+@import url(/styles/colores.css);
+
+.banner-superior {
+    display: flex;
+
+}
+
+.banner {
+    display: block;
+    justify-content: space-between;
+    background: var(--bgcolor);
+    position: relative;
+    top: 7rem;
+    background-image: url(/src/Empresa/norte.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 30rem;
+}
+
+.logo-container {
+    cursor: default;
+    float: left;
+    display: flex;
+}
+
+.logo-container img {
+    width: 35rem;
+    height: 100%;
+    border-radius: 25px;
+    margin-left: 5rem;
+}
+
+.banner .info-container {
+    display: flex;
+    position: relative;
+    padding: 0 4rem;
+    align-items: center;
+    left: 104.5rem;
+
+}
+
+.banner .info-container i {
+    font-size: 8rem;
+    color: var(--textcolor);
+}
+
+.banner .texto-container {
+    margin-left: 1rem;
+}
+
+.banner .texto-container h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--textcolor);
+}
+
+.banner-marcas {
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+}
+
+.item-marcas {
+    display: inline-flex;
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--whitecolor);
+    border-radius: 3.5rem;
+    bottom: -7rem;
+    position: relative;
+}
+
+.item-marcas .marca img {
+    width: 22rem;
+    padding: 0 3rem;
+    justify-content: center;
+    transition: .5s ease;
+
+}
+
+.item-marcas .marca img:hover {
+    transform: scale(1.1);
+}
+
+.lema-container {
+    margin-top: 2rem;
+    max-width: 10rem;
+}
+
+.lema-container img {
+    width: 35rem;
+    display: none;
+}
+
+.contenido {
+    border: solid red;
+    top: -12rem;
+    position: relative;
+    height: 30rem;
+    width: 100%;
+}
+
+.top-container {
+    position: relative;
+    border: solid green;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.top-container .top-box {
+    border: solid blue;
+    height: auto;
+    display: flex;
+    width: 100%;
+    
+}
+
+.top-box .top-producto {
+    border: solid yellow;
+    position: relative;
+    width: 100%;
+}
+
+.top-producto .responsive-banner {
+    margin: 8rem auto;
+    width: 100%;
+    min-width: 50rem;
+    max-width: 55rem;
+    position: relative;
+    height: auto;
+    min-height: 55rem;
+    max-height: 75rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #ee7028, #fa620a);
+    background-repeat: no-repeat;
+    box-shadow: 0 .8rem .7rem var(--shadow-color);
+}
+
+.responsive-banner img {
+    max-width: 58rem;
+    z-index: 100;
+}
+
+.container-envelope {
+    padding: 3.5rem 1.5rem;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.col-xs-12 {
+    position: relative;
+    top: 5rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+}
+
+img {
+    max-width : 58rem;
+    width: 100%;
+    position: relative;
+    
+}
+
+span::after,
+span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.circle-a::before {
+    width: 75rem;
+    height: 75rem;
+    top: -30rem;
+    left: 52%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.circle-a::after {
+    top: 80%;
+    right: 45%;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.circle-b::before {
+    top: 20%;
+    left: -18%;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 30rem;
+    height: 30rem;
+}
+
+.circle-b:after {
+    width: 35rem;
+    height: 35rem;
+    bottom: -10%;
+    right: -10%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.circle-c::before{
+    width: 65rem;
+    height: 65rem;
+    top: -30rem;
+    left: 52%;
+    background: var(--whitecolor);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 90;
+}
+
+.circle-c::after{
+    background:rgba(0, 0, 0, 0.15);
+    top: 60%;
+    left: 1%;
+    width: 40rem;
+    height: 40rem;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.col-xs-12 p {
+    clear: both;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 1em 0 0.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--whitecolor);
+    position: relative;
+    word-wrap: break-word;
+    font-size: 2.3rem;
+    
+    margin-bottom: 2.2rem;
+}
+
+a.more-link {
+    background-color: rgba(255, 255, 255, 0.35);
+    font-size: 2rem;
+    display: inline-block;
+    padding: 12px 18px;
+    color: var(--textcolor);
+    text-decoration: none;
+    line-height: 1.5;
+    text-align: center;
+    border: none !important;
+    position: relative;
+    border-radius: 30px;
+
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    transition: .1s all ease-in-out;
+}
+
+a.more-link:hover {
+    background-color: rgba(255, 255, 255, 0.50);
+}
