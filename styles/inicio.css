@@ -100,7 +100,7 @@
 }
 
 .contenido {
-    border: solid red;
+
     top: -12rem;
     position: relative;
     height: 30rem;
@@ -109,7 +109,7 @@
 
 .top-container {
     position: relative;
-    border: solid green;
+
     height: auto;
     width: 100%;
     margin: 0;
@@ -118,7 +118,7 @@
 }
 
 .top-container .top-box {
-    border: solid blue;
+
     height: auto;
     display: flex;
     width: 100%;
@@ -126,44 +126,51 @@
 }
 
 .top-box .top-producto {
-    border: solid yellow;
+
     position: relative;
     width: 100%;
 }
 
+/*Banner de TOP 100*/
 .top-producto .responsive-banner {
     margin: 8rem auto;
     width: 100%;
     min-width: 50rem;
-    max-width: 55rem;
+    max-width: 100%;
     position: relative;
     height: auto;
     min-height: 55rem;
-    max-height: 75rem;
+    max-height: 100%;
     border-radius: 1.5rem;
     overflow: hidden;
     background-image: linear-gradient(to bottom right, #ee7028, #fa620a);
     background-repeat: no-repeat;
     box-shadow: 0 .8rem .7rem var(--shadow-color);
+    display: flex;
 }
 
 .responsive-banner img {
-    max-width: 58rem;
+
     z-index: 100;
+    width: 85rem;
+    object-fit: cover;
+    position: relative;
+    right: -20%;
 }
 
-.container-envelope {
+.responsive-banner .container-envelope,
+.responsive-banner-2 .container-envelope {
     padding: 3.5rem 1.5rem;
-    color: #fff;
+    color: #111;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
 
-.col-xs-12 {
+.responsive-banner .col-xs-12,
+.responsive-banner-2 .col-xs-12 {
     position: relative;
-    top: 5rem;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -173,14 +180,13 @@
     -ms-flex-item-align: center;
     align-self: center;
     text-align: center;
+    left: 40%;
+    z-index: 99;
+    border-radius: 3rem;
+    padding: 1.2rem 1.8rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-img {
-    max-width : 58rem;
-    width: 100%;
-    position: relative;
-    
-}
 
 span::after,
 span::before {
@@ -192,54 +198,62 @@ span::before {
     height: 10rem;
 }
 
-.circle-a::before {
-    width: 75rem;
-    height: 75rem;
-    top: -30rem;
-    left: 52%;
+.responsive-banner .circle-a::before,
+.responsive-banner-2 .circle-a::before {
+    width: 85rem;
+    height: 85rem;
+    top: -27%;
+    left: 75%;
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 80;
 }
 
-.circle-a::after {
-    top: 80%;
-    right: 45%;
+.responsive-banner .circle-a::after,
+.responsive-banner-2 .circle-a::after {
+    top: 50%;
+    right: 55%;
     width: 25rem;
     height: 25rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.circle-b::before {
-    top: 20%;
-    left: -18%;
+.responsive-banner .circle-b::before,
+.responsive-banner-2 .circle-b::before {
+    top: -21%;
+    left: -10%;
     background-color: rgba(0, 0, 0, 0.2);
-    width: 30rem;
-    height: 30rem;
+    width: 40rem;
+    height: 40rem;
 }
 
-.circle-b:after {
+.responsive-banner .circle-b:after,
+.responsive-banner-2 .circle-b:after {
     width: 35rem;
     height: 35rem;
-    bottom: -10%;
-    right: -10%;
+    top: 10%;
+    left: 15%;
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-.circle-c::before{
-    width: 65rem;
-    height: 65rem;
-    top: -30rem;
-    left: 52%;
+.responsive-banner .circle-c::before,
+.responsive-banner-2 .circle-c::before{
+    width: 85rem;
+    height: 85rem;
+    top: -30%;
+    left: 85%;
     background: var(--whitecolor);
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 90;
+    
 }
 
-.circle-c::after{
+.responsive-banner .circle-c::after,
+.responsive-banner-2 .circle-c::after{
     background:rgba(0, 0, 0, 0.15);
     top: 60%;
     left: 1%;
@@ -247,8 +261,8 @@ span::before {
     height: 40rem;
 }
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.col-xs-12 p {
+.responsive-banner .col-xs-12 p ,
+.responsive-banner-2 .col-xs-12 p {
     clear: both;
     text-rendering: optimizeLegibility;
     font-weight: 500;
@@ -264,7 +278,8 @@ span::before {
     margin-bottom: 2.2rem;
 }
 
-a.more-link {
+.responsive-banner a.more-link,
+.responsive-banner-2 a.more-link {
     background-color: rgba(255, 255, 255, 0.35);
     font-size: 2rem;
     display: inline-block;
@@ -275,14 +290,196 @@ a.more-link {
     text-align: center;
     border: none !important;
     position: relative;
-    border-radius: 30px;
-
+    border-radius: 3rem;
     -webkit-transition: .1s all ease-in-out;
     -moz-transition: .1s all ease-in-out;
     -o-transition: .1s all ease-in-out;
     transition: .1s all ease-in-out;
 }
 
-a.more-link:hover {
-    background-color: rgba(255, 255, 255, 0.50);
+.responsive-banner a.more-link:hover, 
+.responsive-banner-2 a.more-link:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Banner de porductos nuevos*/
+
+.top-producto .responsive-banner-2 {
+    margin: 8rem auto;
+    width: 100%;
+    min-width: 50rem;
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    min-height: 50rem;
+    max-height: 55rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left , #FFCD00, #b38116);
+    background-repeat: no-repeat;
+    box-shadow: 0 .8rem .7rem var(--shadow-color);
+    display: flex;
+}
+
+.responsive-banner-2 img {
+    object-fit: cover;
+    z-index: 100;
+    width: 80rem;
+    position: relative;
+    right: -27%;
+}
+
+/*Banner de promociones*/
+.top-producto .responsive-banner-3 {
+    margin: 8rem auto;
+    width: 100%;
+    min-width: 50rem;
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    min-height: 50rem;
+    max-height: 55rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left , #FF005A, #8a123c);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 .8rem .7rem var(--shadow-color);
+    display: flex;
+}
+
+.responsive-banner-3 img {
+    object-fit: contain;
+    z-index: 100;
+    width: 80rem;
+    position: relative;
+    left: -22%;
+    
+}
+
+.responsive-banner-3 .image-2{
+    width: 90rem;
+    left: -15%;
+    position: relative;
+    object-fit: contain;
+}
+
+
+.responsive-banner-3 .circle-a::before {
+    width: 85rem;
+    height: 85rem;
+    top: -27%;
+    left: 75%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 80;
+}
+
+
+.responsive-banner-3 .circle-a::after {
+    top: 50%;
+    right: 55%;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.responsive-banner-3 .circle-b::before {
+    top: -21%;
+    left: -10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40rem;
+    height: 40rem;
+}
+
+
+.responsive-banner-3 .circle-b:after {
+    width: 35rem;
+    height: 35rem;
+    top: 10%;
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.responsive-banner-3 .circle-c::before{
+    width: 85rem;
+    height: 85rem;
+    top: -30%;
+    left: 85%;
+    background: var(--whitecolor);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 90;
+    
+}
+
+.responsive-banner-3 .circle-c::after{
+    background:rgba(0, 0, 0, 0.5);
+    top: 60%;
+    left: 1%;
+    width: 40rem;
+    height: 40rem;
+}
+
+.responsive-banner-3 .col-xs-12 {
+    position: relative;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 40rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+    right: 130%;
+    top: 35%;
+    z-index: 101;
+    border-radius: 3rem;
+    padding: 1.2rem 1.8rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.responsive-banner-3 .col-xs-12 p{
+    clear: both;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 1em 0 0.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--whitecolor);
+    position: relative;
+    word-wrap: break-word;
+    font-size: 2.3rem;
+    
+    margin-bottom: 2.2rem;
+}
+
+.responsive-banner-3 a.more-link {
+    background-color: rgba(255, 255, 255, 0.35);
+    font-size: 2rem;
+    display: inline-block;
+    padding: 12px 18px;
+    color: var(--textcolor);
+    text-decoration: none;
+    line-height: 1.5;
+    text-align: center;
+    border: none !important;
+    position: relative;
+    border-radius: 3rem;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    transition: .1s all ease-in-out;
+}
+
+.responsive-banner-3 a.more-link:hover{
+    background-color: rgba(255, 255, 255, 0.5);
 }
