@@ -126,7 +126,7 @@
     height: auto;
     display: flex;
     width: 100%;
-    
+
 }
 
 .top-box .top-producto {
@@ -243,7 +243,7 @@ span::before {
 }
 
 .responsive-banner .circle-c::before,
-.responsive-banner-2 .circle-c::before{
+.responsive-banner-2 .circle-c::before {
     width: 85rem;
     height: 85rem;
     top: -30%;
@@ -253,19 +253,19 @@ span::before {
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 90;
-    
+
 }
 
 .responsive-banner .circle-c::after,
-.responsive-banner-2 .circle-c::after{
-    background:rgba(0, 0, 0, 0.15);
+.responsive-banner-2 .circle-c::after {
+    background: rgba(0, 0, 0, 0.15);
     top: 60%;
     left: 1%;
     width: 40rem;
     height: 40rem;
 }
 
-.responsive-banner .col-xs-12 p ,
+.responsive-banner .col-xs-12 p,
 .responsive-banner-2 .col-xs-12 p {
     clear: both;
     text-rendering: optimizeLegibility;
@@ -278,7 +278,7 @@ span::before {
     position: relative;
     word-wrap: break-word;
     font-size: 2.3rem;
-    
+
     margin-bottom: 2.2rem;
 }
 
@@ -301,8 +301,8 @@ span::before {
     transition: .1s all ease-in-out;
 }
 
-.responsive-banner a.more-link:hover, 
-.responsive-banner-2 a.more-link:hover{
+.responsive-banner a.more-link:hover,
+.responsive-banner-2 a.more-link:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -319,7 +319,7 @@ span::before {
     max-height: 55rem;
 
     overflow: hidden;
-    background-image: linear-gradient(to bottom left , #FFCD00, #b38116);
+    background-image: linear-gradient(to bottom left, #FFCD00, #b38116);
     background-repeat: no-repeat;
     box-shadow: 0 .8rem .7rem var(--shadow-color);
     display: flex;
@@ -345,7 +345,7 @@ span::before {
     max-height: 55rem;
 
     overflow: hidden;
-    background-image: linear-gradient(to bottom left , #FF005A, #8a123c);
+    background-image: linear-gradient(to bottom left, #FF005A, #8a123c);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 .8rem .7rem var(--shadow-color);
@@ -358,10 +358,10 @@ span::before {
     width: 85rem;
     position: relative;
     left: -10%;
-    
+
 }
 
-.responsive-banner-3 .image-2{
+.responsive-banner-3 .image-2 {
     width: 90rem;
     left: -15%;
     position: relative;
@@ -409,7 +409,7 @@ span::before {
 }
 
 
-.responsive-banner-3 .circle-c::before{
+.responsive-banner-3 .circle-c::before {
     width: 85rem;
     height: 85rem;
     top: -30%;
@@ -419,11 +419,11 @@ span::before {
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 90;
-    
+
 }
 
-.responsive-banner-3 .circle-c::after{
-    background:rgba(0, 0, 0, 0.5);
+.responsive-banner-3 .circle-c::after {
+    background: rgba(0, 0, 0, 0.5);
     top: 60%;
     left: 1%;
     width: 40rem;
@@ -450,7 +450,7 @@ span::before {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.responsive-banner-3 .col-xs-12 p{
+.responsive-banner-3 .col-xs-12 p {
     clear: both;
     text-rendering: optimizeLegibility;
     font-weight: 500;
@@ -462,7 +462,7 @@ span::before {
     position: relative;
     word-wrap: break-word;
     font-size: 2.3rem;
-    
+
     margin-bottom: 2.2rem;
 }
 
@@ -484,71 +484,266 @@ span::before {
     transition: .1s all ease-in-out;
 }
 
-.responsive-banner-3 a.more-link:hover{
+.responsive-banner-3 a.more-link:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*Galeria de fotos*/
 
-.galeria-container h1{
+.galeria-container h1 {
     font-size: 2.5rem;
     margin-bottom: 8rem;
     margin-top: 5rem;
     text-align: center;
 }
 
-.galeria-container .galeria{
+.galeria-container .galeria {
     display: flex;
-	overflow: hidden;
-	height: 50vw;
-	background: #111;
+    overflow: hidden;
+    height: 50vw;
+    background: var(--textcolor);
+
 }
 
-.galeria:hover img{
+.galeria:hover img {
     opacity: 0.5;
 }
 
-.galeria img{
+.galeria img {
     max-width: 100%;
     width: 30rem;
-	vertical-align: middle;
-	border: .2rem solid var(--textcolor);
-	box-sizing: border-box;
-	transition: opacity .2s;
-    border-radius: 3rem;
+    vertical-align: middle;
+    border: .2rem solid var(--textcolor);
+    box-sizing: border-box;
+    transition: opacity .2s;
+
 }
 
-.galeria img:hover{
+.galeria img:hover {
     opacity: 1;
     transform: scale(1.0);
     transition: .5s ease;
 }
 
 .galeria .column {
-	animation: var(--animation, none) 30s infinite linear;
+    animation: var(--animation, none) 35s infinite linear;
 }
 
 .galeria .column:hover {
-	animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .galeria .column:nth-of-type(odd) {
-	align-self: flex-end;
-	--direction: 50%;
+    align-self: flex-end;
+    --direction: 50%;
 }
 
 @keyframes slide {
-	to { transform: translateY(var(--direction, -50%)) }
+    to {
+        transform: translateY(var(--direction, -50%))
+    }
 }
 
 /*+++++++++++++++++++banner de promociones+++++++++++++++++++++++++++++++*/
 
-.promocion-mes{
+.promocion-mes {
     padding: 0;
     margin: 0;
     position: relative;
-    border: solid green;
     top: 1rem;
     width: 100%;
+}
+
+.promocion-mes .promocion-container {
+
+    padding: 1.5rem 0;
+    margin: 5rem;
+}
+
+.promocion-container h1{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.promocion-contenido {
+    margin-top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    padding: 8rem;
+    max-height: 80rem;
+    max-width: 65%;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom, #eb68ad, #ea58a1, #e84594, #e72e86, #e40078);
+}
+
+.promocion-container .promocion-box {
+    background: #f797ca;
+    max-height: 50rem;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 70rem;
+    opacity: 1;
+    z-index: 110;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 2rem;
+}
+
+.img-container {
+
+    position: absolute;
+    width: 80rem;
+    height: 80rem;
+    right: -45%;
+    bottom: -15%;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.img-container img {
+    object-fit: contain;
+    z-index: 90;
+    width: 68rem;
+    left: -25%;
+    top: 10%;
+    position: relative;
+
+}
+
+.promocion-box .circulo-1,
+.promocion-box .circulo-2,
+.promocion-contenido .circulo-3,
+.promocion-contenido .circulo-4 {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.promocion-box .circulo-1 {
+    background: var(--alternativecolor);
+    opacity: 0.1;
+    width: 80rem;
+    height: 80rem;
+    right: -45%;
+    bottom: -15%;
+    z-index: 101;
+}
+
+.promocion-box .circulo-2 {
+    background-color: #f797ca;
+    width: 45rem;
+    height: 45rem;
+    right: -30%;
+    bottom: 38%;
+    z-index: 101;
+}
+
+.promocion-contenido .circulo-3 {
+    background-color: var(--shadow-color);
+    width: 75rem;
+    height: 75rem;
+    bottom: -40%;
+    left: -30%;
+    z-index: 80;
+}
+
+.promocion-contenido .circulo-3::before{
+    content: "";
+    background-color: #f797ca;
+    width: 40rem;
+    height: 40rem;
+    top: 20%;
+    left: 20%;
+    z-index: 80;
+}
+
+.promocion-contenido .circulo-4{
+    background-color: var(--shadow-color);
+    width: 75rem;
+    height: 75rem;
+    top: -40%;
+    right: -30%;
+    z-index: 80;
+}
+
+.promocion-contenido .circulo-4::before{
+    content: "";
+    background-color: #f797ca;
+    width: 40rem;
+    height: 40rem;
+    bottom: 20%;
+    right: 20%;
+    z-index: 80;
+}
+
+.promocion-contenido .container-texto{
+
+    padding-left: 2rem;
+    margin: 0;
+    position: relative;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.container-texto h2{
+    clear: both;
+    text-rendering: optimizeLegibility;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 1em 0 0.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--secondarycolor);
+    position: relative;
+    word-wrap: break-word;
+    font-size: 4.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    bottom: 10%;
+}
+
+.container-texto span{
+    color: #a04876;
+    font-weight: 700;
+}
+
+.container-texto p{
+    clear: both;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 1em 0 0.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--textcolor);
+    position: relative;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    text-align: left;
+    bottom: -10%;
     
+}
+
+.container-texto h3{
+    clear: both;
+    text-rendering: optimizeLegibility;
+    font-weight: 600;
+    line-height: 1.9;
+    margin: 1em 0 0.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--textcolor);
+    position: relative;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    text-align: left;
+    top: 70%;
 }

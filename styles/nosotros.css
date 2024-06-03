@@ -1,220 +1,123 @@
 @import url("colores.css");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moulpali&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
 
 .nosotros{
-    margin-top: 15%;
-
-}
-
-.introduccion-contenido{
-    max-width: 44rem;
-    padding: 0 2rem 0;
-    
-}
-
-.introduccion-contenido h3{
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: .9;
-}
-
-.introduccion-contenido h1{
-    font-size: 5.6rem;
-    font-weight: 700;
-    margin-bottom: .3rem;
-    line-height: .9;
-}
-
-.introduccion-contenido p{
-    font-size: 1.6rem;
-}
-.introduccion-contenido .redes-sociales i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: transparent;
-    border: .2rem solid var(--secondarycolor);
-    border-radius: 50%;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
-    font-size: 3rem;
-    color: var(--secondarycolor);
-    margin: 2.5rem 1.5rem 3rem 0;
-    transition: .5s ease;
-}
-
-.redes-sociales i:hover{
-    color: var(--bgcolor);
-    background: var(--secondarycolor);
-}
-
-.nosotros .valor-container{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 768px;
-    height: 768px;
-    overflow: hidden;
-    pointer-events: none;
-    margin-top: 7rem;
-
-}
-
-.nosotros .valor-container .valor-box{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 768px;
-    height: 768px;
-    border-radius: 50%;
+    padding: 0;
+} 
+.nosotros-container .banner-info{
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: rotacionValor 13s ease-out infinite;
-
-}
-
-@keyframes rotacionValor{
-    0%, 20%{
-        transform: rotate(0deg);
-    }
-    25%, 45%{
-        transform: rotate(-90deg);
-    }
-    50%, 70%{
-        transform: rotate(-180deg);
-    }
-    75%, 95%{
-        transform: rotate(-270deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
-}
-
-.nosotros .valor-box .valor{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--maincolor);
-    transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
-    left: 0;
-    background: var(--bgcolor);
-    padding: 13px 0;
-
-}
-
-.nosotros .valor-box .valor:nth-child(1) i {
-    margin-right: 15px;
-}
-
-.nosotros .valor-box .valor:nth-child(2),
-.nosotros .valor-box .valor:nth-child(4){
-    padding: 20px;
-}
-
-.nosotros .valor-box .valor h3{
-    font-size: 3.5rem;
-    line-height: 1;
-    font-weight: 600;
-}
-
-
-.valor-container .valor-box .valor img{
-    width: 5.8rem;
-}
-
-.nosotros .valor-box .circle{
-    
-    border: 8px solid var(--alternativecolor);
-    width: 560px;
-    height: 560px;
-    border-radius: 50%;
-
-}
-
-.nosotros .valor-container .overlay{
-    position: absolute;    
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    border-top: 384px solid var(--secondarycolor);
-    border-right: 384px solid var(--secondarycolor);
-    border-bottom: 384px solid var(--secondarycolor);
-    border-left: 384px solid transparent;
-}
-
-
-/*------------------------------------------------------------*/
-.nosotros .mision-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 70rem;
-    margin-bottom: 20rem;
-}
-
-.mision-container .mision-box{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    border-radius: 2rem;
-    padding: 1rem 1rem;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-    overflow: hidden;
-}   
-
-.mision-box img{
-    width: 60%;
-    transition: .5s ease;
-}
-
-.mision-box:hover img{
-    transform: scale(1.1);
-}
-
-.mision-box .mision-layer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(233, 30, 98, 0.623), var(--secondarycolor));
-    color: var(--bgcolor);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 4rem;
-    opacity: 0;
-    transition: .5s ease;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    background-color: var(--azulvolteck);
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.mision-box:hover .mision-layer{
-    opacity: 1;
+.nosotros-container h1{
+    font-size: 3rem;
+    color: var(--azulvolteck);
+    margin-bottom: 1.5rem;
 }
 
-.mision-box h3{
+.nosotros-container span{
+    -webkit-text-stroke: .1rem var(--rojo);
+    -webkit-text-fill-color: var(--rojo2);
     font-size: 3.5rem;
-    color: var(--secondarycolor);
-    padding-bottom: 1.1rem;
+    text-transform: uppercase;
 }
 
-.mision-layer p{
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: .3rem 0 .2rem;
-    color: var(--whitecolor);
+.img-container{
+    position: relative;
+}
+
+.banner-info img{
+
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+}
+
+.banner-info .info-container{
+    z-index: 100;
+    height: 100%;
+    position: relative;
+    width: 40%;
+    left: 5%;
+    top: 8rem;
+}
+.nosotros .info-container h2{
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--secondarycolor);
+    -webkit-text-stroke: 1px var(--whitecolor);
+    
+}
+
+.nosotros .info-container span{
+
+    color: var(--rojo);
+    -webkit-text-stroke: 1px var(--whitecolor);
+    left: 20rem;
+    font-size: 8rem;
+    position: relative;
+    font-family: "Dancing Script", cursive;
+    text-transform: lowercase;
+}
+
+.banner-info .fig-1{
+
+    position: absolute;
+    width: 45rem;
+    height: 45rem;
+    background: var(--rojo2);
+    transform: rotate(45deg);
+    left: -8.5%;
+    top: -5%;
+    z-index: 95;
+}
+
+.banner-info .fig-1::after{
+    position: absolute;
+    content: "";
+    width: 45rem;
+    height: 45rem;
+    background: var(--rojo);
+    left: -8.5%;
+    top: -9%;
+    z-index: 90;
+}
+
+.banner-info .fig-1::before{
+    position: absolute;
+    content: "";
+    width: 45rem;
+    height: 45rem;
+    background: var(--secondarycolor);
+    left: -8.5%;
+    bottom: -9%;
+    z-index: 110;
+}
+
+.nosotros .descripcion-container{
+
+    width: 80%;
+    padding: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
     text-align: justify;
+} 
+
+.descripcion-container p{
+    font-size: 1.8rem;
+    color: var(--textcolor);
+    
+}
+
+.descripcion-container span{
+    color: var(--rojo);
 }
