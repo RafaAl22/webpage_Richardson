@@ -1,6 +1,10 @@
 @import url("colores.css");
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moulpali&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
+h1{
+    font-weight: 700;
+
+}
 
 .nosotros{
     padding: 0;
@@ -16,11 +20,14 @@
     overflow: hidden;
 }
 
+.valores-container h1,
+.mision_vision-container h1,
 .nosotros-container h1{
-    font-size: 3rem;
     color: var(--azulvolteck);
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
 }
+
 
 .nosotros-container span{
     -webkit-text-stroke: .1rem var(--rojo);
@@ -53,19 +60,20 @@
     font-weight: 700;
     line-height: 5rem;
     color: var(--secondarycolor);
-    -webkit-text-stroke: 1px var(--whitecolor);
+    -webkit-text-stroke: .8px var(--whitecolor);
     
 }
 
 .nosotros .info-container span{
 
-    color: var(--rojo);
-    -webkit-text-stroke: 1px var(--whitecolor);
+    color: var(--rojo2);
+    -webkit-text-stroke: .5px var(--whitecolor);
     left: 20rem;
-    font-size: 8rem;
+    font-size: 9rem;
     position: relative;
     font-family: "Dancing Script", cursive;
     text-transform: lowercase;
+    font-weight: 900;
 }
 
 .banner-info .fig-1{
@@ -103,21 +111,137 @@
 }
 
 .nosotros .descripcion-container{
-
     width: 80%;
     padding: 2rem;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
-    text-align: justify;
+    margin-bottom: 10rem;
+    margin-top: 8rem;
 } 
 
 .descripcion-container p{
+    
     font-size: 1.8rem;
     color: var(--textcolor);
-    
+    text-align: justify;
+    font-weight: 500;
 }
 
 .descripcion-container span{
     color: var(--rojo);
+    font-weight: 500;
 }
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.valores-container .valores-box{
+    display: flex;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    justify-content: center;
+    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.valores-box img{
+    width: 20%;
+    text-align: center;
+}
+
+.valores-box .valores{
+    text-align: center;
+    width: 30%;
+}
+
+.valores:nth-child(2){
+    border-left: solid .1rem var(--textcolor);
+    border-right: solid .1rem var(--textcolor);
+}
+
+.valores h2{
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.valores p{
+    font-size: 1.8rem;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.mision_vision-container .mision_vision-box{
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-around;
+    z-index: 120;
+}
+
+.mision_vision{
+    padding: 2rem;
+    background: var(--secondarycolor);
+    text-align: center;
+    z-index: 110;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+    width: 40%;    
+}
+
+.mision_vision img{
+    width: 50rem;
+    border-radius: 2rem;
+    object-fit: contain;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.mision_vision h2{
+    font-size: 2rem;
+    font-weight: 550;
+    margin-bottom: 2rem;
+    color: var(--whitecolor);
+}
+
+.mision_vision p{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--whitecolor);
+    text-align: center;
+}
+
+
+.mision_vision .circle_1{
+    position: absolute;
+    display: block;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+    background-color: var(--shadow-color);
+    z-index: -1;
+    top: -20%;
+    left: -20%;
+    height: 46rem;
+    width: 46rem;
+    
+}
+
+
+.mision_vision .circle_1::after{
+    content: "";
+    z-index: -1;
+    top: 30%;
+    height: 50rem;
+    width: 50rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--shadow-color);
+    top: 100%;
+    left: 125%;
+}
+
+

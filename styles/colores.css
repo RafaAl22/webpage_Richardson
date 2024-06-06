@@ -1,6 +1,6 @@
 :root{
     --bgcolor: #fdfdfd;
-    --maincolor: rgb(235, 27, 27);
+    --maincolor: #eb1b1b;
     --secondarycolor: #08025f;
     --secondarycolor-light: #1224c7;
     --textcolor: #333;
@@ -10,7 +10,7 @@
     --orangecolor:#ee7028;
     --whitecolor:#fff;
     --purplecolor: #E40078;
-    --pruplecolorlight:rgb(138, 43, 226);
+    --pruplecolorlight:#8a2be2;
     --alternativecolor:#FF005A;    
     --azulmarino: #00304E;
     --indigo: #006db2;
