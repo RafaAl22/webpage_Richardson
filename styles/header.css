@@ -1,107 +1,153 @@
 @import url("colores.css");
 
+#menu-icon {
+    font-size: 3.6rem;
+    display: none;
+    color: var(--textcolor);
+    cursor: pointer;
+}
 
 .header {
-    background: var(--azulfoset);
-    width: 100%;
     position: fixed;
-    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-    margin-bottom: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}
-
-.navbar {
+    padding: 2rem 7%;
+    background: transparent;
     display: flex;
-    margin: 0;
-    position: relative;
+    z-index: 1000;
+    transition: .5s ease;
+    
 }
 
-.navbar ul{
+.navbar.light{
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--whitecolor);
+    font-weight: 500;
+    margin-right: 3.5rem;
+    transition: .5s ease;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-right: 3.5rem;
+    transition: .5s ease;
+}
+
+.navbar{
     position: relative;
     left: 50%;
-
-    transform: translate(-50%);
-    list-style: none;
-    overflow: hidden; 
-    
+    transform: translateX(-50%);
 }
 
-.navbar ul li {
-    
-    float: left;
-    font-weight: 400;
-    margin-left: 0;
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
-.navbar ul li a {
-    font-size: 2rem;
-    font-weight: 500;
-    display: flex; 
-    padding: 2rem;
-    color: var(--whitecolor);
-    text-decoration: none;
-    transition: .9s ease;
-    -webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-}
-
-
-
-.navbar ul li:hover{
-    background:#E68FAC;
+.navbar a:hover {
+    color: var(--maincolor);
 }
 
 .header.sticky {
-    background: var(--azulfoset);
+    background: var(--bgcolor);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    margin-left: 3%;
-    margin-top: 3rem;
-    width: 95%;
-    border-radius: 2rem;
-    align-items: center;
-    padding: 0;
-    z-index: 999;
+
 }
 
 .header.sticky .navbar a {
-    color: var(--whitecolor);
-    padding: 1.3rem;
+    color: var(--textcolor);
+
 }
 
-.header.sticky .navbar::after{
+.header.sticky .navbar::after {
     transition: 1s ease-out;
 }
 
-.header.sticky .navbar ul li a.active {
-    color: var(--textcolor);
-    background: #E68FAC;
+.header.sticky .navbar a.active {
+    color: var(--maincolor);
+    
 }
 
-.header.sticky .navbar ul li a::before {
+.header.sticky .navbar a::before {
     opacity: .7;
+    background: var(--maincolor);
 }
 
-.navbar ul li a.active::before {
+.navbar a.active::before {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     bottom: -6px;
     height: 0.2rem;
-    /*background-color: var(--secondarycolor);*/
+    background-color: var(--whitecolor);
 }
 
-.navbar ul li a:hover {
-    color: var(--textcolor);
+.navbar a:hover {
+    color: var(--maincolor);
+}
+
+@media (max-width:1250px){
+    .navbar a{
+        
+        font-size: 1.5rem;
+        
+    }
+    
+}
+
+@media (max-width:900px){
+    .navbar a{
+        
+        font-size: 1.4rem;
+        
+    }
+    
+}
+
+@media (max-width:840px){
+    .navbar a{
+        
+        font-size: 1.3rem;
+        
+    }
+    
 }
 
 
+
+@media (max-width:800px) {
+    #menu-icon {
+        display: flex;
+        
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bgcolor);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+        
+    }
+
+    .navbar.active{
+        display: block;
+        
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--textcolor);
+    }
+
+    .navbar a.active{
+        color: var(--maincolor);
+    }
+}

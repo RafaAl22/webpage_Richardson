@@ -798,3 +798,10 @@ span::before {
     text-align: left;
     top: 70%;
 }
+
+
+/*Responsive de página de inicio*/
+
+@media (max-width: 1800px){
+
+}
