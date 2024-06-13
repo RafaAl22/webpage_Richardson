@@ -29,7 +29,7 @@ window.onscroll = () => {
                     document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
                 });
             };
-        });/*
+        });*/
 
 /*sticky navbar */
 

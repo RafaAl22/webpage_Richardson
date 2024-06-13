@@ -1,17 +1,17 @@
 @import url(/styles/colores.css);
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moulpali&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
-
+/*Portada de inicio*/
 .banner {
     display: block;
     justify-content: space-between;
     background: var(--bgcolor);
     position: relative;
-    top: 7rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    top: 6.5rem;
     height: 45rem;
-    background-color: var(--secondarycolor);
+    background-image: url(/src/Inicio/Fondo-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
     z-index: 90;
 }
@@ -19,70 +19,32 @@
 .banner-superior {
     display: block;
     position: relative;
-
     z-index: 100;
     width: 100%;
     height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    overflow: hidden;
     align-content: center;
     text-align: center;
-}
 
-.banner .circle-banner {
-    display: block;
-    position: absolute;
-    width: 450rem;
-    height: 420rem;
-    background: var(--rojo);
-    border-radius: 50%;
-    bottom: 20%;
-    right: -75%;
-    z-index: 80;
-    box-shadow: rgba(255, 253, 253, 0.56) 0px 22px 70px 4px;
-}
-
-
-.banner .circle-banner::after {
-    content: "";
-    position: absolute;
-    width: 400rem;
-    height: 440rem;
-    background: var(--whitecolor);
-    border-radius: 50%;
-    bottom: 2%;
-    right: 11%;
-    z-index: 85;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.banner .circle-banner::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 450rem;
-    height: 420rem;
-    background: var(--shadow-color);
-    border-radius: 50%;
-    top: 50%;
-    left: 10%;
-    z-index: 85;
-    opacity: .5;
 }
 
 .logo-container {
     cursor: default;
     position: relative;
-    display: flex;
     z-index: 90;
-
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
     justify-content: center;
+    border-radius: 3rem;
 }
 
 .logo-container img {
     width: 45rem;
     height: 100%;
-
+    background: var(--whitecolor);
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .banner .texto-container {
@@ -90,12 +52,13 @@
     width: 100%;
     justify-content: center;
     position: relative;
-    display: block;
+    display: flex;
     top: 1rem;
+
 }
 
 .texto-container h1 {
-    font-size: 12rem;
+    font-size: 13rem;
     font-family: "Dancing Script", cursive;
     color: var(--secondarycolor);
     -webkit-text-stroke: .8px var(--whitecolor);
@@ -103,57 +66,16 @@
 }
 
 .texto-container span {
-    
-    font-size: 9rem;
-    color: var(--rojo);
+    margin-left: 2rem;
+    font-size: 11rem;
+    color: var(--secondarycolor);
     -webkit-text-stroke: 1px var(--whitecolor);
 }
 
-.banner-marcas {
-    margin-top: 0;
-    height: auto;
-    width: 100%;
-}
-
-.item-marcas {
-    display: inline-flex;
-    margin-top: 3rem;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--whitecolor);
-    border-radius: 3.5rem;
-    bottom: -7rem;
-    position: relative;
-}
-
-.item-marcas .marca img {
-    width: 22rem;
-    padding: 0 3rem;
-    justify-content: center;
-    transition: .5s ease;
-
-}
-
-.item-marcas .marca img:hover {
-    transform: scale(1.1);
-}
-
-.lema-container {
-    margin-top: 2rem;
-    max-width: 10rem;
-}
-
-.lema-container img {
-    width: 35rem;
-    display: none;
-}
+/*Banners publicitarios de productos    |*/
 
 .contenido {
     padding: 0;
-
     position: relative;
     height: 25rem;
     top: 7rem;
@@ -163,8 +85,8 @@
 }
 
 .top-container {
-    position: relative;
 
+    position: relative;
     height: auto;
     width: 100%;
     margin: 0;
@@ -188,7 +110,7 @@
 
 /*Banner de TOP 100*/
 .top-producto .responsive-banner {
-    margin: 8rem auto;
+    margin: 8rem 0;
     width: 100%;
     min-width: 50rem;
     max-width: 100%;
@@ -196,7 +118,6 @@
     height: auto;
     min-height: 55rem;
     max-height: 100%;
-
     overflow: hidden;
     background-image: linear-gradient(to bottom right, #ee7028, #fa620a);
     background-repeat: no-repeat;
@@ -213,8 +134,88 @@
     right: -25%;
 }
 
+span::after,
+span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.responsive-banner .circle-a::before,
+.responsive-banner-2 .circle-a::before,
+.responsive-banner-3 .circle-a::before {
+    width: 80rem;
+    height: 80rem;
+    top: -7.5%;
+    left: 76.5%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 80;
+}
+
+.responsive-banner .circle-a::after,
+.responsive-banner-2 .circle-a::after,
+.responsive-banner-3 .circle-a::after {
+    top: 50%;
+    right: 55%;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.responsive-banner .circle-b::before,
+.responsive-banner-2 .circle-b::before,
+.responsive-banner-3 .circle-b::before {
+    top: -21%;
+    left: -10%;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40rem;
+    height: 40rem;
+}
+
+.responsive-banner .circle-b:after,
+.responsive-banner-2 .circle-b:after,
+.responsive-banner-3 .circle-b:after {
+    width: 35rem;
+    height: 35rem;
+    top: 10%;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.responsive-banner .circle-c::before,
+.responsive-banner-2 .circle-c::before,
+.responsive-banner-3 .circle-c::before {
+    width: 85rem;
+    height: 85rem;
+    top: -30%;
+    left: 85%;
+    background: var(--whitecolor);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 90;
+
+}
+
+.responsive-banner .circle-c::after,
+.responsive-banner-2 .circle-c::after,
+.responsive-banner-3 .circle-c::after {
+    background: rgba(0, 0, 0, 0.15);
+    top: 60%;
+    left: 1%;
+    width: 40rem;
+    height: 40rem;
+}
+
 .responsive-banner .container-envelope,
-.responsive-banner-2 .container-envelope {
+.responsive-banner-2 .container-envelope,
+.responsive-banner-3 .container-envelope {
     padding: 3.5rem 1.5rem;
     color: #111;
     display: -webkit-box;
@@ -224,7 +225,8 @@
 }
 
 .responsive-banner .col-xs-12,
-.responsive-banner-2 .col-xs-12 {
+.responsive-banner-2 .col-xs-12,
+.responsive-banner-3 .col-xs-12 {
     position: relative;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
@@ -240,267 +242,11 @@
     border-radius: 3rem;
     padding: 1.2rem 1.8rem;
     background-color: rgba(0, 0, 0, 0.1);
-}
 
-
-span::after,
-span::before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-}
-
-.responsive-banner .circle-a::before,
-.responsive-banner-2 .circle-a::before {
-    width: 80rem;
-    height: 80rem;
-    top: -7.5%;
-    left: 76.5%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 80;
-}
-
-.responsive-banner .circle-a::after,
-.responsive-banner-2 .circle-a::after {
-    top: 50%;
-    right: 55%;
-    width: 25rem;
-    height: 25rem;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.responsive-banner .circle-b::before,
-.responsive-banner-2 .circle-b::before {
-    top: -21%;
-    left: -10%;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 40rem;
-    height: 40rem;
-}
-
-.responsive-banner .circle-b:after,
-.responsive-banner-2 .circle-b:after {
-    width: 35rem;
-    height: 35rem;
-    top: 10%;
-    left: 15%;
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-.responsive-banner .circle-c::before,
-.responsive-banner-2 .circle-c::before {
-    width: 85rem;
-    height: 85rem;
-    top: -30%;
-    left: 85%;
-    background: var(--whitecolor);
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    z-index: 90;
-
-}
-
-.responsive-banner .circle-c::after,
-.responsive-banner-2 .circle-c::after {
-    background: rgba(0, 0, 0, 0.15);
-    top: 60%;
-    left: 1%;
-    width: 40rem;
-    height: 40rem;
 }
 
 .responsive-banner .col-xs-12 p,
-.responsive-banner-2 .col-xs-12 p {
-    clear: both;
-    text-rendering: optimizeLegibility;
-    font-weight: 500;
-    line-height: 1.15;
-    margin: 1em 0 0.5em;
-    margin: 0;
-    padding: 0;
-    color: var(--whitecolor);
-    position: relative;
-    word-wrap: break-word;
-    font-size: 2.3rem;
-
-    margin-bottom: 2.2rem;
-}
-
-.responsive-banner a.more-link,
-.responsive-banner-2 a.more-link {
-    background-color: rgba(255, 255, 255, 0.35);
-    font-size: 2rem;
-    display: inline-block;
-    padding: 12px 18px;
-    color: var(--textcolor);
-    text-decoration: none;
-    line-height: 1.5;
-    text-align: center;
-    border: none !important;
-    position: relative;
-    border-radius: 3rem;
-    -webkit-transition: .1s all ease-in-out;
-    -moz-transition: .1s all ease-in-out;
-    -o-transition: .1s all ease-in-out;
-    transition: .1s all ease-in-out;
-}
-
-.responsive-banner a.more-link:hover,
-.responsive-banner-2 a.more-link:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-/*Banner de porductos nuevos*/
-
-.top-producto .responsive-banner-2 {
-    margin: 8rem auto;
-    width: 100%;
-    min-width: 50rem;
-    max-width: 100%;
-    position: relative;
-    height: auto;
-    min-height: 50rem;
-    max-height: 55rem;
-
-    overflow: hidden;
-    background-image: linear-gradient(to bottom left, #FFCD00, #b38116);
-    background-repeat: no-repeat;
-    box-shadow: 0 .8rem .7rem var(--shadow-color);
-    display: flex;
-}
-
-.responsive-banner-2 img {
-    object-fit: cover;
-    z-index: 100;
-    width: 85rem;
-    position: relative;
-    right: -32%;
-}
-
-/*Banner de productos en descuento o liquidación*/
-.top-producto .responsive-banner-3 {
-    margin: 8rem auto;
-    width: 100%;
-    min-width: 50rem;
-    max-width: 100%;
-    position: relative;
-    height: auto;
-    min-height: 50rem;
-    max-height: 55rem;
-
-    overflow: hidden;
-    background-image: linear-gradient(to bottom left, #FF005A, #8a123c);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 .8rem .7rem var(--shadow-color);
-    display: flex;
-}
-
-.responsive-banner-3 img {
-    object-fit: contain;
-    z-index: 100;
-    width: 85rem;
-    position: relative;
-    left: -10%;
-
-}
-
-.responsive-banner-3 .image-2 {
-    width: 90rem;
-    left: -15%;
-    position: relative;
-    object-fit: contain;
-}
-
-
-.responsive-banner-3 .circle-a::before {
-    width: 80rem;
-    height: 80rem;
-    top: -7.5%;
-    left: 76.5%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 80;
-}
-
-
-.responsive-banner-3 .circle-a::after {
-    top: 50%;
-    right: 55%;
-    width: 25rem;
-    height: 25rem;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-.responsive-banner-3 .circle-b::before {
-    top: -21%;
-    left: -10%;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 40rem;
-    height: 40rem;
-}
-
-
-.responsive-banner-3 .circle-b:after {
-    width: 35rem;
-    height: 35rem;
-    top: 10%;
-    left: 20%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-.responsive-banner-3 .circle-c::before {
-    width: 85rem;
-    height: 85rem;
-    top: -30%;
-    left: 85%;
-    background: var(--whitecolor);
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    z-index: 90;
-
-}
-
-.responsive-banner-3 .circle-c::after {
-    background: rgba(0, 0, 0, 0.5);
-    top: 60%;
-    left: 1%;
-    width: 40rem;
-    height: 40rem;
-}
-
-.responsive-banner-3 .col-xs-12 {
-    position: relative;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    width: 40rem;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    text-align: center;
-    right: 130%;
-    top: 35%;
-    z-index: 101;
-    border-radius: 3rem;
-    padding: 1.2rem 1.8rem;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
+.responsive-banner-2 .col-xs-12 p,
 .responsive-banner-3 .col-xs-12 p {
     clear: both;
     text-rendering: optimizeLegibility;
@@ -513,10 +259,11 @@ span::before {
     position: relative;
     word-wrap: break-word;
     font-size: 2.3rem;
-
     margin-bottom: 2.2rem;
 }
 
+.responsive-banner a.more-link,
+.responsive-banner-2 a.more-link,
 .responsive-banner-3 a.more-link {
     background-color: rgba(255, 255, 255, 0.35);
     font-size: 2rem;
@@ -535,8 +282,62 @@ span::before {
     transition: .1s all ease-in-out;
 }
 
+.responsive-banner a.more-link:hover,
+.responsive-banner-2 a.more-link:hover,
 .responsive-banner-3 a.more-link:hover {
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Banner de porductos nuevos*/
+
+.top-producto .responsive-banner-2 {
+    margin: 8rem 0;
+    width: 100%;
+    min-width: 50rem;
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    min-height: 50rem;
+    max-height: 55rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, #FFCD00, #b38116);
+    background-repeat: no-repeat;
+    box-shadow: 0 .8rem .7rem var(--shadow-color);
+    display: flex;
+}
+
+.responsive-banner-2 img {
+    object-fit: cover;
+    z-index: 100;
+    width: 85rem;
+    position: relative;
+    right: -32%;
+}
+
+/*Banner de productos en descuento o liquidación*/
+.top-producto .responsive-banner-3 {
+    margin: 8rem 0;
+    width: 100%;
+    min-width: 50rem;
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    min-height: 50rem;
+    max-height: 55rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, #FF005A, #8a123c);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 .8rem .7rem var(--shadow-color);
+    display: flex;
+}
+
+.responsive-banner-3 img {
+    object-fit: contain;
+    z-index: 100;
+    width: 85rem;
+    position: relative;
+    right: -38%;
 }
 
 /*Galeria de fotos*/
@@ -801,7 +602,778 @@ span::before {
 
 
 /*Responsive de página de inicio*/
+@media (max-width:1660px) {
 
-@media (max-width: 1800px){
 
+    .top-producto .responsive-banner img {
+        width: 80rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -20%;
+    }
+
+    .responsive-banner-2 img {
+        object-fit: cover;
+        z-index: 100;
+        width: 80rem;
+        position: relative;
+        right: -27%;
+    }
+
+    .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 82rem;
+        position: relative;
+        right: -31%;
+
+    }
+
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -7.5%;
+        left: 75.5%;
+    }
+}
+
+@media (max-width: 1555px) {
+    .logo-container img {
+        width: 41rem;
+        height: 100%;
+    }
+
+    .texto-container h1 {
+        font-size: 11rem;
+
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 9rem;
+
+    }
+
+    .top-producto .responsive-banner img {
+        width: 80rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -18%;
+    }
+
+    .responsive-banner-2 img {
+        object-fit: cover;
+        z-index: 100;
+        width: 80rem;
+        position: relative;
+        right: -25%;
+    }
+
+    .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 80rem;
+        position: relative;
+        right: -30%;
+
+    }
+
+    .responsive-banner .col-xs-12 p,
+    .responsive-banner-2 .col-xs-12 p,
+    .responsive-banner-3 .col-xs-12 p {
+        font-size: 2rem;
+    }
+
+    .responsive-banner a.more-link,
+    .responsive-banner-2 a.more-link,
+    .responsive-banner-3 a.more-link {
+        font-size: 1.8rem;
+    }
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -7.5%;
+        left: 74.5%;
+    }
+}
+
+@media (max-width:1440px) {
+    .logo-container img {
+        width: 35rem;
+        height: 100%;
+    }
+
+    .texto-container h1 {
+        font-size: 9rem;
+        font-family: "Dancing Script", cursive;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 8rem;
+        color: var(--rojo);
+        -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    .top-producto .responsive-banner img {
+        width: 75rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -18%;
+    }
+
+    .responsive-banner-2 img {
+        object-fit: cover;
+        z-index: 100;
+        width: 75rem;
+        position: relative;
+        right: -20%;
+    }
+
+    .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 75rem;
+        position: relative;
+        right: -30%;
+    }
+
+    .responsive-banner .col-xs-12 p,
+    .responsive-banner-2 .col-xs-12 p,
+    .responsive-banner-3 .col-xs-12 p {
+        font-size: 1.8rem;
+    }
+
+    .responsive-banner a.more-link,
+    .responsive-banner-2 a.more-link,
+    .responsive-banner-3 a.more-link {
+        font-size: 1.6rem;
+    }
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -7.5%;
+        left: 74%;
+    }
+}
+
+@media (max-width:1366px) {
+    .logo-container img {
+        width: 33rem;
+        height: 100%;
+    }
+
+    .texto-container h1 {
+        font-size: 8rem;
+        font-family: "Dancing Script", cursive;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 7rem;
+        color: var(--rojo);
+        -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+        height: auto;
+        min-height: 40rem;
+        max-height: 45rem;
+        height: 42rem;
+    }
+
+    .top-producto .responsive-banner img {
+        width: 73rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -14%;
+    }
+
+    .responsive-banner-2 img {
+        object-fit: cover;
+        z-index: 100;
+        width: 73rem;
+        position: relative;
+        right: -18%;
+    }
+
+    .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 73rem;
+        position: relative;
+        right: -24%;
+    }
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -7.5%;
+        left: 73%;
+    }
+
+    .responsive-banner .circle-a::after,
+    .responsive-banner-2 .circle-a::after,
+    .responsive-banner-3 .circle-a::after {
+        top: 50%;
+        right: 55%;
+        width: 25rem;
+        height: 25rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .responsive-banner .circle-a::after,
+    .responsive-banner-2 .circle-a::after,
+    .responsive-banner-3 .circle-a::after {
+        top: 50%;
+        right: 55%;
+        width: 20rem;
+        height: 20rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .responsive-banner .circle-b::before,
+    .responsive-banner-2 .circle-b::before,
+    .responsive-banner-3 .circle-b::before {
+        top: -21%;
+        left: -10%;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .responsive-banner .circle-b:after,
+    .responsive-banner-2 .circle-b:after,
+    .responsive-banner-3 .circle-b:after {
+        width: 25rem;
+        height: 25rem;
+        top: 10%;
+        left: 15%;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .responsive-banner .circle-c::after,
+    .responsive-banner-2 .circle-c::after,
+    .responsive-banner-3 .circle-c::after {
+        background: rgba(0, 0, 0, 0.15);
+        top: 60%;
+        left: -3%;
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .logo-container img {
+        width: 30rem;
+        height: 100%;
+    }
+
+    .texto-container h1 {
+        font-size: 6rem;
+        font-family: "Dancing Script", cursive;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 5rem;
+        color: var(--rojo);
+        -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+        height: auto;
+        min-height: 35rem;
+        max-height: 40rem;
+        height: 39rem;
+    }
+
+    .top-producto .responsive-banner img {
+        width: 63rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -10%;
+    }
+
+    .top-producto .responsive-banner-2 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 63rem;
+        position: relative;
+        right: -19%;
+    }
+
+    .top-producto .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 63rem;
+        position: relative;
+        right: -25%;
+    }
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -7.5%;
+        left: 73%;
+    }
+
+    .responsive-banner .circle-c::before,
+    .responsive-banner-2 .circle-c::before,
+    .responsive-banner-3 .circle-c::before {
+        width: 85rem;
+        height: 85rem;
+        top: -30%;
+        left: 90%;
+    }
+}
+
+@media (max-width:1100px) {
+
+
+    .banner{
+        height: 30rem;
+    }
+
+    .logo-container img {
+        padding: 1rem;
+        width: 22rem;
+        height: 100%;
+    }
+
+    .texto-container h1 {
+        font-size: 7rem;
+        font-family: "Dancing Script", cursive;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 6rem;
+        color: var(--rojo);
+        -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+
+        min-height: 35rem;
+        max-height: 38rem;
+        height: 35rem;
+
+    }
+
+    .top-producto .responsive-banner img {
+        width: 50rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -15%;
+    }
+
+    .top-producto .responsive-banner-2 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 50rem;
+        position: relative;
+        right: -16%;
+    }
+
+    .top-producto .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 50rem;
+        position: relative;
+        right: -25%;
+    }
+
+
+    .responsive-banner .circle-c::before,
+    .responsive-banner-2 .circle-c::before,
+    .responsive-banner-3 .circle-c::before {
+        width: 75rem;
+        height: 75rem;
+        top: -23%;
+        left: 90%;
+    }
+
+    .responsive-banner .circle-a::after,
+    .responsive-banner-2 .circle-a::after,
+    .responsive-banner-3 .circle-a::after {
+        display: none;
+    }
+
+    .responsive-banner .circle-a::after,
+    .responsive-banner-2 .circle-a::after,
+    .responsive-banner-3 .circle-a::after {
+        display: none;
+    }
+
+    .responsive-banner .circle-b::before,
+    .responsive-banner-2 .circle-b::before,
+    .responsive-banner-3 .circle-b::before {
+        display: none;
+    }
+
+    .responsive-banner .circle-b:after,
+    .responsive-banner-2 .circle-b:after,
+    .responsive-banner-3 .circle-b:after {
+        display: none;
+    }
+
+    .responsive-banner .circle-c::after,
+    .responsive-banner-2 .circle-c::after,
+    .responsive-banner-3 .circle-c::after {
+        display: none;
+    }
+
+    .responsive-banner .col-xs-12,
+    .responsive-banner-2 .col-xs-12,
+    .responsive-banner-3 .col-xs-12 {
+        left: 10%;
+    }
+
+    .responsive-banner .col-xs-12 p,
+    .responsive-banner-2 .col-xs-12 p,
+    .responsive-banner-3 .col-xs-12 p {
+
+        font-weight: 400;
+
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .responsive-banner a.more-link,
+    .responsive-banner-2 a.more-link,
+    .responsive-banner-3 a.more-link {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width:853px){
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+        min-height: 28rem;
+        max-height: 35rem;
+        height: 30rem;
+    }
+
+    .top-producto .responsive-banner img {
+        width: 50rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: -7%;
+    }
+
+    .top-producto .responsive-banner-2 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 50rem;
+        position: relative;
+        right: -5%;
+    }
+
+    .top-producto .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 50rem;
+        position: relative;
+        right: -10%;
+    }
+
+    .responsive-banner .col-xs-12 p,
+    .responsive-banner-2 .col-xs-12 p,
+    .responsive-banner-3 .col-xs-12 p {
+
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .responsive-banner a.more-link,
+    .responsive-banner-2 a.more-link,
+    .responsive-banner-3 a.more-link {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:720px){
+
+    .logo-container img {
+        padding: 1rem;
+        width: 20rem;
+        height: 100%;
+    }
+
+    .texto-container h1 {
+        font-size: 6rem;
+        font-family: "Dancing Script", cursive;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 5rem;
+        color: var(--rojo);
+        -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+        min-height: 28rem;
+        max-height: 55rem;
+        height: 55rem;
+        width: 100%;
+    }
+
+    .top-producto .responsive-banner img {
+        width: 35rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: 23%;
+        top: -25%;
+    }
+
+    .top-producto .responsive-banner-2 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 35rem;
+        position: relative;
+        right: 23%;
+        top: -25%;
+    }
+
+    .top-producto .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 35rem;
+        position: relative;
+        right: 23%;
+        top: -25%;
+    }
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -80%;
+        left: 40%;
+        width: 90rem;
+        height: 90rem;
+    }
+
+    .responsive-banner .circle-c::before,
+    .responsive-banner-2 .circle-c::before,
+    .responsive-banner-3 .circle-c::before {
+        width: 75rem;
+        height: 75rem;
+        top: -75%;
+        left: 50%;
+    }
+
+    .responsive-banner .col-xs-12,
+    .responsive-banner-2 .col-xs-12,
+    .responsive-banner-3 .col-xs-12 {
+        left: 90%;
+        top: 50%;
+        position: relative;
+        transform: translate(-30%, -50%);
+    }
+}
+
+@media (max-width:600px){
+
+    .logo-container img {
+        padding: 1rem;
+        width: 18rem;
+        height: 100%;
+    }
+
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+        min-height: 28rem;
+        max-height: 55rem;
+        height: 53rem;
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 2rem;
+    }
+
+    .top-producto .responsive-banner img {
+        width: 30rem;
+        z-index: 100;
+        object-fit: contain;
+        position: relative;
+        right: 21%;
+        top: -25%;
+    }
+
+    .top-producto .responsive-banner-2 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 30rem;
+        position: relative;
+        right: 21%;
+        top: -25%;
+    }
+
+    .top-producto .responsive-banner-3 img {
+        object-fit: contain;
+        z-index: 100;
+        width: 30rem;
+        position: relative;
+        right: 21%;
+        top: -25%;
+    }
+
+    .responsive-banner .circle-a::before,
+    .responsive-banner-2 .circle-a::before,
+    .responsive-banner-3 .circle-a::before {
+        top: -90%;
+        left: 30%;
+        width: 90rem;
+        height: 90rem;
+    }
+
+    .responsive-banner .circle-c::before,
+    .responsive-banner-2 .circle-c::before,
+    .responsive-banner-3 .circle-c::before {
+        width: 75rem;
+        height: 75rem;
+        top: -88%;
+        left: 50%;
+    }
+
+    .responsive-banner .col-xs-12,
+    .responsive-banner-2 .col-xs-12,
+    .responsive-banner-3 .col-xs-12 {
+        left: 80%;
+        top: 50%;
+        position: relative;
+        transform: translate(-10%, -50%);
+        width: 100%;
+    }
+}
+
+@media (max-width:540px){
+    .responsive-banner .col-xs-12,
+    .responsive-banner-2 .col-xs-12,
+    .responsive-banner-3 .col-xs-12 {
+        left: 90%;
+        top: 50%;
+        position: relative;
+        transform: translate(-10%, -50%);
+        width: 100%;
+    }
+}
+
+@media (max-width:500px){
+
+    .banner{
+        height: 25rem;
+    }
+
+    .logo-container{
+        left: 45%;
+    }
+
+    .logo-container img {
+        padding: 1rem;
+        width: 16rem;
+        height: 100%;
+
+    }
+
+    .texto-container h1 {
+        font-size: 5rem;
+        font-family: "Dancing Script", cursive;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+        font-weight: 900;
+    }
+
+    .texto-container span {
+        margin-left: 2rem;
+        font-size: 4rem;
+        color: var(--rojo);
+        -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    .top-producto .responsive-banner,
+    .top-producto .responsive-banner-2,
+    .top-producto .responsive-banner-3{        
+        position: relative;
+        min-height: 28rem;
+        max-height: 55rem;
+        height: 54rem;
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 0;
+    }
+
+    .responsive-banner .col-xs-12,
+    .responsive-banner-2 .col-xs-12,
+    .responsive-banner-3 .col-xs-12 {
+        left: 95%;
+        top: 50%;
+        position: relative;
+        transform: translate(-10%, -50%);
+        width: 100%;
+        padding: .8rem 1.5rem;
+    }
+
+    .responsive-banner .col-xs-12 p,
+    .responsive-banner-2 .col-xs-12 p,
+    .responsive-banner-3 .col-xs-12 p {
+
+        font-weight: 350;
+        font-size: 1.4rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .responsive-banner a.more-link,
+    .responsive-banner-2 a.more-link,
+    .responsive-banner-3 a.more-link {
+        font-size: 1.2rem;
+    }
 }

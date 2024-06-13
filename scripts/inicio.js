@@ -11,6 +11,7 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 30,
 });
+
 /*
 [...document.querySelectorAll('.column')].map(column => {
 	column.style.setProperty('--animation', 'slide');

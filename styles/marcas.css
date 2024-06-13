@@ -1,96 +1,229 @@
 @import url("colores.css");
 
-section{
-    margin-top:5rem;
-}
-
-.section-indice{
-    background-image: url("/src/Marcas/portada-banner.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-}
-
-.marcas-container{
+section {
+    margin-top: 10rem;
     position: relative;
-    border-radius: 20px;
-    margin-top: 25%;
-    margin-left: 1rem;
-    display: block;
-    background: var(--bgcolor);
 }
 
-.marcas-container .marcas-box{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.texts h1 {
+    color: var(--orangered);
+    font-size: 1.8rem;
+}
+
+.texts p {
+    color: var(--textcolor);
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.texts span{
+    color: var(--rojo);
+    font-size: 1.3rem;
+}
+
+.marcas-container {
+    background-image: url(/src/Marcas/portada-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    border-radius: 2rem;
+    display: block;
+    top: 5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.marcas-container .marcas-box:nth-child(1) {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.marcas-box:nth-child(2) {
+    position: relative;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 22% 22% 22%;
+    justify-content: center;
+    gap: 2rem;
     width: 100%;
 }
 
-.marcas-box .marcas a img{
-    width: 28rem;
+.marcas-box .marcas {
+    position: relative;
+    background: #0000006e;
+    height: 25rem;
+    border-radius: 2rem;
+    border: .3rem solid var(--plata);
+    text-align: center;
+}
+
+.marcas-box .marcas a img {
+    top: 1rem;
+    width: 95%;
+    height: 40%;
     padding: 5px;
     transition: .3s ease;
-
-
+    background: var(--whitecolor);
+    border-radius: 2rem;
+    padding: 3%;
+    position: relative;
+    opacity: 1;
 }
 
-.marcas a img:hover{
-    transform: scale(1.3);
+.marcas-box .marcas p {
+    top: 30%;
+    transform: translateY(-50%);
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--whitecolor);
 }
 
-.section-truper{
+
+
+.section-truper {
     background-image: url("/src/Marcas/TRUPER_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
-.section-pretul{
+.section-pretul {
     background-image: url("/src/Marcas/TRUPER_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
-.section-klintek{
+.section-klintek {
     background-image: url("/src/Marcas/KLINTEK_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
-.section-foset{
+.section-foset {
     background-image: url("/src/Marcas/FOSET_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
-.section-hermex{
+.section-hermex {
     background-image: url("/src/Marcas/HRMEX_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
-.section-volteck{
+.section-volteck {
     background-image: url("/src/Marcas/VOLTECK_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
-.section-fiero{
+.section-fiero {
     background-image: url("/src/Marcas/FIERO_portada.jpg");
     background-position: center;
     background-size: cover;
     display: none;
 }
 
+/*Responsive productos Truper*/
+
+@media (max-width:1670px) {
+
+    .marcas-box .marcas p {
+        top: 30%;
+        transform: translateY(-50%);
+        position: relative;
+        font-size: 1.8em;
+        font-weight: 500;
+        color: var(--whitecolor);
+    }
+
+}
+
+@media(max-width:1300px) {
+    
+    .marcas-box .marcas p {
+        top: 30%;
+        transform: translateY(-50%);
+        position: relative;
+        font-size: 1.6em;
+        font-weight: 500;
+        color: var(--whitecolor);
+    }
+
+    .marcas-box .marcas{
+        height: 22rem;
+    }
+}
+
+@media(max-width:1160px) {
+    
+
+    .marcas-box .marcas p {
+        top: 30%;
+        transform: translateY(-50%);
+        position: relative;
+        font-size: 1.4em;
+        font-weight: 500;
+        color: var(--whitecolor);
+    }
+
+    .marcas-box .marcas{
+        height: 20rem;
+    }
+}
+
+@media(max-width:840px){
+    .marcas-box .marcas p {
+        top: 30%;
+        transform: translateY(-50%);
+        position: relative;
+        font-size: 1.2em;
+        font-weight: 450;
+        color: var(--whitecolor);
+    }
+
+    .marcas-box .marcas{
+        height: 15rem;
+    }
+}
+
+@media(max-width:700px){
+    .marcas-container .marcas-box:nth-child(1),
+    .marcas-box:nth-child(2){
+        position: relative;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%; 
+    }
+
+}
+
+@media(max-width:375px){
 
 
-
-
-
+    .marcas-container .marcas-box:nth-child(1),
+    .marcas-box:nth-child(2){
+        position: relative;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 95%;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%; 
+    }
+}
