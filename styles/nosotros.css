@@ -1,74 +1,87 @@
 @import url("colores.css");
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moulpali&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
-h1{
+h1 {
     font-weight: 700;
 
 }
 
-.nosotros{
+.nosotros {
     padding: 0;
-} 
-.nosotros-container .banner-info{
+}
+
+.nosotros-container {
+
+    position: relative;
+    min-width: 50rem;
+}
+
+.nosotros-container .banner-info {
     margin: 0;
     padding: 0;
-    display: flex;
     position: relative;
     width: 100%;
     background-color: var(--azulvolteck);
-    justify-content: space-between;
     overflow: hidden;
+
+    height: 30rem;
 }
 
 .valores-container h1,
 .mision_vision-container h1,
-.nosotros-container h1{
+.nosotros-container h1 {
     color: var(--azulvolteck);
     margin-bottom: 5rem;
     margin-left: 5rem;
+    font-size: 2rem;
 }
 
 
-.nosotros-container span{
+.nosotros-container span {
     -webkit-text-stroke: .1rem var(--rojo);
     -webkit-text-fill-color: var(--rojo2);
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
-.img-container{
-    position: relative;
-}
-
-.banner-info img{
-
-    position: relative;
-    object-fit: cover;
+.img-container {
+    position: absolute;
+    right: 0px;
+    width: 45%;
     height: 100%;
 }
 
-.banner-info .info-container{
+.banner-info img {
+    width: 100%;
+    position: relative;
+    object-fit: contain;
+    height: 100%;
+}
+
+.banner-info .info-container {
     z-index: 100;
-    height: 100%;
-    position: relative;
-    width: 40%;
-    left: 5%;
-    top: 8rem;
+    height: auto;
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+    display: block;
 }
-.nosotros .info-container h2{
+
+.nosotros .info-container h2 {
     font-size: 7rem;
     font-weight: 700;
     line-height: 5rem;
     color: var(--secondarycolor);
     -webkit-text-stroke: .8px var(--whitecolor);
-    
+
 }
 
-.nosotros .info-container span{
-
+.nosotros .info-container span {
     color: var(--rojo2);
     -webkit-text-stroke: .5px var(--whitecolor);
-    left: 20rem;
+    left: 9%;
     font-size: 9rem;
     position: relative;
     font-family: "Dancing Script", cursive;
@@ -76,7 +89,7 @@ h1{
     font-weight: 900;
 }
 
-.banner-info .fig-1{
+.banner-info .fig-1 {
 
     position: absolute;
     width: 45rem;
@@ -88,7 +101,7 @@ h1{
     z-index: 95;
 }
 
-.banner-info .fig-1::after{
+.banner-info .fig-1::after {
     position: absolute;
     content: "";
     width: 45rem;
@@ -99,7 +112,7 @@ h1{
     z-index: 90;
 }
 
-.banner-info .fig-1::before{
+.banner-info .fig-1::before {
     position: absolute;
     content: "";
     width: 45rem;
@@ -110,7 +123,7 @@ h1{
     z-index: 110;
 }
 
-.nosotros .descripcion-container{
+.nosotros .descripcion-container {
     width: 80%;
     padding: 2rem;
     left: 50%;
@@ -118,23 +131,24 @@ h1{
     position: relative;
     margin-bottom: 10rem;
     margin-top: 8rem;
-} 
+}
 
-.descripcion-container p{
-    
+.descripcion-container p {
+
     font-size: 1.8rem;
     color: var(--textcolor);
     text-align: justify;
     font-weight: 500;
 }
 
-.descripcion-container span{
+.descripcion-container span {
     color: var(--rojo);
     font-weight: 500;
 }
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.valores-container .valores-box{
+.valores-container .valores-box {
     display: flex;
     width: 100%;
     height: auto;
@@ -145,33 +159,40 @@ h1{
     margin-bottom: 10rem;
 }
 
-.valores-box img{
+.valores-box img {
     width: 20%;
     text-align: center;
+    justify-content: center;
 }
 
-.valores-box .valores{
+.valores-box .valores {
     text-align: center;
+    justify-content: center;
     width: 30%;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
-.valores:nth-child(2){
+.valores:nth-child(2) {
     border-left: solid .1rem var(--textcolor);
     border-right: solid .1rem var(--textcolor);
 }
 
-.valores h2{
+.valores h2 {
     font-size: 2rem;
     font-weight: 550;
 }
 
-.valores p{
-    font-size: 1.8rem;
+.valores p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--textcolor);
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.mision_vision-container .mision_vision-box{
+.mision_vision-container .mision_vision-box {
     display: flex;
     max-width: 100%;
     overflow: hidden;
@@ -180,7 +201,7 @@ h1{
     z-index: 120;
 }
 
-.mision_vision{
+.mision_vision {
     padding: 2rem;
     background: var(--secondarycolor);
     text-align: center;
@@ -188,34 +209,36 @@ h1{
     border-radius: 3rem;
     position: relative;
     overflow: hidden;
-    width: 40%;    
+    width: 40%;
+    height: auto;
 }
 
-.mision_vision img{
+.mision_vision img {
     width: 50rem;
     border-radius: 2rem;
     object-fit: contain;
     position: relative;
+
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.mision_vision h2{
+.mision_vision h2 {
     font-size: 2rem;
     font-weight: 550;
     margin-bottom: 2rem;
     color: var(--whitecolor);
 }
 
-.mision_vision p{
+.mision_vision p {
     margin-top: 2rem;
     font-size: 1.8rem;
     text-align: center;
     color: var(--whitecolor);
-    text-align: center;
+    text-align: justify;
 }
 
 
-.mision_vision .circle_1{
+.mision_vision .circle_1 {
     position: absolute;
     display: block;
     height: 50rem;
@@ -227,11 +250,11 @@ h1{
     left: -20%;
     height: 46rem;
     width: 46rem;
-    
+
 }
 
 
-.mision_vision .circle_1::after{
+.mision_vision .circle_1::after {
     content: "";
     z-index: -1;
     top: 30%;
@@ -244,4 +267,280 @@ h1{
     left: 125%;
 }
 
+/*Diseño responsivo de acerca de nosotros*/
 
+@media(max-width:1670px) {
+
+    .nosotros .info-container h2 {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 8rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 900;
+    }
+
+
+    .mision_vision img {
+        width: 48rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+}
+
+@media(max-width:1500px) {
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+
+        height: 27rem;
+    }
+
+    .mision_vision img {
+        width: 46rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+}
+
+@media(max-width:1300px) {
+
+    .nosotros .info-container h2 {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 6rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 900;
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 23rem;
+    }
+
+    .mision_vision img {
+        width: 44rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+
+    .mision_vision p {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        text-align: justify;
+        color: var(--whitecolor);
+        text-align: justify;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .nosotros-container span {
+        -webkit-text-stroke: .1rem var(--rojo);
+        -webkit-text-fill-color: var(--rojo2);
+        font-size: 2.8rem;
+        text-transform: uppercase;
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 22rem;
+    }
+}
+
+@media(max-width:1160px) {
+
+    .valores-container h1,
+    .mision_vision-container h1,
+    .nosotros-container h1 {
+        color: var(--azulvolteck);
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        font-size: 1.8rem;
+    }
+
+    .nosotros-container span {
+        -webkit-text-stroke: .1rem var(--rojo);
+        -webkit-text-fill-color: var(--rojo2);
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+
+    .nosotros .info-container h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 5rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 900;
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 20rem;
+    }
+
+    .descripcion-container p {
+
+        font-size: 1.5rem;
+        color: var(--textcolor);
+        text-align: justify;
+        font-weight: 500;
+    }
+
+    .mision_vision img {
+        width: 33rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    }
+
+    .mision_vision p {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        text-align: justify;
+        color: var(--whitecolor);
+        text-align: justify;
+        font-weight: 450;
+    }
+
+    .valores h2 {
+        font-size: 1.7rem;
+        font-weight: 550;
+    }
+
+    .valores p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--textcolor);
+    }
+}
+
+@media(max-width:900px) {
+
+    .mision_vision img {
+        width: 32rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 18rem;
+    }
+
+
+}
+
+@media(max-width:840px){
+    .banner-info .info-container {
+        z-index: 100;
+        height: auto;
+        position: absolute;
+        width: 55%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        display: block;
+    }
+
+    .nosotros .info-container h2 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 6rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 900;
+    }
+    
+    .nosotros-container .banner-info img{
+        display: none;
+    }
+
+    .mision_vision img {
+        width: 28rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        left: 47%;
+        transform: translateX(-50%);
+    }
+}
