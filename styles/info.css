@@ -1,51 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('colores.css');
 
-.informacion{
+.informacion {
+    margin-top: 5%;
+
     width: 100%;
+    position: relative;
 }
 
-.preguntas-btn{
-    display: inline-flex;
+.preguntas-btn {
     width: 100%;
-    flex-direction: row;
-    
+    position: relative;
+    margin: 0;
 }
-.tags{
-    font-size: 1.3rem;
-    letter-spacing: normal;
+
+.preguntas-btn .tags-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-left: 1rem;
+}
+
+.tags {
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--textcolor);
-    border-radius: 12px;
+    border-radius: 1.2rem;
     border: .1rem solid var(--secondarycolor);
-    margin-right: 1rem;
-    padding: .3rem .9rem;
+    padding: .2rem .5rem;
+    position: static;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
 }
 
-.seleccion{
+.seleccion {
     background-color: var(--secondarycolor);
     color: var(--whitecolor);
     border: .1rem solid var(--secondarycolor);
     font-weight: 500;
-    transition: .8s ease;
+    transition: .3s ease;
+
+
 }
+
 /*---------------------------------------------------------------------------------*/
-.pregunta-box{
-    padding: 5rem 5rem;
-
+.pregunta-box {
+    padding: 5rem;
 }
 
-.pregunta-header{
+.pregunta-header {
     display: flex;
     text-align: center;
 }
 
-.pregunta-header i{
+.pregunta-header i {
     font-size: 4rem;
     margin-right: 1.5rem;
 }
 
-.pregunta{
+.pregunta {
     width: 100%;
     margin-top: 3rem;
     display: bloc;
@@ -54,27 +71,29 @@
     border-bottom: .5px solid var(--shadow-color);
 }
 
-.respuesta-container a i{
+
+.respuesta-container a i {
     font-size: 6rem;
     color: var(--textcolor);
-    
+    border-radius: 50%;
 }
 
-.respuesta-container{
+.respuesta-container {
     display: flex;
     justify-content: space-between;
 }
 
-.respuesta-container a{
+.respuesta-container a {
     transition: .3s ease;
 }
-.encabezado{
+
+.encabezado {
     font-size: 2.5rem;
-    color: var(--alternativecolor);
+    color: var(--textcolor);
     font-weight: 500;
 }
 
-.respuesta{
+.respuesta {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 1.8rem;
@@ -82,66 +101,284 @@
     color: var(--textcolor);
 }
 
-.rotacion{
+.rotacion {
     transform: rotate(180deg);
     transition: .3s ease;
 }
 
-.respuesta-container-expandir{
+.respuesta-container-expandir {
     display: block;
     text-align: start;
     position: relative;
 }
 
-.ocultar{
+.ocultar {
     display: none;
 }
 
 
 /*------------------------------------------------------------------------------------------*/
-.numeros-container .numeros-box h2{
+.numeros-container .numeros-box h2 {
     font-size: 2rem;
     color: var(--textcolor);
     font-weight: 600;
 }
 
-.numeros-container .numeros-box h3{
+.numeros-container .numeros-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--textcolor);
 }
 
-.numeros-container{
-    display: flex;
+.numeros-container {
+    display: grid;
     padding-bottom: 3rem;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    column-gap: 2rem;
+    padding: 2rem;
 }
 
-.numeros-container .numeros-box{
-    margin-right: 2rem;
-    padding: 2rem 3rem;
-    align-items: center;
-    width: 50%;
-    border-radius: 20px;
-    box-shadow: 0 .7rem 2rem var(--shadow-color);
+.numeros-container .numeros-sucursal{
+
+    display: block;
+    justify-content: center;
+}
+
+.numeros-container .numeros-box {
+
+    padding: 2rem 2rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: .5s ease;
+
 }
 
-.numeros-container .numeros-box:hover{
+.numeros-container .numeros-box:hover {
     transform: scale(1.1);
 }
 
-.numeros-box .numeros{
+.numeros-box .numeros {
+
     display: flex;
     padding: 2rem;
 }
 
-.numeros-box .numeros i{
+.numeros-box .numeros i {
     font-size: 2.8rem;
 }
 
 /*----------------------------------------------------------------------------*/
 
-.respuesta-container-expandir .lista-numeros{
+.respuesta-container-expandir .lista-numeros {
     margin-left: 2rem;
+    
 }
 
+/*Diseño responsive de página de información al usuario*/
+
+@media (max-width:1500px) {
+    .numeros-container {
+        display: grid;
+        padding-bottom: 3rem;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        column-gap: 2rem;
+        row-gap: 3rem;
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:1300px){
+    .informacion {
+        margin-top: 6%;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media(max-width:1080px) {
+
+    .informacion {
+        margin-top: 8%;
+        width: 100%;
+        position: relative;
+    }
+    .encabezado {
+        font-size: 2.3rem;
+        color: var(--textcolor);
+        font-weight: 500;
+    }
+    
+    .respuesta {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 1.7rem;
+        font-weight: 350;
+        color: var(--textcolor);
+    }
+    
+}
+
+@media(max-width:800px){
+    .informacion {
+        margin-top: 12%;
+        width: 100%;
+        position: relative;
+    }
+
+    .pregunta-header i {
+        font-size: 3.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .encabezado {
+        font-size: 2.1rem;
+        color: var(--textcolor);
+        font-weight: 500;
+    }
+    
+    .respuesta {
+        padding-top: 1.8rem;
+        padding-bottom: 2rem;
+        font-size: 1.7rem;
+        font-weight: 350;
+        color: var(--textcolor);
+    }
+}
+
+@media(max-width:700px){
+    .informacion {
+        margin-top: 14%;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    .pregunta-box{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:600px){
+
+    .numeros-container {
+        display: grid;
+        padding-bottom: 3rem;
+        grid-template-columns: 100%;
+        justify-content: center;
+        column-gap: 2rem;
+        row-gap: 3rem;
+        padding: 2rem;
+    }
+
+    .numeros-container .numeros-sucursal{
+
+        display: flex;
+        
+    }
+
+    .numeros-container .numeros-box {
+
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        transition: .5s ease;
+        
+    }
+
+    .numeros-box .numeros {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .numeros-container .numeros-box h2 {
+        font-size: 1.7rem;
+        color: var(--textcolor);
+        font-weight: 600;
+    }
+    
+    .numeros-container .numeros-box h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--textcolor);
+    }
+    
+
+    .encabezado {
+        font-size: 2rem;
+        color: var(--textcolor);
+        font-weight: 500;
+    }
+    
+    .respuesta {
+        padding-top: 1.6rem;
+        padding-bottom: 2rem;
+        font-size: 1.7rem;
+        font-weight: 350;
+        color: var(--textcolor);
+    }
+}
+
+@media(max-width:500px){
+    .informacion {
+        margin-top: 18%;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width:425px){
+    .informacion {
+        margin-top: 22%;
+        width: 100%;
+        position: relative;
+    }
+
+    .numeros-container .numeros-box h2 {
+        font-size: 1.7rem;
+        color: var(--textcolor);
+        font-weight: 600;
+    }
+    
+    .numeros-container .numeros-box h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--textcolor);
+    }
+    
+
+    .encabezado {
+        font-size: 1.7rem;
+        color: var(--textcolor);
+        font-weight: 500;
+    }
+    
+    .respuesta {
+        padding-top: 1.6rem;
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--textcolor);
+    }
+
+    .respuesta-container a i {
+        font-size: 4rem;
+        color: var(--textcolor);
+
+    }
+}
+
+@media(max-width: 375px){
+    .pregunta-box{
+        padding: 3rem 1.3rem;
+    }
+}

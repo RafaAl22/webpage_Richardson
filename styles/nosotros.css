@@ -13,7 +13,7 @@ h1 {
 .nosotros-container {
 
     position: relative;
-    min-width: 50rem;
+
 }
 
 .nosotros-container .banner-info {
@@ -23,8 +23,8 @@ h1 {
     width: 100%;
     background-color: var(--azulvolteck);
     overflow: hidden;
-
     height: 30rem;
+
 }
 
 .valores-container h1,
@@ -98,7 +98,8 @@ h1 {
     transform: rotate(45deg);
     left: -8.5%;
     top: -5%;
-    z-index: 95;
+    z-index: 55;
+    display: block;
 }
 
 .banner-info .fig-1::after {
@@ -109,7 +110,8 @@ h1 {
     background: var(--rojo);
     left: -8.5%;
     top: -9%;
-    z-index: 90;
+    z-index: 50;
+    display: block;
 }
 
 .banner-info .fig-1::before {
@@ -120,7 +122,8 @@ h1 {
     background: var(--secondarycolor);
     left: -8.5%;
     bottom: -9%;
-    z-index: 110;
+    z-index: 60;
+    display: block;
 }
 
 .nosotros .descripcion-container {
@@ -197,29 +200,35 @@ h1 {
     max-width: 100%;
     overflow: hidden;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 120;
 }
 
 .mision_vision {
-    padding: 2rem;
+    padding: 0 2rem 2rem 0.8rem;
     background: var(--secondarycolor);
     text-align: center;
+    justify-content: center;
+    align-items: center;
     z-index: 110;
     border-radius: 3rem;
     position: relative;
     overflow: hidden;
     width: 40%;
     height: auto;
+    margin: 0;
+
 }
 
 .mision_vision img {
-    width: 50rem;
+    width: 95%;
     border-radius: 2rem;
     object-fit: contain;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
 
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .mision_vision h2 {
@@ -235,6 +244,7 @@ h1 {
     text-align: center;
     color: var(--whitecolor);
     text-align: justify;
+    padding-left: 2rem;
 }
 
 
@@ -248,16 +258,12 @@ h1 {
     z-index: -1;
     top: -20%;
     left: -20%;
-    height: 46rem;
-    width: 46rem;
-
 }
-
 
 .mision_vision .circle_1::after {
     content: "";
     z-index: -1;
-    top: 30%;
+
     height: 50rem;
     width: 50rem;
     position: absolute;
@@ -290,13 +296,13 @@ h1 {
     }
 
 
-    .mision_vision img {
+    /*.mision_vision img {
         width: 48rem;
         border-radius: 2rem;
         object-fit: contain;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    }
+    }*/
 
 }
 
@@ -312,13 +318,13 @@ h1 {
         height: 27rem;
     }
 
-    .mision_vision img {
+    /*.mision_vision img {
         width: 46rem;
         border-radius: 2rem;
         object-fit: contain;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    }
+    }*/
 }
 
 @media(max-width:1300px) {
@@ -351,13 +357,13 @@ h1 {
         height: 23rem;
     }
 
-    .mision_vision img {
+    /*.mision_vision img {
         width: 44rem;
         border-radius: 2rem;
         object-fit: contain;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    }
+    }*/
 
     .mision_vision p {
         margin-top: 2rem;
@@ -443,14 +449,14 @@ h1 {
         font-weight: 500;
     }
 
-    .mision_vision img {
+    /*.mision_vision img {
         width: 33rem;
         border-radius: 2rem;
         object-fit: contain;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
-    }
+    }*/
 
     .mision_vision p {
         margin-top: 2rem;
@@ -476,7 +482,7 @@ h1 {
 
 @media(max-width:900px) {
 
-    .mision_vision img {
+    /*.mision_vision img {
         width: 32rem;
         border-radius: 2rem;
         object-fit: contain;
@@ -484,7 +490,7 @@ h1 {
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         left: 50%;
         transform: translateX(-50%);
-    }
+    }*/
 
     .nosotros-container .banner-info {
         margin: 0;
@@ -496,10 +502,46 @@ h1 {
         height: 18rem;
     }
 
+    .banner-info .fig-1 {
+
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        background: var(--rojo2);
+        transform: rotate(45deg);
+        left: -15.5%;
+        top: -5%;
+        z-index: 55;
+        display: block;
+    }
+
+    .banner-info .fig-1::after {
+        position: absolute;
+        content: "";
+        width: 30rem;
+        height: 30rem;
+        background: var(--rojo);
+        left: -15.5%;
+        top: -9%;
+        z-index: 50;
+        display: block;
+    }
+
+    .banner-info .fig-1::before {
+        position: absolute;
+        content: "";
+        width: 30rem;
+        height: 30rem;
+        background: var(--secondarycolor);
+        left: -15.5%;
+        bottom: -9%;
+        z-index: 60;
+        display: block;
+    }
 
 }
 
-@media(max-width:840px){
+@media(max-width:840px) {
     .banner-info .info-container {
         z-index: 100;
         height: auto;
@@ -529,18 +571,447 @@ h1 {
         text-transform: lowercase;
         font-weight: 900;
     }
-    
-    .nosotros-container .banner-info img{
+
+    .nosotros-container .banner-info img {
         display: none;
     }
 
-    .mision_vision img {
+    /*.mision_vision img {
         width: 28rem;
         border-radius: 2rem;
         object-fit: contain;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         left: 47%;
+        transform: translateX(-50%);
+    }*/
+
+
+}
+
+@media(max-width:800px) {
+
+    .nosotros-container h1 {
+        margin-top: 13rem;
+    }
+
+    .valores-container h1,
+    .mision_vision-container h1,
+    .nosotros-container h1 {
+        color: var(--azulvolteck);
+        margin-bottom: 5rem;
+
+        margin-left: 5rem;
+        font-size: 1.8rem;
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 22rem;
+    }
+
+    .nosotros .info-container h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 5rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 900;
+    }
+
+    /*.mision_vision img {
+        width: 25rem;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        left: 50%;
+        transform: translateX(-50%);
+    }*/
+
+    .valores h2 {
+        font-size: 1.6rem;
+        font-weight: 550;
+    }
+
+    .valores p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--textcolor);
+    }
+}
+
+@media(max-width:720px) {
+    .mision_vision-container .mision_vision-box {
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        z-index: 120;
+    }
+
+    .mision_vision {
+        padding: 2rem;
+        background: var(--secondarycolor);
+        text-align: center;
+        z-index: 110;
+        border-radius: 3rem;
+        position: relative;
+        overflow: hidden;
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*.mision_vision img {
+        width: 100%;
+        border-radius: 2rem;
+        object-fit: contain;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        left: 50%;
+        transform: translateX(-50%);
+    }*/
+
+}
+
+@media(max-width:600px) {
+
+    .valores-container h1,
+    .mision_vision-container h1,
+    .nosotros-container h1 {
+        color: var(--azulvolteck);
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .nosotros-container span {
+        -webkit-text-stroke: .1rem var(--rojo);
+        -webkit-text-fill-color: var(--rojo2);
+        font-size: 2.2rem;
+        text-transform: uppercase;
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 22rem;
+    }
+
+    .banner-info .info-container {
+        z-index: 100;
+        height: auto;
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        display: block;
+    }
+
+    .nosotros .info-container h2 {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 5.5rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 950;
+    }
+}
+
+@media(max-width:540px) {
+
+    .valores-container h1,
+    .mision_vision-container h1,
+    .nosotros-container h1 {
+        color: var(--azulvolteck);
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        font-size: 1.4rem;
+    }
+
+    .nosotros-container span {
+        -webkit-text-stroke: .1rem var(--rojo);
+        -webkit-text-fill-color: var(--rojo2);
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .descripcion-container p {
+
+        font-size: 1.3rem;
+        color: var(--textcolor);
+        text-align: justify;
+        font-weight: 500;
+    }
+
+    .valores h2 {
+        font-size: 1.4rem;
+        font-weight: 550;
+    }
+
+    .valores p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--textcolor);
+    }
+
+    .mision_vision p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        color: var(--whitecolor);
+        text-align: justify;
+        font-weight: 450;
+    }
+}
+
+@media(max-width:500px) {
+    .banner-info .info-container {
+        z-index: 100;
+        height: auto;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        display: block;
+    }
+
+    .nosotros .info-container h2 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 5rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 950;
+    }
+}
+
+@media(max-width:425px) {
+
+    .banner-info .info-container {
+        z-index: 100;
+        height: auto;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        display: block;
+    }
+
+    .nosotros .info-container h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 4rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 950;
+    }
+
+    .nosotros-container span {
+        -webkit-text-stroke: .1rem var(--rojo);
+        -webkit-text-fill-color: var(--rojo2);
+        font-size: 1.7rem;
+        text-transform: uppercase;
+    }
+
+    .nosotros-container .banner-info {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        background-color: var(--azulvolteck);
+        overflow: hidden;
+        height: 20rem;
+
+    }
+
+    .banner-info .fig-1 {
+        position: absolute;
+        width: 28rem;
+        height: 28rem;
+        background: var(--rojo2);
+        transform: rotate(45deg);
+        left: -20.5%;
+        top: -5%;
+        z-index: 55;
+
+    }
+
+    .banner-info .fig-1::after {
+        position: absolute;
+        content: "";
+        width: 28rem;
+        height: 28rem;
+        background: var(--rojo);
+        left: -20.5%;
+        top: -9%;
+        z-index: 50;
+
+    }
+
+    .banner-info .fig-1::before {
+        position: absolute;
+        content: "";
+        width: 28rem;
+        height: 28rem;
+        background: var(--secondarycolor);
+        left: -20.5%;
+        bottom: -9%;
+        z-index: 60;
+    }
+}
+
+@media(max-width:350px) {
+
+    .nosotros .info-container h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 5rem;
+        color: var(--secondarycolor);
+        -webkit-text-stroke: .8px var(--whitecolor);
+    }
+
+    .nosotros .info-container span {
+        color: var(--rojo2);
+        -webkit-text-stroke: .5px var(--whitecolor);
+        font-size: 3.5rem;
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        text-transform: lowercase;
+        font-weight: 950;
+    }
+
+    .banner-info .fig-1 {
+        position: absolute;
+        width: 25rem;
+        height: 25rem;
+        background: var(--rojo2);
+        transform: rotate(45deg);
+        left: -20.5%;
+        top: -5%;
+        z-index: 55;
+
+    }
+
+    .banner-info .fig-1::after {
+        position: absolute;
+        content: "";
+        width: 25rem;
+        height: 25rem;
+        background: var(--rojo);
+        left: -20.5%;
+        top: -9%;
+        z-index: 50;
+
+    }
+
+    .banner-info .fig-1::before {
+        position: absolute;
+        content: "";
+        width: 25rem;
+        height: 25rem;
+        background: var(--secondarycolor);
+        left: -20.5%;
+        bottom: -9%;
+        z-index: 60;
+    }
+
+    .valores-container .valores-box {
+        display: block;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    .valores-box .valores {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.8rem 0;
+    }
+
+    .valores:nth-child(2) {
+        border-left: solid 0 var(--textcolor);
+        border-right: solid 0 var(--textcolor);
+        border-top: solid .1rem var(--textcolor);
+        border-bottom: solid .1rem var(--textcolor);
+    }
+
+    .mision_vision {
+        padding: 2rem;
+        background: var(--secondarycolor);
+        text-align: center;
+        z-index: 110;
+        border-radius: 3rem;
+        position: relative;
+        overflow: hidden;
+        width: 95%;
+        height: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+        justify-content: center;
+        left: 50%;
         transform: translateX(-50%);
     }
 }

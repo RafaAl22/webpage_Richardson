@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.scroll_card', {interval: 100});

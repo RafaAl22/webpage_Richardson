@@ -204,7 +204,7 @@
     }
 }
 
-@media(max-width:375px) {
+@media(max-width:425px) {
     .categoria-container {
         text-align: center;
         justify-content: center;
@@ -235,6 +235,10 @@
         top: 10%;
         width: 10rem;
         height: 7rem;
+    }
+
+    .descripcion-categoria h2 {
+        font-size: 1.3rem;
     }
 
     .categoria .icono-box img {

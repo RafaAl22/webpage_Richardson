@@ -325,12 +325,13 @@ h1 {
     }
 }
 
-@media(max-width:375px){
-    
+@media(max-width:480px){
     .section-cat {
-        margin-top: 20%;
+        margin-top: 22%;
     }
+}
 
+@media(max-width:375px){
     .cat-container {
         justify-content: center;
         width: 100%;
