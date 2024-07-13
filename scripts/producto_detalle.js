@@ -11,6 +11,13 @@ document.getElementById('btn1').addEventListener("click", function(){
     if (especificaciones.classList.contains("ocultar")){
         especificaciones.classList.remove('ocultar');
         btn1.classList.add('active');
+
+        if(!especificaciones2.classList.contains("ocultar")){
+            especificaciones2.classList.add('ocultar');
+            btn2.classList.remove('active');
+            flecha2.classList.remove('rotacion');
+        }
+
     }else{
         especificaciones.classList.add('ocultar');
         btn1.classList.remove('active');
@@ -28,6 +35,12 @@ document.getElementById('btn2').addEventListener("click", function(){
     if (especificaciones2.classList.contains("ocultar")){
         especificaciones2.classList.remove('ocultar');
         btn2.classList.add('active');
+
+        if(!especificaciones.classList.contains("ocultar")){
+            especificaciones.classList.add('ocultar');
+            btn1.classList.remove('active');
+            flecha1.classList.remove('rotacion');
+        }
     }else{
         especificaciones2.classList.add('ocultar');
         btn2.classList.remove('active');
