@@ -49,6 +49,10 @@ h1 {
     right: 0;
     padding-right: 1rem;
     z-index: 10;
+    
+}
+.cat-box .marca-container img{
+    width: 100%;
 }
 
 .cat-box .img-container {
@@ -127,6 +131,9 @@ h1 {
     background: var(--azulfoset);
 }
 
+.rugo{
+    background: var(--azulrugo);
+}
 /*Responsive de productos de una categoría*/
 
 @media(max-width:1440px) {

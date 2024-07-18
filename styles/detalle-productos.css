@@ -243,27 +243,24 @@ h1 {
     position: relative;
     justify-content: space-between;
     transition: .5s ease;
-
+    
     padding-left: 2rem;
 
 }
 
 .specs-container .specs-header:hover {
-    background: var(--auxcolor);
-    transition: .5s ease;
+    
+    transition: .2s ease;
     cursor: pointer;
-
+    border-radius: 3rem;
 }
 
 .specs-container .specs-header:hover h1,
 .specs-container .specs-header:hover i {
-    color: var(--whitecolor);
+    color: var(--textcolor);
 }
 
-.specs-container .specs-header.active h1,
-.specs-container .specs-header.active i {
-    color: var(--whitecolor);
-}
+
 
 .specs-container .specs-header h1 {
     font-size: 2.2rem;
@@ -272,6 +269,7 @@ h1 {
     font-weight: 450;
     color: var(--textcolor);
 }
+
 
 
 .specs-container .specs-header i {
@@ -317,7 +315,7 @@ h1 {
 }
 
 .active {
-    background: var(--auxcolor);
+    opacity: 1;
 }
 
 .rotacion {
@@ -358,6 +356,20 @@ h1 {
     background-size: fill;
 }
 
+.bg_yale {
+    background: url(/src/Marcas/YALE.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg_rugo {
+    background: url(/src/Marcas/RUGO.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .bg_truper,
 .bg_klintek,
 .bg_foset,
@@ -368,6 +380,54 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*backgrounds para encabezados de productos según marca*/
+.hermex {
+    background: var(--rojo);
+    border-radius: 3rem;
+}
+
+.yale {
+    background: var(--amarillopretul);
+    border-radius: 3rem;
+}
+
+.volteck {
+    background: var(--azulvolteck);
+    border-radius: 3rem;
+}
+
+.fiero {
+    background: var(--rojo);
+    border-radius: 3rem;
+}
+
+.truper {
+    background: var(--naranjatruper);
+    border-radius: 3rem;
+}
+
+.pretul {
+    background: var(--textcolor);
+    border-radius: 3rem;
+}
+
+.klintek {
+    background: var(--verdeklintek);
+    border-radius: 3rem;
+}
+
+.foset {
+    background: var(--azulfoset);
+    border-radius: 3rem;
+}
+
+.rugo{
+    background: var(--azulrugo);
+    border-radius: 3rem;
+}
+
+
 
 /*Diseño responsive para FT de productos*/
 
