@@ -111,17 +111,17 @@ if (sec_fiero.classList.contains('mostrar') || sec_foset.classList.contains('mos
 
     const swiper = new Swiper('.swiper', {
         slidesPerView: 1,
-        spaceBetween: 175,
+        spaceBetween: 260,
         /*effect: "cards",*/
         loop: true,
         clickable: true,
-        grabCursor: true,
+        grabCursor: false,
         scrollbar: {
             el: '.swiper-scrollbar',
         },
         autoplay: {
             delay: 4500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
         },
     });
 }

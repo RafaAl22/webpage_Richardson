@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 7%;
+    padding: 2rem 5%;
     background: var(--whitecolor);
     display: flex;
     z-index: 1000;
@@ -21,21 +21,13 @@
     
 }
 
-.navbar.light{
-    position: relative;
-    font-size: 1.7rem;
-    color: var(--whitecolor);
-    font-weight: 500;
-    margin-right: 3.5rem;
-    transition: .5s ease;
-}
 
 .navbar a{
     position: relative;
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
-    margin-right: 3.5rem;
+    margin: 0 .8rem;
     transition: .5s ease;
 }
 
@@ -43,6 +35,8 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
 }
 
 .navbar a:hover {

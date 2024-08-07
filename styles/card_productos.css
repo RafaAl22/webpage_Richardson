@@ -17,6 +17,8 @@
     --amarillopretul2: #E49B0F;
 }
 
+
+
 .section-foset,
 .section-truper,
 .section-pretul,
@@ -26,7 +28,7 @@
 .section-klintek {
     position: relative;
     padding: 0;
-
+    margin: 0;
 }
 
 .card-container {
@@ -37,14 +39,16 @@
     position: relative;
     margin: 0;
     padding: 0;
-
+    
+    overflow: hidden;
 }
 
 .card-container .card-wrapper {
     position: relative;
-    width: 60%;
+    width: 50%;
     height: auto;
     bottom: 50%;
+    
     transform: translateY(45%);
 
 
@@ -52,7 +56,9 @@
 
 .card-wrapper .card-box {
     border-radius: 2rem;
-    padding-left: 17rem;
+    padding-left: 18rem;
+    width: 100%;
+    
 }
 
 .card-container .card-slide {
@@ -60,10 +66,10 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     height: auto;
+    border-radius: 2rem;
     position: relative;
+    
 }
 
 
@@ -72,43 +78,46 @@
     top: 50%;
     left: 0%;
     transform: translate(-50%, -50%);
-
 }
 
 .card-slide .circle-img img {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: .9em solid var(--shadow-color);
-    outline: .6rem solid var(--plata);
-    box-shadow: 0 .5rem .5rem var(--shadow-color);
+
+    border-radius: 15%;
+    object-fit: contain;
+    border: .9em solid transparent;
+    outline: .6rem solid var(--whitecolor);
+    width: 34rem;
+    height: 34rem;
 }
 
 .card-slide .product-content {
-    background: rgba(0, 0, 0, 0.5);
+
     border-radius: 2rem;
     width: 100%;
     height: 50rem;
     top: 50%;
     left: 50%;
-
 }
 
 .product-content .logo-content {
     float: right;
-    width: 35%;
+    width: 30%;
 
 }
 
 .product-content .logo-content img {
     width: 100%;
     border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     float: right;
+    background-color: var(--whitecolor);
+    padding: .8rem;
 }
 
 .product-content .product-description {
+    display: block;
     align-items: center;
+    text-align: center;
     position: relative;
     top: 40%;
     left: 50%;
@@ -119,9 +128,9 @@
 .product-description h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: var(--plata);
+    color: var(--whitecolor);
     text-align: center;
-    position: relative;
+
 }
 
 .product-description h2 {
@@ -137,47 +146,66 @@
     text-align: center;
 }
 
+.btn {
+    position: relative;
+    border: solid .2rem var(--whitecolor);
+    border-radius: 2rem;
+    padding: 0.7rem;
+    letter-spacing: normal;
+    background: transparent;
+    margin: 0;
+    top: 1.5rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--textcolor);
+}
+
 .product-content .marcas-index {
     position: absolute;
-    top: 88%;
+    bottom: 2%;
     display: flex;
-    align-items: center;
     left: 50%;
     transform: translate(-50%);
-    border: .2rem solid var(--plata);
+    border: .2rem solid var(--whitecolor);
     border-radius: 3rem;
-    padding-left: .8rem;
+
+    width: 98%;
+    justify-content: center;
+
 }
 
 .product-content .marcas-index img {
-    width: 8rem;
-    margin-right: 1.4rem;
+    width: 12.5%;
+    margin: 0 .7%;
 }
 
 
 /*------------------------------------------------------------------------------------------------------*/
 .card-container .foset-slide {
-    background: linear-gradient(to left, #00304e, #003f66, #004e7e, #005d98, #006db2);
+    background: #053352;
 }
 
 .card-container .truper-slide {
-    background: linear-gradient(to left top, #ff8c00, #ff7d00, #ff6d00, #ff5b00, #ff4500);
+    background: #531a05;
 }
 
 .card-container .volteck-slide {
-    background: linear-gradient(to right top, #253692, #374a9f, #495dab, #5b71b6, #6f85c1);
+    background: #05133d;
 }
 
 .card-container .hermex-slide {
-    background: linear-gradient(to right top, #d3063e, #c20938, #b20b32, #a20c2c, #920c27);
+    background: #700a1e;
 }
 
 .card-container .klintek-slide {
-    background: linear-gradient(to right top, #009f9a, #01928d, #018681, #017a75, #016e69);
+    background: #033d3a;
 }
 
 .card-container .pretul-slide {
-    background: linear-gradient(to left top, #ff8c00, #ff7d00, #ff6d00, #ff5b00, #ff4500);
+    background: #af6f20;
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -189,32 +217,55 @@
 /*Diseño responsive de cards de productos según marcas*/
 
 @media(max-width:1670px) {
-    .card-slide .circle-img img {
-        width: 28rem;
-        height: 28rem;
-        border-radius: 50%;
-        object-fit: cover;
-        border: .9em solid var(--shadow-color);
-        outline: .6rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+    .card-container {
+        width: 100%;
+        height: 100%;
+        max-height: 90rem;
+        min-height: 85rem;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
     }
 
-    .card-wrapper .card-box {
+    .card-slide .circle-img img {
+        width: 30rem;
+        height: 30rem;
+        border: .9em solid var(--shadow-color);
+        outline: .6rem solid var(--whitecolor);
+        object-fit: cover;
+    }
+
+    .card-slide .product-content {
+
         border-radius: 2rem;
-        padding-left: 16rem;
+        width: 100%;
+        height: 45rem;
+        top: 50%;
+        left: 50%;
     }
 
 }
 
 @media(max-width:1500px) {
+
+    .card-container {
+        width: 100%;
+        height: 100%;
+        max-height: 85rem;
+        min-height: 80rem;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+    }
+
     .card-slide .circle-img img {
         width: 25rem;
         height: 25rem;
-        border-radius: 50%;
+        
         object-fit: cover;
-        border: .9em solid var(--shadow-color);
-        outline: .6rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
     .card-wrapper .card-box {
@@ -224,30 +275,22 @@
 
 
     .product-description h1 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         font-weight: 600;
-        color: var(--plata);
+
         text-align: center;
         position: relative;
     }
 
     .product-description h2 {
-        font-size: 2.1rem;
-        color: var(--plata);
+        font-size: 1.8rem;
+    
         font-weight: 400;
         text-align: center;
     }
 
-    .product-description p {
 
-        font-size: 1.4rem;
-        color: var(--plata);
-    }
 
-    .product-content .marcas-index img {
-        width: 7.5rem;
-        margin-right: 1.4rem;
-    }
 
 }
 
@@ -255,11 +298,9 @@
     .card-slide .circle-img img {
         width: 23rem;
         height: 23rem;
-        border-radius: 50%;
+        
         object-fit: cover;
-        border: .9em solid var(--shadow-color);
-        outline: .6rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
     .card-wrapper .card-box {
@@ -267,6 +308,14 @@
         padding-left: 14rem;
     }
 
+    .card-slide .product-content {
+
+        border-radius: 2rem;
+        width: 100%;
+        height: 40rem;
+        top: 50%;
+        left: 50%;
+    }
 
     .product-content .product-description {
         align-items: center;
@@ -281,28 +330,18 @@
     .product-description h1 {
         font-size: 2.1rem;
         font-weight: 600;
-        color: var(--plata);
+        
         text-align: center;
         position: relative;
     }
 
     .product-description h2 {
         font-size: 1.9rem;
-        color: var(--plata);
+        
         font-weight: 400;
         text-align: center;
     }
 
-    .product-description p {
-
-        font-size: 1.3rem;
-        color: var(--plata);
-    }
-
-    .product-content .marcas-index img {
-        width: 7rem;
-        margin-right: 1.4rem;
-    }
 }
 
 @media(max-width:1250px) {
@@ -310,7 +349,7 @@
     .product-description h1 {
         font-size: 2.1rem;
         font-weight: 600;
-        color: var(--plata);
+
         text-align: center;
         position: relative;
     }
@@ -325,21 +364,14 @@
 
     .product-description h2 {
         font-size: 1.9rem;
-        color: var(--plata);
+        
         font-weight: 400;
         text-align: center;
     }
 
-    .product-description p {
+    
 
-        font-size: 1.3rem;
-        color: var(--plata);
-    }
 
-    .product-content .marcas-index img {
-        width: 6rem;
-        margin-right: 1.4rem;
-    }
 }
 
 @media(max-width:1200px) {
@@ -351,10 +383,7 @@
         padding: 0;
     }
 
-    .product-content .marcas-index img {
-        width: 5.5rem;
-        margin-right: 1.4rem;
-    }
+
 
     .card-container .card-wrapper {
         position: relative;
@@ -381,11 +410,12 @@
     .card-slide .circle-img img {
         width: 18rem;
         height: 18rem;
-        border-radius: 50%;
-        object-fit: cover;
         border: .6em solid var(--shadow-color);
-        outline: .4rem solid var(--plata);
+        outline: .4rem solid var(--whitecolor);
         box-shadow: 0 .5rem .5rem var(--shadow-color);
+
+        object-fit: cover;
+        
     }
 
     .card-container {
@@ -394,11 +424,6 @@
         position: relative;
         margin: 0;
         padding: 0;
-    }
-
-    .product-content .marcas-index img {
-        width: 5.5rem;
-        margin-right: 1.4rem;
     }
 
     .card-container .card-wrapper {
@@ -420,15 +445,55 @@
     }
 }
 
+
+
+@media (max-width:1050px) {
+
+    .product-description h1 {
+        font-size: 1.7rem;
+        font-weight: 600;
+
+        text-align: center;
+        position: relative;
+    }
+
+
+    .product-description h2 {
+        font-size: 1.6rem;
+
+        font-weight: 400;
+        text-align: center;
+    }
+
+    
+
+    .btn {
+        position: relative;
+        border: solid .2rem var(--whitecolor);
+        border-radius: 2rem;
+        padding: 0.7rem;
+        letter-spacing: normal;
+        background: transparent;
+        margin: 0;
+        top: 1.5rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+
+    .card-wrapper .card-box {
+        border-radius: 2rem;
+        padding-left: 18%;
+    }
+}
+
 @media(max-width:990px) {
     .card-slide .circle-img img {
         width: 17rem;
         height: 17rem;
-        border-radius: 50%;
+        
         object-fit: cover;
-        border: .6em solid var(--shadow-color);
-        outline: .4rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
     .card-container {
@@ -439,10 +504,7 @@
         padding: 0;
     }
 
-    .product-content .marcas-index img {
-        width: 5rem;
-        margin-right: 1.4rem;
-    }
+
 
     .card-container .card-wrapper {
         position: relative;
@@ -486,50 +548,13 @@
 
 }
 
-@media (max-width:1050px) {
-
-    .product-description h1 {
-        font-size: 1.7rem;
-        font-weight: 600;
-        color: var(--plata);
-        text-align: center;
-        position: relative;
-    }
-
-
-    .product-description h2 {
-        font-size: 1.6rem;
-        color: var(--plata);
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .product-description p {
-
-        font-size: 1.1rem;
-        color: var(--plata);
-    }
-
-    .product-content .marcas-index img {
-        width: 4.5rem;
-        margin-right: 1rem;
-    }
-
-    .card-wrapper .card-box {
-        border-radius: 2rem;
-        padding-left: 18%;
-    }
-}
-
 @media(max-width:840px) {
     .card-slide .circle-img img {
         width: 15rem;
         height: 15rem;
-        border-radius: 50%;
+        
         object-fit: cover;
-        border: .6em solid var(--shadow-color);
-        outline: .4rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
     .product-description h1 {
@@ -567,9 +592,17 @@
         color: var(--plata);
     }
 
-    .product-content .marcas-index img {
-        width: 4.5rem;
-        margin-right: 1rem;
+    .btn {
+        position: relative;
+        border: solid .2rem var(--whitecolor);
+        border-radius: 2rem;
+        padding: 0.7rem;
+        letter-spacing: normal;
+        background: transparent;
+        margin: 0;
+        top: 1.5rem;
+        font-weight: 500;
+        font-size: 1.3rem;
     }
 
 }
@@ -586,11 +619,9 @@
     .card-slide .circle-img img {
         width: 15rem;
         height: 15rem;
-        border-radius: 50%;
+        
         object-fit: cover;
-        border: .6em solid var(--shadow-color);
-        outline: .4rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
     .product-content .product-description {
@@ -612,8 +643,9 @@
     .product-content .logo-content img {
         object-fit: contain;
         border-top-right-radius: 0px;
+        border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
-
+        border-bottom-left-radius: 0rem;
     }
 
     .card-wrapper {
@@ -629,23 +661,45 @@
     .product-content .marcas-index {
         display: none;
     }
+
+    .btn {
+        position: relative;
+        border: solid .2rem var(--whitecolor);
+        border-radius: 2rem;
+        padding: 0.7rem;
+        letter-spacing: normal;
+        background: transparent;
+        margin: 0;
+        top: 1.5rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:700px){
+    .card-container {
+        width: 100%;
+        height: 70rem;
+        position: relative;
+        margin-top: 15rem;
+        padding: 0;
+    }
+    
+    
 }
 
 @media(max-width:600px) {
     .card-slide .circle-img img {
         width: 13rem;
         height: 13rem;
-        border-radius: 50%;
         object-fit: cover;
-        border: .6em solid var(--shadow-color);
-        outline: .4rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
-    .card-container .card-wrapper {
-        position: relative;
-        width: 70%;
-        height: auto;
+    .card-container .card-wrapper{
+        left: 50%;
+        transform: translateX(-55%);
+        top: 20%;
     }
 }
 
@@ -653,11 +707,8 @@
     .card-slide .circle-img img {
         width: 11rem;
         height: 11rem;
-        border-radius: 50%;
         object-fit: cover;
-        border: .6em solid var(--shadow-color);
-        outline: .4rem solid var(--plata);
-        box-shadow: 0 .5rem .5rem var(--shadow-color);
+        
     }
 
     .product-description h1 {

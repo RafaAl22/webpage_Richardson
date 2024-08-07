@@ -1,7 +1,7 @@
 @import url("colores.css");
 
 section {
-    margin-top: 10rem;
+    margin-top: 8rem;
     position: relative;
 }
 
@@ -84,8 +84,6 @@ section {
     font-weight: 500;
     color: var(--whitecolor);
 }
-
-
 
 .section-truper {
     background-image: url("/src/Marcas/TRUPER_portada.jpg");
@@ -211,6 +209,71 @@ section {
         width: 100%; 
     }
 
+    section{
+        height: auto;
+        max-height: 200vh;
+    }
+
+    
+
+    .section-indice{
+        overflow: visible;
+        
+        height: 100rem;
+    }
+    
+}
+
+@media(max-width:600px){
+    .section-truper {
+        background-image: url("/src/Marcas/TRUPER_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+        margin: 0;
+    }
+    
+    .section-pretul {
+        background-image: url("/src/Marcas/TRUPER_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+    
+    .section-klintek {
+        background-image: url("/src/Marcas/KLINTEK_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+    
+    .section-foset {
+        background-image: url("/src/Marcas/FOSET_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+    
+    .section-hermex {
+        background-image: url("/src/Marcas/HRMEX_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+    
+    .section-volteck {
+        background-image: url("/src/Marcas/VOLTECK_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+    
+    .section-fiero {
+        background-image: url("/src/Marcas/FIERO_portada_vertical.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
 }
 
 @media(max-width:375px){

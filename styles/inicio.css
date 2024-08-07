@@ -353,7 +353,7 @@ span::before {
     display: flex;
     overflow: hidden;
     height: 50vw;
-    background: var(--textcolor);
+    background: var(--whitecolor);
 
 }
 
@@ -373,7 +373,6 @@ span::before {
 
 .galeria img:hover {
     opacity: 1;
-    transform: scale(1.0);
     transition: .5s ease;
 }
 
