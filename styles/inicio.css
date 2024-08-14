@@ -353,7 +353,7 @@ span::before {
     display: flex;
     overflow: hidden;
     height: 50vw;
-    background: var(--whitecolor);
+    background: var(--textcolor);
 
 }
 
