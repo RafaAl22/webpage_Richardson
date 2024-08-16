@@ -7,7 +7,7 @@
     --auxcolor: #747272;
     --blackcolor: #161414;
     --shadow-color:#00000033;
-    --orangecolor:#ee7028;
+    --orangecolor:rgb(238, 112, 40);
     --whitecolor:#fff;
     --purplecolor: #E40078;
     --pruplecolorlight:#8a2be2;
@@ -17,15 +17,15 @@
     --darkorange: #FF8C00;
     --orangered: #ff4500;
     --plata: #BEBEBE;
-    --azulvolteck:#253692;
+    --azulvolteck:rgb(37, 54, 146);
     --azulvolteck2: #6f85c1;
     --azulfoset:#006db2;
-    --rojo:#d3063e;
+    --rojo:rgb(211, 6, 62);
     --rojo2: #920c27;
-    --verdeklintek:#009f9a;
+    --verdeklintek:rgb(0, 159, 154);
     --verdeklintek2:#016e69;
     --amarillopretul:#FFCD00;
     --amarillopretul2:#E49B0F;
     --naranjatruper:#ec600b;
-    --azulrugo: #2c3c5c;
+    --azulrugo: rgb(44, 60, 92);
 }

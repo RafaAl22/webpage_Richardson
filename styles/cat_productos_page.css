@@ -88,13 +88,24 @@ h1 {
     color: var(--textcolor);
 }
 
-
 .cat-box .info-container a {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--textcolor);
+    border: .2rem solid var(--shadow-color);
+    border-radius: 2rem;
+    padding: .5rem;
+    bottom: 10%;
+    background: var(--shadow-color);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: .3s ease;
+}
 
-
+.info-container a:hover{
+    background: #ccc7c733;
+    transition: .3s ease;
 }
 
 /*Colores por marca*/
