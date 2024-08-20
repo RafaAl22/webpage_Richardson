@@ -1,0 +1,73 @@
+@import url(colores.css);
+
+.modal-contenido {
+
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.modal-contenido img{
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+}
+
+.modal-contenido .button-close{
+    
+
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    color: var(--textcolor);
+}
+
+.modal-contenido .button-close a{
+
+    color: var(--textcolor);
+    font-size: 4rem;
+    transition: all .5s;
+    padding: .5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.modal-contenido .button-close a:hover{
+    background: var(--textcolor);
+    color: var(--whitecolor);
+    transition: all .5s;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+    z-index: 1000;
+    margin: 0;
+    width: 100%;
+}
+
+/*#miModal:target,
+#miModal2:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+*/
+.visible{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.invisible{
+    opacity: 0;
+}

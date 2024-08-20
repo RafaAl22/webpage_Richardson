@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/styles/detalle-productos.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Motobomba autocebante 2" x 2" a gasolina 7 HP - TRUPER</title>
@@ -20,7 +21,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>17116 | MOTB-2</h2>
+                    <h2 id="codigo">17116 | MOTB-2</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -41,7 +42,7 @@
                             <img src="/src/Detalle Productos/Top productos/Motobomba autocebante a gasolina de 7 HP - Truper/MOTB-2+E1.jpg"
                                 alt="">
                         </div>
-                        
+
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -50,9 +51,10 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Motobomba autocebante 2" x 2" a gasolina 7 HP - TRUPER</h1>
+                    <h1 id="encabezado">Motobomba autocebante 2" x 2" a gasolina 7 HP - TRUPER</h1>
                     <ul>
-                        <li>Ideal para sistemas de riego, bombeo de pozos, agricultura y construcción. Para zonas de difícil acceso a electricidad</li>
+                        <li>Ideal para sistemas de riego, bombeo de pozos, agricultura y construcción. Para zonas de
+                            difícil acceso a electricidad</li>
                         <li>Se utiliza para trasladar grandes cantidades de agua limpia</li>
                         <li>Altura máxima de bombeo: 25 m</li>
                         <li>Flujo máximo: 500 L/min</li>
@@ -60,16 +62,39 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0; "
+                    
+                    <a href="#miModal" id="abrir_modal"><img style="opacity: 0; pointer-events: none;  "
                         src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2+FC3.jpg"
                         alt="">
-                    <img style="opacity: 1;"
-                        src="/src/Detalle Productos/Top productos/Motobomba autocebante a gasolina de 7 HP - Truper/MOTB-2+FC2.jpg"
-                        alt="">
+                    </a>
+                    <img onclick="abrir_modal()" id="miModal2" style="opacity: 1;"
+                            src="/src/Detalle Productos/Top productos/Motobomba autocebante a gasolina de 7 HP - Truper/MOTB-2+FC1.jpg"
+                            alt="">
+                    
+
                 </div>
+
             </div>
         </div>
-
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="button-close" >
+                    <a href=""><i class='bx bx-x'></i></a>
+                </div>
+                <a href="" class="all"></a>
+                <img src="/src/Detalle Productos/Top productos/Motobomba autocebante a gasolina de 7 HP - Truper/MOTB-2+FC2.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div id="miModal2" class="modal">
+            <div class="modal-contenido">
+                <div  class="button-close" >
+                   <a onclick="cerrar_modal()" href=""><i role="button" class='bx bx-x'></i></a> 
+                </div>
+                <img src="/src/Detalle Productos/Top productos/Motobomba autocebante a gasolina de 7 HP - Truper/MOTB-2+FC1.jpg"
+                    alt="">
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
@@ -152,11 +177,14 @@
                     <div class="specs">
                         <h1>1 Llave para bujía</h1>
                     </div>
-                
+
                 </div>
             </div>
 
         </div>
+
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
+
 
     </section>
 
@@ -164,6 +192,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
+    <script src="/scripts/ventana_modal.js"></script>
 </body>
 
 </html>

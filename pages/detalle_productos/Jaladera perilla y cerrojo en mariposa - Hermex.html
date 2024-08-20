@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/detalle-productos.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +21,7 @@
         <div class="detalle-container bg_hermex" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>23671 | CEP-11PJP</h2>
+                    <h2 id="codigo">23671 | CEP-11PJP</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -49,7 +50,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Jaladera, perilla y cerrojo mariposa, latón brillante - Hermex</h1>
+                    <h1 id="encabezado">Jaladera, perilla y cerrojo mariposa, latón brillante - Hermex</h1>
                     <ul>
                         <li>Juego de cerraduras, jaladera con gatillo y perilla</li>
                         <li>Cerrojos con llave al exterior y mariposa al interior</li>
@@ -102,10 +103,12 @@
         </div>
     </section>
 
+    <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_red'></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>
