@@ -16,7 +16,7 @@
     padding: .5rem;
     transition: all 300ms ease 0ms;
     
-    z-index: 999;
+    z-index: 990;
 }
 
 .btn_whatsapp i:hover{
