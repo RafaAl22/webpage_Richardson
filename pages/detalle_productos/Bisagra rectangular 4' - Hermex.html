@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +20,7 @@
         <div class="detalle-container bg_hermex" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>43198 | BR-401</h2>
+                    <h2 id="codigo">43198 | BR-401</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -48,7 +49,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Bisagra rectangular 4" acero latonado - Hermex</h1>
+                    <h1 id="encabezado">Bisagra rectangular 4" acero latonado - Hermex</h1>
                     <ul>
                         <li>Fabricada en acero con acabado latonado pulido espejo</li>
                         <li>Perno remachado con cabeza media bola</li>
@@ -122,10 +123,12 @@
         </div>
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_red'></i></a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

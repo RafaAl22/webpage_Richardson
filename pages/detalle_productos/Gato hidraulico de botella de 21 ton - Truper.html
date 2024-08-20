@@ -7,8 +7,8 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +20,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>14822 | GAT-20</h2>
+                    <h2 id="codigo">14822 | GAT-20</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -46,7 +46,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Gato hidráulico de botella de 21 Ton - Truper</h1>
+                    <h1 id="encabezado">Gato hidráulico de botella de 21 Ton - Truper</h1>
                     <ul>
                         <li>Cabeza maquinada que reduce el deslizamiento de la carga</li>
                         <li>Con dispositivo de extensión (tornillo) el cual incrementa la altura máxima</li>
@@ -56,7 +56,7 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2+FC3.jpg"
                         alt="">
                     <img style="opacity: 1;"
@@ -126,12 +126,14 @@
 
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

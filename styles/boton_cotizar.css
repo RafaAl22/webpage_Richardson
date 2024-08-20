@@ -20,8 +20,7 @@
 }
 
 .btn_whatsapp i:hover{
-    color: var(--whitecolor);
-    background-color: green;
+
     /* Color de fondo al pasar el cursor */
     
     transition: all 300ms ease 0ms;

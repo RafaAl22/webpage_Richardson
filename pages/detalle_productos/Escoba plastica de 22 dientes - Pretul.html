@@ -7,8 +7,8 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +20,7 @@
         <div class="detalle-container bg_pretul" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>21430 | EP-22P</h2>
+                    <h2 id="codigo">21430 | EP-22P</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -46,7 +46,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Escoba plástica flex. p/jardín, 22 dientes, mango de 48" - Pretul</h1>
+                    <h1 id="encabezado">Escoba plástica flex. p/jardín, 22 dientes, mango de 48" - Pretul</h1>
                     <ul>
                         <li>Cabeza de polipropileno de alta resistencia</li>
                         <li>Diseño flexible</li>
@@ -57,10 +57,10 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Jardineria/Desmalezadora a gasolina 52 cc mango tipo bici, 18' - Truper/DES-520+FC3.jpg"
                         alt="">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Jardineria/Desmalezadora a gasolina 52 cc mango tipo bici, 18' - Truper/DES-520+FC2.jpg"
                         alt="">
                 </div>
@@ -70,7 +70,7 @@
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn1" id="btn1">
+                    <a class="specs-header" id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>
@@ -99,10 +99,9 @@
                     </div>
                 </div>
             </div>
-
-            
-
         </div>
+
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_black'></i></a>
 
     </section>
 
@@ -110,6 +109,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

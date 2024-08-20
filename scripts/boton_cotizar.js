@@ -9,11 +9,9 @@ document.getElementById('abrir_whatsapp').addEventListener('click',function(){
     encabezado = document.getElementById('encabezado').textContent;
 
     var mensaje;
-    mensaje = 'Me interesa el producto, '  + encabezado + ', con código y nombre clave ' + codigo +'.'+'\nLo vi en www.gruporichardson.com.ni';
-    
-    var url = "whatsapp://send?text="+encodeURIComponent(mensaje)+"&phone= +50582021466"
+    mensaje = 'Me interesa el producto, '  + encabezado + ', con código y/o nombre clave ' + codigo +'.'+'\nLo vi en www.gruporichardson.com.ni';
+    var url = "https://api.whatsapp.com/send?text="+encodeURIComponent(mensaje)+"&phone= +50582021466";
 
-    console.log(mensaje);
     window.open(url);
 });     
 
