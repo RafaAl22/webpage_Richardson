@@ -7,8 +7,9 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +21,7 @@
         <div class="detalle-container bg_volteck" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>44329 | CIN-5035N</h2>
+                    <h2 id="codigo">44329 | CIN-5035N</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -46,7 +47,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Bolsa con 25 cinchos plásticos 50 lb, 350x4.5 mm, negros - Volteck</h1>
+                    <h1 id="encabezado">Bolsa con 25 cinchos plásticos 50 lb, 350x4.5 mm, negros - Volteck</h1>
                     <ul>
                         <li>Fabricados en nylon</li>
                         <li>Seguro automático</li>
@@ -55,20 +56,41 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 1;"
+                    <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Ferreteria general/Bolsa con 25 cinchos plásticos 50 lb, negros - Volteck/CIN-5035N+D2.jpg"
                         alt="">
-                    <img style="opacity: 1;"
+                    <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Ferreteria general/Bolsa con 25 cinchos plásticos 50 lb, negros - Volteck/CIN-5035N+D3.jpg"
                         alt="">
                 </div>
             </div>
         </div>
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                    <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail"
+                                src="/src/Detalle Productos/Ferreteria general/Bolsa con 25 cinchos plásticos 50 lb, negros - Volteck/CIN-5035N+D2.jpg"
+                                alt="">
+                        </div>
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail"
+                                src="/src/Detalle Productos/Ferreteria general/Bolsa con 25 cinchos plásticos 50 lb, negros - Volteck/CIN-5035N+D3.jpg"
+                                alt="">
+                        </div>
 
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn1" id="btn1">
+                    <a class="specs-header" id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>
@@ -95,12 +117,15 @@
 
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_blue'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
+    <script src="/scripts/ventana_modal.js"></script>
 </body>
 
 </html>

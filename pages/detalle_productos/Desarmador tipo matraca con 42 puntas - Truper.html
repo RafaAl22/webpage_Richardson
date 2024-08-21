@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +21,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>18220 | JDM-58</h2>
+                    <h2 id="codigo">18220 | JDM-58</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -48,7 +50,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Desarmador tipo matraca con 42 puntas, 14 dados y extensión - Truper</h1>
+                    <h1 id="encabezado">Desarmador tipo matraca con 42 puntas, 14 dados y extensión - Truper</h1>
                     <ul>
                         <li>Puntas de acero al cromo vanadio, 2X más resistente que el acero al carbono</li>
                         <li>Posición de bloqueo y para girar en ambos sentidos</li>
@@ -57,16 +59,31 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style=" opacity: 0;"
+                    <img style=" opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Cocinas y baños/Regadera cuadrada ABS 4' acabado negro mate con brazo - Foset/R-403M+FC2.jpg"
                         alt="">
-                    <img style="opacity: 1;"
+                    <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Herramientas de mano/Desarmador tipo matraca con 42 puntas, 14 dados y extensión - Truper/JDM-58+D1.jpg"
                         alt="">
                 </div>
             </div>
         </div>
-
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                        <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail" src="/src/Detalle Productos/Herramientas de mano/Desarmador tipo matraca con 42 puntas, 14 dados y extensión - Truper/JDM-58+D1.jpg"
+                                alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
@@ -105,15 +122,15 @@
                 <div class="specs-content ocultar" id="specs2">
                     <div class="specs">
                         <h1>9 Puntas planas: 3 a 7 mm</h1>
-                        
+
                     </div>
                     <div class="specs">
                         <h1>10 Puntas Phillips: PH0 a PH3</h1>
-                        
+
                     </div>
                     <div class="specs">
                         <h1>9 Puntas Torx: T10 a T40</h1>
-                        
+
                     </div>
                     <div class="specs">
                         <h1>7 Puntas Pozidriv: PZ0 a PZ3</h1>
@@ -138,10 +155,13 @@
         </div>
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
+    <script src="/scripts/ventana_modal.js"></script>
 </body>
 
 </html>

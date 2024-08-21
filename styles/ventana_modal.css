@@ -2,7 +2,7 @@
 
 .modal-contenido {
 
-    width: 50%;
+    width: 100%;
     padding: 0;
     margin: 0;
     left: 50%;
@@ -11,51 +11,84 @@
     position: relative;
 }
 
-.modal-contenido img{
-    width: 100%;
-    object-fit: contain;
-    position: relative;
-}
-
-.modal-contenido .button-close{
-    
-
+.modal-contenido a {
+    color: var(--whitecolor);
+    font-size: 6rem;
+    transition: all .5s;
+    padding: 0;
+    border-bottom-left-radius: 1.5rem;
     position: absolute;
-    z-index: 1000;
+    z-index: 1100;
     top: 0;
     right: 0;
-    color: var(--textcolor);
+    cursor: pointer;
 }
 
-.modal-contenido .button-close a{
-
+.modal-contenido a:hover {
+    background: var(--whitecolor);
     color: var(--textcolor);
-    font-size: 4rem;
-    transition: all .5s;
-    padding: .5rem;
-    border-bottom-left-radius: 1.5rem;
-}
-
-.modal-contenido .button-close a:hover{
-    background: var(--textcolor);
-    color: var(--whitecolor);
     transition: all .5s;
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    display: none;
     pointer-events: none;
     transition: all .5s;
     z-index: 1000;
     margin: 0;
     width: 100%;
+
 }
+
+.img_details-swiper {
+    transition: all .5s;
+    overflow: hidden;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+}
+
+.img_details-box {
+    width: 100%;
+
+}
+
+.img_details-cards {
+    width: 100%;
+
+}
+
+.img_details-cards img {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    object-fit: contain;
+    position: relative;
+
+
+}
+
+.img_details-swiper .swiper-button-next {
+    right: 0;
+    position: absolute;
+    color: var(--whitecolor);
+}
+
+.img_details-swiper .swiper-button-prev {
+    left: 0;
+    position: absolute;
+    color: var(--whitecolor);
+}
+
 
 /*#miModal:target,
 #miModal2:target {
@@ -63,11 +96,68 @@
     pointer-events: auto;
 }
 */
-.visible{
-    opacity: 1;
+.visible {
+    display: block;
     pointer-events: auto;
 }
 
-.invisible{
-    opacity: 0;
+@media (max-width:1440px) {
+    .img_details-cards img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55%;
+        object-fit: contain;
+        position: relative;
+
+    }
+}
+
+@media (max-width:1250px) {
+    .modal-contenido a {
+        font-size: 5rem;
+    }
+
+    .img_details-cards img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        object-fit: contain;
+        position: relative;
+    }
+}
+
+@media (max-width:1024px) {
+    .img_details-cards img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        object-fit: contain;
+        position: relative;
+    }
+}
+
+@media (max-width:768px) {
+    .img_details-cards img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        object-fit: contain;
+        position: relative;
+    }
+}
+
+@media (max-width:600px) {
+    .modal-contenido a {
+        font-size: 4rem;
+    }
+
+    .img_details-cards img {
+        width: 85%;
+    }
+}
+
+@media (max-width:425px) {
+    .modal-contenido a {
+        font-size: 2.5rem;
+    }
 }

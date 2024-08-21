@@ -7,8 +7,9 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +21,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>11032 | DES-520</h2>
+                    <h2 id="codigo">11032 | DES-520</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -46,31 +47,49 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Desmalezadora a gasolina 52 cc mango tipo "bici",<br> 18" de corte - Truper</h1>
+                    <h1 id="encabezado">Desmalezadora a gasolina 52 cc mango tipo "bici", 18" de corte - Truper</h1>
                     <ul>
-                        <li>Motor de 2 HP a 2 tiempos (materiales internos en aluminio al alto silicio <br> para mayor tiempo
+                        <li>Motor de 2 HP a 2 tiempos (materiales internos en aluminio al alto silicio para mayor tiempo
                             de vida útil)</li>
                         <li>Sistema de arranque con embrague</li>
-                        <li>Eje recto de aluminio, permite cortar áreas más grandes en menor tiempo,<br> ofrece mayor torque y menor vibración</li>
+                        <li>Eje recto de aluminio, permite cortar áreas más grandes en menor tiempo, ofrece mayor torque y menor vibración</li>
                         <li>Mango abatible que facilita su transporte y almacenamiento</li>
-                        <li>Arnés completo que distribuye el peso sobre los hombros y la espalda, reduciendo <br> la fatiga</li>
+                        <li>Arnés completo que distribuye el peso sobre los hombros y la espalda, reduciendo la fatiga</li>
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 1;"
+                    <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Jardineria/Desmalezadora a gasolina 52 cc mango tipo bici, 18' - Truper/DES-520+FC3.jpg"
                         alt="">
-                    <img style="opacity: 1;"
+                    <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Jardineria/Desmalezadora a gasolina 52 cc mango tipo bici, 18' - Truper/DES-520+FC2.jpg"
                         alt="">
                 </div>
             </div>
         </div>
-
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                        <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail" src="/src/Detalle Productos/Jardineria/Desmalezadora a gasolina 52 cc mango tipo bici, 18' - Truper/DES-520+FC3.jpg"
+                                alt="">
+                        </div>
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail" src="/src/Detalle Productos/Jardineria/Desmalezadora a gasolina 52 cc mango tipo bici, 18' - Truper/DES-520+FC2.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn1" id="btn1">
+                    <a class="specs-header" id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>
@@ -110,7 +129,7 @@
                     </div>
                     <div class="specs">
                         <h1>Ciclo de trabajo</h1>
-                        <h2>20 minutos de descanso por tanque <br> consumido. Máximo 6 horas</h2>
+                        <h2>20 minutos de descanso por tanque consumido. Máximo 6 horas</h2>
                     </div>
                     <div class="specs">
                         <h1>Peso</h1>
@@ -125,7 +144,7 @@
 
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn2" id="btn2">
+                    <a class="specs-header"  id="btn2">
                         <h1 id="texto2">Incluye</h1>
                         <i id="flecha2" class='bx bx-chevron-down'></i>
                     </a>
@@ -144,12 +163,15 @@
 
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
+    <script src="/scripts/ventana_modal.js"></script>
 </body>
 
 </html>

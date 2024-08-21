@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +20,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>14158 | GO-1/4X4P</h2>
+                    <h2 id="codigo">14158 | GO-1/4X4P</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -48,7 +49,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Desarmador plano de golpe 1/4" x 4" - Truper</h1>
+                    <h1 id="encabezado">Desarmador plano de golpe 1/4" x 4" - Truper</h1>
                     <ul>
                         <li>Barra hexagonal de acero al cromo vanadio, 2X más resistentes al desgaste que las de acero
                             al carbono
@@ -62,7 +63,7 @@
                     <img style="display: none;"
                         src="/src/Detalle Productos/Cocinas y baños/Regadera cuadrada ABS 4' acabado negro mate con brazo - Foset/R-403M+FC2.jpg"
                         alt="">
-                    <img style="display: none;"
+                    <img style="display: none; "
                         src="/src/Detalle Productos/Cocinas y baños/Regadera eléctrica, 4 temperaturas, 14.5cm, blanca - Foset/REGEL-4+D1.jpg"
                         alt="">
                 </div>
@@ -117,10 +118,12 @@
         </div>
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

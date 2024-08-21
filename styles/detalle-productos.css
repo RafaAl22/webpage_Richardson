@@ -140,13 +140,14 @@ h1 {
     top: 40%;
     transform: translateY(-50%);
     width: 100%;
+    overflow: hidden;
 }
 
 .img-box {
     position: absolute;
     width: 100%;
     display: flex;
-
+    
 }
 
 .img-box .img-slide {

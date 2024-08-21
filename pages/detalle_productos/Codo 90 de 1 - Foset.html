@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +20,7 @@
         <div class="detalle-container bg_foset" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>45413 | PVC-563</h2>
+                    <h2 id="codigo">45413 | PVC-563</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -42,7 +43,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Codo 90° de PVC de 1" - Foset</h1>
+                    <h1 id="encabezado">Codo 90° de PVC de 1" - Foset</h1>
                     <ul>
                         <li>Cuerpo de PVC (Policloruro de vinilo), cédula 40</li>
                         <li>Para cementar a tubería de PVC</li>
@@ -52,10 +53,10 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Ferreteria general/Abrazaderas sin fin reforzadas  1-1s16 - Fiero/AB-10+D1.jpg"
                         alt="">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Ferreteria general/Abrazaderas sin fin reforzadas  1-1s16 - Fiero/AB-10+D1.jpg"
                         alt="">
                 </div>
@@ -65,7 +66,7 @@
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn1" id="btn1">
+                    <a class="specs-header" id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>
@@ -93,10 +94,12 @@
 
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_blue'></i></a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

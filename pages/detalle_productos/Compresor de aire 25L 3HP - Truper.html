@@ -7,8 +7,8 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +20,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>15006 | COMP-25LT</h2>
+                    <h2 id="codigo">15006 | COMP-25LT</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -49,7 +49,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Compresor de aire, lubricado, horizontal 25L 3HP 127V - Truper</h1>
+                    <h1 id="encabezado">Compresor de aire, lubricado, horizontal 25L 3HP 127V - Truper</h1>
                     <ul>
                         <li>Motor monofásico de 3 HP con bobinas de cobre, 2X mayor durabilidad que las de aluminio</li>
                         <li>Protector térmico contra sobrecalentamiento de motor y carter de aluminio para mayor disipación de calor</li>
@@ -59,10 +59,10 @@
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2+FC3.jpg"
                         alt="">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Maquinaria/Bomba sumergible plástica, 1s2 HP para agua limpia - Truper/BOS-1-2LP+FC2.jpg"
                         alt="">
                 </div>
@@ -149,12 +149,14 @@
 
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

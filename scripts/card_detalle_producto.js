@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-    effect: "flip",
+    effect: "fade",
     grabCursor: true,
     keyboard: {
         enabled: true,
@@ -9,3 +9,4 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+

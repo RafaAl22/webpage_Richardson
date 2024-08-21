@@ -1,45 +1,33 @@
-var mod = document.getElementById("modal");
 var modal = document.getElementById("miModal");
-var modal2 = document.getElementById("miModal2");
+var img_details = document.getElementById("img_detail");
 
-
-
-/*var boton = document.getElementById("abrir_modal");
-var boton2 = document.getElementById("abrir_modal2");*/
-
-
-
-function abrir_modal(){
-    modal.classList.add('visible');
+function abrir_modal() {
+  modal.classList.add('visible');
 }
 
 function cerrar_modal(){
-    modal.style.opacity ="0";
-     
+  modal.classList.remove('visible');
 }
 
-
+var swiper2 = new Swiper(".mySwiper2", {
+  keyboard: {
+      enabled: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  loop: true,
+});
 
 window.addEventListener("click",function(event) {
     if (event.target == modal) {
-      modal.style.opacity = "0";
-    }
-    else
-    {
-        if (event.target == modal2) {
-            modal2.style.opacity = "none";
-        }
+      modal.classList.remove('visible');
     }
 });
-/*
-boton.addEventListener("click",function() {
-  modal.style.display = "block";
-  if(modal.style.opacity ="0")
-    {
-      PointerEvent = none;
+
+window.addEventListener("keyup", function(event){
+    if( event.keyCode === 27){
+      modal.classList.remove('visible');
     }
 });
-boton2.addEventListener("click",function() {
-    modal2.style.display = "block";
-});
-  */

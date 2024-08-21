@@ -7,8 +7,8 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +20,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>12496 | DES-26C</h2>
+                    <h2 id="codigo">12496 | DES-26C</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -65,10 +65,10 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Desbrozadora a gasolina 26cc mango tipo "D", <br> 17"corte, curva - Truper</h1>
+                    <h1 id="encabezado">Desbrozadora a gasolina 26cc mango tipo "D", 17"corte, curva - Truper</h1>
                     <ul>
                         <li>Motor de 1 HP a 2 tiempos</li>
-                        <li>Eje curvo ideal para jardines residenciales,<br> más ligero y fácil de maniobrar</li>
+                        <li>Eje curvo ideal para jardines residenciales, más ligero y fácil de maniobrar</li>
                         <li>Función de desbrozadora y orilladora</li>
                         <li>Eje desmontable que facilita su transporte y almacenamiento</li>
                         <li>Para corte en césped residencial delgado, hierba y maleza</li>
@@ -88,7 +88,7 @@
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn1" id="btn1">
+                    <a class="specs-header"  id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="specs">
                         <h1>Ciclo de trabajo</h1>
-                        <h2>30 minutos de descanso por tanque <br> consumido. Máximo 6 horas</h2>
+                        <h2>30 minutos de descanso por tanque consumido. Máximo 6 horas</h2>
                     </div>
                     <div class="specs">
                         <h1>Peso</h1>
@@ -143,7 +143,7 @@
 
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn2"id="btn2">
+                    <a class="specs-header" id="btn2">
                         <h1 id="texto2">Incluye</h1>
                         <i id="flecha2" class='bx bx-chevron-down'></i>
                     </a>
@@ -164,12 +164,14 @@
         
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>

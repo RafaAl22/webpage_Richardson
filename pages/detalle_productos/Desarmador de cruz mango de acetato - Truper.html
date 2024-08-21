@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +20,7 @@
         <div class="detalle-container bg_truper" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>14074 | DP-1/4X4</h2>
+                    <h2 id="codigo">14074 | DP-1/4X4</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -48,20 +49,20 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Desarmador de cruz 1/4" x 4" mango de acetato - Truper</h1>
+                    <h1 id="encabezado">Desarmador de cruz 1/4" x 4" mango de acetato - Truper</h1>
                     <ul>
                         <li>Barra de acero al cromo vanadio, 2X más resistente al desgaste que las de acero al carbono
                         </li>
                         <li>Mango de acetato, 3X mayor resistencia al impacto y solventes que los mangos de PVC</li>
-                        
+
 
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Cocinas y baños/Regadera cuadrada ABS 4' acabado negro mate con brazo - Foset/R-403M+FC2.jpg"
                         alt="">
-                    <img style="opacity: 0;"
+                    <img style="opacity: 0; pointer-events: none;"
                         src="/src/Detalle Productos/Cocinas y baños/Regadera eléctrica, 4 temperaturas, 14.5cm, blanca - Foset/REGEL-4+D1.jpg"
                         alt="">
                 </div>
@@ -116,10 +117,12 @@
         </div>
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_orange'></i></a>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
 </body>
 
 </html>
