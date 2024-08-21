@@ -1,12 +1,16 @@
 var modal = document.getElementById("miModal");
-var img_details = document.getElementById("img_detail");
+/*var img_details = document.getElementById('img_details');*/
+
+
 
 function abrir_modal() {
   modal.classList.add('visible');
 }
 
+
 function cerrar_modal(){
   modal.classList.remove('visible');
+  
 }
 
 var swiper2 = new Swiper(".mySwiper2", {
@@ -17,7 +21,7 @@ var swiper2 = new Swiper(".mySwiper2", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
-  loop: true,
+  loop: false,
 });
 
 window.addEventListener("click",function(event) {
