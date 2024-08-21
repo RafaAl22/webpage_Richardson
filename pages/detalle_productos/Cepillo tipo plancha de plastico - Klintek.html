@@ -7,8 +7,9 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +21,7 @@
         <div class="detalle-container bg_klintek" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>57008 | CELI-35</h2>
+                    <h2 id="codigo">57008 | CELI-35</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -33,11 +34,8 @@
                             <img src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+FC1.jpg"
                                 alt="">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+FC2.jpg"
-                                alt="">
-                        </div>
-                        
+                    
+
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -46,29 +44,48 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Cepillo tipo plancha de plástico - Klintek</h1>
+                    <h1 id="encabezado">Cepillo tipo plancha de plástico - Klintek</h1>
                     <ul>
                         <li>Cerdas de PET</li>
                         <li>Mango de plástico con diseño ergonómico</li>
 
-                        
+
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"
-                        src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+D1.jpg"
+                    <img style="opacity: 1; " onclick="abrir_modal()"
+                        src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+FC2.jpg"
                         alt="">
-                    <img style="opacity: 1;"
+                    <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+D1.jpg"
                         alt="">
                 </div>
             </div>
         </div>
-
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                    <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
+                        <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
+                            <img src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+FC2.jpg"
+                                alt="">
+                        </div>
+                        <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
+                            <img src="/src/Detalle Productos/Limpieza/Cepillo tipo plancha de plástico - Klintek/CELI-35+D1.jpg"
+                                alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header" href="#btn1" id="btn1">
+                    <a class="specs-header" id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>
@@ -86,61 +103,26 @@
                         <h1>Alto de las cerdas</h1>
                         <h2>3 cm</h2>
                     </div>
-                
-                    
+
+
                     <div class="specs">
                         <h1>Empaque individual</h1>
                         <h2>Etiqueta</h2>
                     </div>
                 </div>
             </div>
-<!--
-            <div class="specs-container">
-                <div>
-                    <a class="specs-header" href="#btn2"id="btn2">
-                        <h1>Incluye</h1>
-                        <i id="flecha2" class='bx bx-chevron-down'></i>
-                    </a>
-                </div>
-                <div class="specs-content ocultar" id="specs2">
-                    <div class="specs">
-                        <h1>1 Broca para madera de 5/32"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para madera de 3/16"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para madera de 7/32"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para metal de 5/32"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para metal de 3/16"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para metal de 7/32"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para concreto de 3/16"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para concreto de 1/4"</h1>
-                    </div>
-                    <div class="specs">
-                        <h1>1 Broca para concreto de 5/16"</h1>
-                    </div>
-                </div>
-            </div>
-        -->
+            
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_green'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
+    <script src="/scripts/ventana_modal.js"></script>
 </body>
 
 </html>

@@ -16,8 +16,8 @@ var swiper2 = new Swiper(".mySwiper2", {
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-  },
-  loop: true,
+  }
+  
 });
 
 window.addEventListener("click",function(event) {

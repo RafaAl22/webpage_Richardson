@@ -7,8 +7,9 @@
     <!--css-->
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/detalle-productos.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,7 +21,7 @@
         <div class="detalle-container bg_hermex" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>43315 | CH-38</h2>
+                    <h2 id="codigo">43315 | CH-38</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -50,7 +51,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Candado de hierro 38 mm gancho corto en caja - Hermex</h1>
+                    <h1 id="encabezado">Candado de hierro 38 mm gancho corto en caja - Hermex</h1>
                     <ul>
                         <li>Cuerpo de hierro en una sola pieza y gancho corto reforzado de acero con acabado cromado</li>
                         <li>Seguro tipo perno, seguridad estándar</li>
@@ -60,10 +61,36 @@
                 </div>
 
                 <div class="img-info">
-                    <img src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+D1.jpg"
+                    <img onclick="abrir_modal()" src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+D1.jpg"
                         alt="" >
-                    <img src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+D2.jpg"
+                    <img onclick="abrir_modal()" src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+D2.jpg"
                         alt="" >
+                </div>
+            </div>
+        </div>
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                    <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
+                        <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
+                            <img 
+                                src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+D1.jpg"
+                                alt="">
+                        </div>
+                        <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
+                            <img 
+                                src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+D2.jpg"
+                                alt="">
+                        </div>
+                        <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
+                            <img 
+                                src="/src/Detalle Productos/Top productos/Candado de hierro de 38 mm - Hermex/CH-38+FC1.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -111,12 +138,15 @@
             </div>
         </div>
 
+        <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_red'></i></a>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/scripts/card_detalle_producto.js"></script>
     <script src="/scripts/producto_detalle.js"></script>
+    <script src="/scripts/boton_cotizar.js"></script>
+    <script src="/scripts/ventana_modal.js"></script>
 </body>
 
 </html>
