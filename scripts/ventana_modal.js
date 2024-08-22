@@ -1,10 +1,18 @@
 var modal = document.getElementById("miModal");
 /*var img_details = document.getElementById('img_details');*/
-
+/*var modal2 = document.getElementById("miModal2");*/
 
 
 function abrir_modal() {
   modal.classList.add('visible');
+
+  
+}
+/*function abrir_modal() {
+  modal2.classList.add('visible');
+  
+}*/
+
 
 }
 
@@ -29,6 +37,8 @@ window.addEventListener("click",function(event) {
       modal.classList.remove('visible');
     }
 });
+
+
 
 window.addEventListener("keyup", function(event){
     if( event.keyCode === 27){

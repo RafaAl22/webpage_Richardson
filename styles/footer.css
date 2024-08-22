@@ -37,7 +37,9 @@ p {
 
 .container-footer .box-information {
     position: relative;
-    top: 13rem;
+    left: 3%;
+    top: 5rem;
+    height: 100%;
     display: block;
     text-align: center;
     z-index: 110;
@@ -78,10 +80,28 @@ p {
     position: relative;
     display: block;
     top: 15%;
+    animation:pulse-animation 3s infinite ease-in-out;
+    left: 15%;
 }
+
+
+
+@keyframes pulse-animation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 
 .container-footer .box-socials h1 {
     font-size: 2.3rem;
+    color: white;
 }
 
 .box-socials i {
@@ -125,7 +145,7 @@ p {
 
 /*+-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.container-footer .box-contact {
+.container-footer .info-contact {
     height: auto;
     width: 50%;
     display: block;
@@ -133,37 +153,55 @@ p {
     padding-top: 2rem;
     text-align: center;
     z-index: 110;
+    
+    
 }
 
-.box-contact .contact-details {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    row-gap: 2rem;
-    column-gap: 2rem;
+.info-contact .contact-details {
+    width: 100%;
     text-align: center;
     justify-content: center;
 }
 
-.container-footer .box-contact .sucursal-box {
+.container-footer .info-contact .sucursal-box {
     border-radius: 1.5rem;
     height: 20rem;
-    width: 35rem;
-
+    width: 100%;
+    align-items: center;
     padding: 1.5rem;
     background-color: var(--azulmarino);
+    border: solid pink;
+}
+.sucursal-box{
+    width: 70%;
+    text-align: center;
 }
 
 .sucursal-box h2,
 .sucursal-box h3 {
     color: var(--whitecolor);
+    padding-bottom: 0.5rem;
 }
 
 .sucursal-box h3 {
     font-weight: 500;
 }
 
+.sucursal-box a {
+    color: var(--whitecolor);
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    
+    padding: 0.5rem;
 
-.container-footer .box-contact h1 {
+    position: relative;
+}
+
+
+
+.container-footer .info-contact h1 {
+    color: white;
     font-size: 2.3rem;
     margin-bottom: 2rem;
 }
@@ -179,6 +217,48 @@ p {
     font-weight: 500;
     z-index: 999;
 }
+
+.sucursales-swiper{
+   /*
+    left: 50%;
+    transform: translateX(-5%);*/
+    position: relative;
+   /* top: 40%;*/
+   /* transform: translateY(-50%);*/
+    width: 70%;
+    overflow: hidden;
+    /*border:  solid green;*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sucursales-slide{
+    /*border: solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;*/
+    
+    
+    overflow: visible;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.contact-details .swiper-button-next {
+    right: 0;
+    padding-left: 0;
+    position: absolute;
+    color: var(--whitecolor);
+}
+
+.contact-details .swiper-button-prev {
+    left: 0;
+    position: absolute;
+    color: var(--whitecolor);
+}
+
+
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .circle-footer {
@@ -209,6 +289,7 @@ p {
     z-index: 85;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
 
 /*Responsive footer*/
 
