@@ -9,17 +9,19 @@
     top: 50%;
     transform: translate(-50%, -50%);
     position: relative;
+    overflow-y: visible;
 }
 
 .modal-contenido a {
     color: var(--whitecolor);
     font-size: 6rem;
+    font-weight: 800;
     transition: all .5s;
     padding: 0;
-    border-bottom-left-radius: 1.5rem;
+    border-radius: 1.5rem;
     position: absolute;
-    z-index: 1100;
-    top: 0;
+    z-index: 1200;
+    top: -10%;
     right: 0;
     cursor: pointer;
 }
@@ -43,13 +45,15 @@
     z-index: 1000;
     margin: 0;
     width: 100%;
+    
 
 }
 
 .img_details-swiper {
 
     transition: all .5s;
-    overflow: hidden;
+
+
     width: 90%;
     position: relative;
     left: 50%;
@@ -60,13 +64,13 @@
 }
 
 .img_details-box {
-
+    overflow-y: visible;
     width: 100%;
 
 }
 
 .img_details-cards {
-
+    overflow-y: visible;
     width: auto;
     padding: 0;
     

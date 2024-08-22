@@ -5,6 +5,7 @@ var modal = document.getElementById("miModal");
 
 function abrir_modal() {
   modal.classList.add('visible');
+
   
 }
 /*function abrir_modal() {
@@ -13,6 +14,7 @@ function abrir_modal() {
 }*/
 
 
+}
 
 function cerrar_modal(){
   modal.classList.remove('visible');
