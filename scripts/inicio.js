@@ -4,12 +4,12 @@ var swiper = new Swiper(".mySwiper", {
         hide: true,
         
     },
-    autoplay:{
+    /*autoplay:{
         delay:5000
-    },
+    },*/
     grabCursor: true,
     loop: true,
-    spaceBetween: 30,
+    /*spaceBetween: 30,*/
 });
 
 /*

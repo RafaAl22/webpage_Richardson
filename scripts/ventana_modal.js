@@ -5,8 +5,8 @@ var modal = document.getElementById("miModal");
 
 function abrir_modal() {
   modal.classList.add('visible');
-}
 
+}
 
 function cerrar_modal(){
   modal.classList.remove('visible');
