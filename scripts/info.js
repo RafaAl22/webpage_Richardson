@@ -150,19 +150,22 @@ var estado5 = document.getElementById("5");
 var estado6 = document.getElementById("6");
 var estado7 = document.getElementById("7");
 
-document.getElementById("flecha").addEventListener("click", function () {
-    if (flecha.classList.contains("rotacion")) {
-        flecha.classList.remove("rotacion");
-    } else {
-        flecha.classList.add("rotacion");
-    }
+function rotacion_Flecha1(){
+    
+        if (flecha.classList.contains("rotacion")) {
+            flecha.classList.remove("rotacion");
+        } else {
+            flecha.classList.add("rotacion");
+        }
+    
+        if (estado.classList.contains("ocultar")) {
+            estado.classList.remove("ocultar");
+        } else {
+            estado.classList.add("ocultar");
+        }
+    
+}
 
-    if (estado.classList.contains("ocultar")) {
-        estado.classList.remove("ocultar");
-    } else {
-        estado.classList.add("ocultar");
-    }
-});
 
 document.getElementById("flecha2").addEventListener("click", function () {
     if (flecha2.classList.contains("rotacion")) {
