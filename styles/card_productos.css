@@ -39,7 +39,6 @@
     position: relative;
     margin: 0;
     padding: 0;
-    
     overflow: hidden;
 }
 
@@ -48,17 +47,15 @@
     width: 50%;
     height: auto;
     bottom: 50%;
-    
+    overflow-x: visible;
     transform: translateY(45%);
-
-
 }
 
 .card-wrapper .card-box {
     border-radius: 2rem;
     padding-left: 18rem;
     width: 100%;
-    
+
 }
 
 .card-container .card-slide {
@@ -69,7 +66,7 @@
     height: auto;
     border-radius: 2rem;
     position: relative;
-    
+    overflow: visible;
 }
 
 

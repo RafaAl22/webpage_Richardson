@@ -153,7 +153,7 @@ p {
     padding-top: 2rem;
     text-align: center;
     z-index: 110;
-    
+
     
 }
 
@@ -161,20 +161,21 @@ p {
     width: 100%;
     text-align: center;
     justify-content: center;
+
 }
 
 .container-footer .info-contact .sucursal-box {
     border-radius: 1.5rem;
-    height: 20rem;
-    width: 100%;
+    height: 20%;
+    width: 60%;
     align-items: center;
     padding: 1.5rem;
     background-color: var(--azulmarino);
     border: solid pink;
-}
-.sucursal-box{
-    width: 70%;
-    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
 }
 
 .sucursal-box h2,
@@ -192,13 +193,9 @@ p {
     font-size: 1.2rem;
     border-radius: 3rem;
     background-color: rgba(255, 255, 255, 0.35);
-    
     padding: 0.5rem;
-
     position: relative;
 }
-
-
 
 .container-footer .info-contact h1 {
     color: white;
@@ -397,7 +394,7 @@ p {
         width: 20rem;
     }
 
-    .container-footer .box-contact {
+    .container-footer .info-contact {
         display: none;
     }
 
@@ -420,26 +417,6 @@ p {
     .box-socials .nav-links a {
         font-size: 1.4rem;
     }
-
-    /*.footer .circle-footer {
-        bottom: 18%;
-        left: -60%;
-        width: 250rem;
-        height: 250rem;
-        position: absolute;
-        background: var(--rojo);
-        z-index: 80;
-    }
-
-    .footer .circle-footer::after {
-        content: "";
-        bottom: 3%;
-        left: 20%;
-        width: 150rem;
-        height: 150rem;
-        position: absolute;
-        z-index: 85;
-    }*/
 
     .footer {
         position: relative;

@@ -15,12 +15,11 @@
     padding: 2rem 5%;
     background: var(--whitecolor);
     display: flex;
-    z-index: 1000;
+    z-index: 4000;
     transition: .5s ease;
     align-items: center;
     
 }
-
 
 .navbar a{
     position: relative;
@@ -40,13 +39,12 @@
 }
 
 .navbar a:hover {
-    color: var(--maincolor);
+    color: #333;
 }
 
 .header.sticky {
     background: var(--bgcolor);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
 }
 
 .header.sticky .navbar a {

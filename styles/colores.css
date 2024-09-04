@@ -6,7 +6,7 @@
     --textcolor: #333;
     --auxcolor: #747272;
     --blackcolor: #161414;
-    --shadow-color:#00000033;
+    --shadow-color:rgba(0, 0, 0, 0.2);
     --orangecolor:rgb(238, 112, 40);
     --whitecolor:#fff;
     --purplecolor: #E40078;
@@ -27,5 +27,5 @@
     --amarillopretul:#FFCD00;
     --amarillopretul2:#E49B0F;
     --naranjatruper:#ec600b;
-    --azulrugo: rgb(44, 60, 92);
+    --azulrugo: #2c3c5c;
 }

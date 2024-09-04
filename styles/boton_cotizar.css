@@ -1,9 +1,10 @@
 @import url(/styles/colores.css);
 
 
-.btn_whatsapp i{
+.btn_whatsapp i,
+.btn_cerrar i {
     border-radius: 50%;
-    font-size: 7rem;
+    font-size: 6rem;
     /* Cambiar el tamaño de la tipografia */
     color: green;
     /* Color del texto */
@@ -15,14 +16,72 @@
     right: 40px;
     padding: .5rem;
     transition: all 300ms ease 0ms;
-    
     z-index: 990;
 }
 
-.btn_whatsapp i:hover{
+
+
+
+.btn_norte i,
+.btn_sur i,
+.btn_leon i {
+    border-radius: 50%;
+    font-size: 2rem;
+    color: green;
+    padding: .5rem;
+    background: var(--whitecolor);
+    transition: all 300ms ease 0ms;
+}
+
+.btn_norte,
+.btn_sur,
+.btn_leon {
+    width: 29rem;
+    font-size: 1.8rem;
+    align-content: center;
+    color: var(--whitecolor);
+    position: fixed;
+    background: var(--textcolor);
+    border-radius: 4rem;
+    padding: .5rem .8rem;
+    right: 1%;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+.btn_norte {
+    bottom: 24rem;
+    
+}
+
+.btn_sur {
+    bottom: 19rem;
+    
+}
+
+.btn_leon{
+    bottom: 14rem;
+}
+.btn_norte:hover i,
+.btn_sur:hover i,
+.btn_leon:hover i{
+    background: green;
+    color: var(--whitecolor);
+    transition: all 300ms ease 0ms;
+}
+
+
+.btn_whatsapp i:hover {
 
     /* Color de fondo al pasar el cursor */
-    
+
+    transition: all 300ms ease 0ms;
+    transform: translateY(-8px);
+}
+
+.btn_cerrar i:hover{
     transition: all 300ms ease 0ms;
     transform: translateY(-8px);
 }
@@ -51,6 +110,10 @@
     box-shadow: 0px 15px 20px rgb(0, 159, 154);
 }
 
+.ocultar {
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
     .btn_whatsapp {
@@ -60,9 +123,9 @@
     }
 }
 
-@media (max-width:500px){
-    
-    .btn_whatsapp i{
+@media (max-width:500px) {
+
+    .btn_whatsapp i {
         font-size: 6rem;
         right: 20px;
     }

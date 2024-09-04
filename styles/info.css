@@ -3,9 +3,9 @@
 
 .informacion {
     margin-top: 5%;
-
     width: 100%;
     position: relative;
+    padding: 2rem 7% 1rem;
 }
 
 .preguntas-btn {
@@ -81,6 +81,7 @@
 .respuesta-container {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .respuesta-container_1{

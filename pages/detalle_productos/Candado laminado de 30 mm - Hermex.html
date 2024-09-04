@@ -21,7 +21,7 @@
         <div class="detalle-container bg_hermex" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2>23502 | CM-30P</h2>
+                    <h2 id="codigo">23502 | CM-30P</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
@@ -50,7 +50,7 @@
             </div>
             <div class="info-container">
                 <div class="info">
-                    <h1>Candado laminado, 30mm, gancho corto - Hermex</h1>
+                    <h1 id="encabezado">Candado laminado, 30mm, gancho corto - Hermex</h1>
                     <ul>
                         <li>Cuerpo de acero laminado con acabado niquelado y gancho de acero con acabado cromado</li>
                         <li>Seguro doble tipo perno seguridad estándar</li>
@@ -61,9 +61,11 @@
                 </div>
 
                 <div class="img-info">
-                    <img onclick="abrir_modal()" src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D1.jpg"
+                    <img onclick="abrir_modal()"
+                        src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D1.jpg"
                         alt="">
-                    <img onclick="abrir_modal()" src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D2.jpg"
+                    <img onclick="abrir_modal()"
+                        src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D2.jpg"
                         alt="">
                 </div>
             </div>
@@ -74,16 +76,14 @@
                     <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
                     <div class="img_details-box swiper-wrapper">
                         <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
-                            <img 
-                                src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D1.jpg"
+                            <img src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D1.jpg"
                                 alt="">
                         </div>
                         <div onclick="cerrar_modal()" class="img_details-cards swiper-slide">
-                            <img 
-                                src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D2.jpg"
+                            <img src="/src/Detalle Productos/Herrajes/Candado laminado 30mm gancho corto -  Hermex/CM-30P+D2.jpg"
                                 alt="">
                         </div>
-                        
+
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -120,6 +120,13 @@
 
         </div>
         <a class="btn_whatsapp " id="abrir_whatsapp"><i class='bx bxl-whatsapp shadow_red'></i></a>
+
+        <a class="btn_norte ocultar" id="abrir_norte"><i class='bx bxl-whatsapp '></i> Cotizar en sucursal Norte</a>
+        <a class="btn_sur ocultar" id="abrir_sur"><i class='bx bxl-whatsapp '></i> Cotizar en sucursal Sur</a>
+        <a class="btn_leon ocultar" id="abrir_leon"><i class='bx bxl-whatsapp '></i> Cotizar en sucursal León</a>
+        <a class="btn_cerrar ocultar" id="cerrar_whatsapp"><i class='bx bx-x-circle shadow_red'></i></a>
+
+
     </section>
 
 
