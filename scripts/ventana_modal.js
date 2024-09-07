@@ -24,11 +24,11 @@ var swiper2 = new Swiper(".mySwiper2", {
   loop: false,
 });
 
-window.addEventListener("click",function(event) {
-    if (event.target == modal) {
-      modal.classList.remove('visible');
-    }
-});
+/*window.addEventListener("click",function(event) {
+  if (event.target == modal) {
+    modal.classList.remove('visible');
+  }
+});*/
 
 
 
