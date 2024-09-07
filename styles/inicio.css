@@ -123,15 +123,12 @@ div {
 /*Banner de productos TOP*/
 
 .contenido .box-banner {
-
     position: relative;
     margin: 0;
     height: 45rem;
     padding: 0;
     width: 100%;
     overflow: hidden;
-
-
 }
 
 .box-banner .img_banner {
@@ -785,7 +782,48 @@ svg {
 
 
 /*Responsive de página de inicio*/
-@media (max-width:1660px) {}
+@media (max-width:1660px) {
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 40rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 4.5rem;
+        letter-spacing: .2rem;
+        -webkit-text-stroke: .8px var(--blackcolor);
+    }
+
+    .box-banner .btn_banner{
+        width: 15rem;
+        height: 15rem;
+        font-size: 2.5rem;
+    }
+
+    /*Banner de Raspadita*/
+
+    .section-promociones {
+
+        height: 35rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+    
+
+}
 
 @media (max-width: 1555px) {
     .logo-container img {
