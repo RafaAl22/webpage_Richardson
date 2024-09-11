@@ -5,6 +5,12 @@ var modal = document.getElementById("miModal");
 
 function abrir_modal() {
   modal.classList.add('visible');
+  swiper2.slideTo(0);
+}
+
+function abrir_modal2(){
+  modal.classList.add('visible');
+  swiper2.slideTo(1);
 }
 
 
