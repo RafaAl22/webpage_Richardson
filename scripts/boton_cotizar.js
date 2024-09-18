@@ -61,7 +61,7 @@ btn_whatsapp.addEventListener('click', function () {
 
 btn_norte.addEventListener('click', function(){
     codigo = document.getElementById('codigo').textContent;
-encabezado = document.getElementById('encabezado').textContent;
+    encabezado = document.getElementById('encabezado').textContent;
 
 var mensaje;
 mensaje = 'Me interesa el producto, ' + encabezado + ', con código y/o nombre clave ' + codigo + '.' + '\nLo vi en www.gruporichardson.com.ni';

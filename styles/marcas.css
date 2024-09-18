@@ -6,9 +6,11 @@ section {
     padding: 2rem 7% 1rem;
 }
 
+
 .texts h1 {
     color: var(--orangered);
     font-size: 1.8rem;
+    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
 }
 
 .texts p {
@@ -33,7 +35,8 @@ section {
     top: 5rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 8rem;
+    
 }
 
 .marcas-container .marcas-box:nth-child(1) {
@@ -84,6 +87,7 @@ section {
     font-size: 2em;
     font-weight: 500;
     color: var(--whitecolor);
+    cursor: pointer;
 }
 
 .section-truper {

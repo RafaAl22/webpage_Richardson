@@ -3,7 +3,7 @@
 #menu-icon {
     font-size: 3.6rem;
     display: none;
-    color: var(--textcolor);
+    color: var(--whitecolor);
     cursor: pointer;
 }
 
@@ -18,13 +18,13 @@
     z-index: 4000;
     transition: .5s ease;
     align-items: center;
-    
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .navbar a{
     position: relative;
     font-size: 1.7rem;
-    color: var(--text-color);
+    color: var(--whitecolor);
     font-weight: 500;
     margin: 0 .8rem;
     transition: .5s ease;
@@ -43,12 +43,11 @@
 }
 
 .header.sticky {
-    background: var(--bgcolor);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .header.sticky .navbar a {
-    color: var(--textcolor);
+    color: var(--whitecolor);
 
 }
 

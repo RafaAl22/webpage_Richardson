@@ -434,3 +434,34 @@ function rotacion_Flecha7() {
     estado6.classList.add("ocultar");
 
 };
+
+var cont_norte = document.getElementById('cont_norte');
+var cont_sur = document.getElementById('cont_sur');
+var cont_leon = document.getElementById("cont_leon");
+
+cont_norte.addEventListener('click', function(){
+
+    var mensaje;
+    mensaje = 'Hola, me pueden ayudar con información?. Gracias!';
+    var url = "https://api.whatsapp.com/send?text=" + encodeURIComponent(mensaje) + "&phone= +50589402765";
+
+window.open(url);
+});
+
+cont_sur.addEventListener('click', function(){
+    
+    var mensaje;
+    mensaje = 'Hola, me pueden ayudar con información?. Gracias!';
+    var url = "https://api.whatsapp.com/send?text=" + encodeURIComponent(mensaje) + "&phone= +50584980917";
+    
+    window.open(url);
+})
+
+cont_leon.addEventListener('click', function(){
+     
+    var mensaje;
+    mensaje = 'Hola, me pueden ayudar con información?. Gracias!';
+    var url = "https://api.whatsapp.com/send?text=" + encodeURIComponent(mensaje) + "&phone= +50588389692";
+
+window.open(url);
+})

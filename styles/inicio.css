@@ -139,7 +139,7 @@ div {
     transform: translateX(-50%);
     pointer-events: none;
     z-index: 1107;
-
+    filter: drop-shadow( 20px 20px 10px #000);
 }
 
 .circulo1,
@@ -337,7 +337,7 @@ div {
 }
 
 .section-promociones {
-
+    border: solid green;
     height: 40rem;
     max-height: 70rem;
     width: 100%;
@@ -349,7 +349,8 @@ div {
 }
 
 .box-productos_descuentos {
-    margin: 0;
+    top: 10%;
+    margin: 10px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -536,7 +537,7 @@ div {
 /*BANNER RUGO*/
 
 .box-productos_rugo {
-    margin: 0;
+    margin-top: 7%;
     width: 100%;
     height: 60rem;
     background-image: url('/src/Inicio/Portada RUGO.jpg');
@@ -644,9 +645,11 @@ div {
 /* BANNER SEGUNDO*/
 
 .segundo-banner {
+    margin-top: 10%;
     display: flex;
     padding: 0;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     position: relative;
     max-height: 450px;
     border-radius: 10px;

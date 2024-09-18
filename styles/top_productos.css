@@ -9,8 +9,9 @@
 }
 
 .section-top_products h1 {
+    margin-top: 7%;
     text-align: center;
-    font-size: auto;
+    font-size: 2rem;
     margin-bottom: 6rem;
     font-weight: 600;
     color: var(--textcolor);

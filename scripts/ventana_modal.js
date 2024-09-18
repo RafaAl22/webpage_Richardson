@@ -1,4 +1,5 @@
 var modal = document.getElementById("miModal");
+var imagen = document.getElementById("imagen")
 /*var img_details = document.getElementById('img_details');*/
 /*var modal2 = document.getElementById("miModal2");*/
 
@@ -16,6 +17,9 @@ function abrir_modal2(){
 
 function cerrar_modal(){
   modal.classList.remove('visible');
+  if (event.target == modal) {
+    modal.classList.remove('visible');
+  }
   
 }
 
@@ -30,11 +34,11 @@ var swiper2 = new Swiper(".mySwiper2", {
   loop: false,
 });
 
-/*window.addEventListener("click",function(event) {
+window.addEventListener("click",function(event) {
   if (event.target == modal) {
     modal.classList.remove('visible');
   }
-});*/
+});
 
 
 
