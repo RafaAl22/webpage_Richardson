@@ -25,7 +25,7 @@
 }
 
 .tags {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: var(--textcolor);
     border-radius: 1.2rem;
@@ -55,6 +55,7 @@
 .pregunta-header {
     display: flex;
     text-align: center;
+    filter: drop-shadow( 5px 5px 5px #0000009d);
 }
 
 .pregunta-header i {
@@ -76,22 +77,27 @@
     font-size: 6rem;
     color: var(--textcolor);
     border-radius: 50%;
+    
 }
 
 .respuesta-container {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    text-align: justify;
+    
 }
 
 .respuesta-container_1{
     justify-content: space-between;
     display: flex;
     width: 100%;
+    
 }
 
 .respuesta-container a {
     transition: .3s ease;
+    
 }
 
 .encabezado {
@@ -106,6 +112,7 @@
     font-size: 1.8rem;
     font-weight: 300;
     color: var(--textcolor);
+    text-align: justify;
 }
 
 .rotacion {
@@ -129,12 +136,14 @@
     font-size: 2rem;
     color: var(--textcolor);
     font-weight: 600;
+    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
 }
 
 .numeros-container .numeros-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--textcolor);
+    
 }
 
 .numeros-container {
