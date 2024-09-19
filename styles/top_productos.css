@@ -9,9 +9,10 @@
 }
 
 .section-top_products h1 {
+    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
     margin-top: 7%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-bottom: 6rem;
     font-weight: 600;
     color: var(--textcolor);
@@ -118,7 +119,9 @@
 
 .tittle-container h1 {
     font-weight: 600;
-    font-size: auto;
+    
+    font-size: 1.9rem;
+    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
 }
 
 .tittle-container img {
@@ -149,7 +152,6 @@
 .feature-container ul li {
     font-size: 1.8rem;
     font-weight: 500;
-    
     letter-spacing: normal;
 }
 
@@ -170,6 +172,7 @@
     font-weight: 600;
     height: auto;
     padding-top: .8rem;
+    filter: drop-shadow( 2px 2px 2px #0f0c3d9d);
 }
 
 .detalle-container .btn {
