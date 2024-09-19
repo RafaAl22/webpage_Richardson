@@ -37,6 +37,15 @@ var swiper3 = new Swiper(".mySwiper3", {
     },
 });
 
+var swiper4 = new Swiper(".mySwiper4", {
+    slidesPerView: 1,
+    grabCursor: true,
+    autoplay:{
+        delay: 6000
+    },
+    loop: true,
+});
+
 /*
 [...document.querySelectorAll('.column')].map(column => {
     column.style.setProperty('--animation', 'slide');
