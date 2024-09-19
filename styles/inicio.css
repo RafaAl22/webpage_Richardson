@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moulpali&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Satisfy&display=swap');
 
 section {
     margin: 0;
@@ -330,14 +331,13 @@ div {
 
 /*+++++++++++++++++++banner de promociones+++++++++++++++++++++++++++++++*/
 
-.swiper-banner_promocional {
+.container-swiper {
     height: 100%;
     position: relative;
     display: flex;
 }
 
 .section-promociones {
-    border: solid green;
     height: 40rem;
     max-height: 70rem;
     width: 100%;
@@ -345,20 +345,21 @@ div {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    border: .2rem solid var(--whitecolor);
+    
 }
 
-.box-productos_descuentos {
-    top: 10%;
-    margin: 10px;
+
+.section-promociones .container-swiper .box-productos_descuentos {
+    margin: 0;
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
     background-image: linear-gradient(to bottom, #006db2, #20609c, #2a5386, #2d4771, #2c3c5c);
+
 }
 
-.img-promocion {
+.container-swiper .box-productos_descuentos .img-promocion {
     width: 28%;
     top: 50%;
     position: absolute;
@@ -429,18 +430,16 @@ div {
 
 }
 
-.box-productos_descuentos .text {
+.container-swiper .box-productos_descuentos .text {
     position: absolute;
     z-index: 3000;
     width: 50%;
 
     right: 0;
     height: 100%;
-
-
 }
 
-.box-productos_descuentos .text h1 {
+.container-swiper .box-productos_descuentos .text h1 {
     letter-spacing: .2rem;
     text-align: center;
     font-size: 4.5rem;
@@ -499,28 +498,6 @@ div {
     animation-fill-mode: both;
 }
 
-.sticker-descuento {
-    background: var(--verdeklintek);
-    font-size: 3rem;
-    color: var(--whitecolor);
-    text-align: center;
-    align-content: center;
-    position: absolute;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    top: 50%;
-    right: 20%;
-    z-index: 3000;
-    font-style: normal;
-    animation-name: scaleAndColorChange;
-    animation-duration: .5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: both;
-}
 
 @keyframes scaleAndColorChange {
     0% {
@@ -532,6 +509,195 @@ div {
         transform: scale(1.2);
 
     }
+}
+
+/*BANNER Asistencia técnica*/
+
+.section-promociones .container-swiper .banner-asistencia {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to left, #720c20, #8e0a31, #ab0645, #c8015d, #e40078);
+}
+
+.container-swiper .banner-asistencia .img-asistencia,
+.container-swiper .banner-asistencia .img-asistencia2,
+.container-swiper .banner-asistencia .img-asistencia3,
+.container-swiper .banner-asistencia .img-asistencia4 {
+    width: 15%;
+    top: 50%;
+    position: absolute;
+    right: 5%;
+    transform: translatey(-50%);
+    z-index: 2000;
+    object-fit: contain;
+    border-radius: 2rem;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container-swiper .banner-asistencia .img-asistencia{
+    width: 18%;
+    right: 23%;
+    top: 60%;
+    rotate: -15deg;
+    z-index: 2988;
+}
+
+.container-swiper .banner-asistencia .img-asistencia2{
+    width: 20%;
+    right: -1%;
+    top: 25%;
+    z-index: 2990;
+    rotate: 15deg;
+}
+
+.container-swiper .banner-asistencia .img-asistencia3{
+    right: 14%;
+    z-index: 2989;
+}
+
+.container-swiper .banner-asistencia .img-asistencia4{
+    right: 3%;
+    width: 11%;
+    top: 75%;
+    z-index: 3000;
+}
+
+.banner-asistencia .cuadro1,
+.banner-asistencia .cuadro2,
+.banner-asistencia .cuadro3,
+.banner-asistencia .cuadro4,
+.banner-asistencia .cuadro5 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.banner-asistencia .cuadro1 {
+    background-image: linear-gradient(to right bottom, #720c20, #8e0a31, #ab0645, #c8015d, #e40078);
+    left: -1%;
+    width: 100%;
+    height: 100%;
+    rotate: 45deg;
+    z-index: 1000;
+
+}
+
+.banner-asistencia .cuadro2 {
+    background-image: linear-gradient(to right bottom, #720c20, #8e0a31, #ab0645, #c8015d, #e40078);
+    left: -1%;
+    width: 100%;
+    height: 100%;
+    rotate: 135deg;
+    z-index: 1980;
+
+}
+
+.banner-asistencia .cuadro3 {
+    background-image: linear-gradient(to right bottom, #720c20, #8e0a31, #ab0645, #c8015d, #e40078);
+    left: 15%;
+    width: 100%;
+    height: 180%;
+    rotate: 90deg;
+    z-index: 2200;
+
+}
+
+.banner-asistencia .cuadro5 {
+    background-image: linear-gradient(to right bottom, #720c20, #8e0a31, #ab0645, #c8015d, #e40078);
+    left: 5%;
+    width: 100%;
+    height: 90%;
+    rotate: 90deg;
+    z-index: 2200;
+}
+
+.banner-asistencia .cuadro4 {
+    width: 40%;
+    height: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(to top, #006db2, #20609c, #2a5386, #2d4771, #2c3c5c);
+}
+
+.container-swiper .banner-asistencia .text {
+    position: absolute;
+    z-index: 3000;
+    width: 50%;
+    left: 0;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.container-swiper .banner-asistencia .text h1 {
+    
+    text-align: center;
+    font-size: 4rem;
+    color: var(--whitecolor);
+    font-weight: 600;
+    font-family: "News Cycle", sans-serifs;
+}
+
+.container-swiper .banner-asistencia .text h2 {
+    font-size: 2.5rem;
+    color: var(--whitecolor);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.container-swiper .banner-asistencia .text h4 {
+    color: var(--whitecolor);
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: 400;
+    font-size: 1.3rem;
+    bottom: 0;
+    
+}
+
+.container-swiper .banner-asistencia .text span{
+    font-size: 2rem;
+    color: var(--whitecolor);
+    font-weight: 600;
+    text-align: center;
+    left: 50%;
+}
+
+
+/*Cinta con lema de ferretería*/
+
+.cinta-lema{
+    display: flex;
+    height: auto;
+    width: 100%;
+    background:#97979746;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.cinta-lema img{
+    width: 10%;
+    object-fit: cover;
+    display: none;
+}
+
+.cinta-lema h1{
+    font-size: 6rem;
+    color: var(--azulrugo);
+    font-family: "Allura", system-ui;
+    font-weight: 800;
+}
+
+.cinta-lema h1 span{
+    color: var(--rojo);
+    font-family: "Allura", system-ui;
+    font-weight: 800;
 }
 
 /*BANNER RUGO*/
@@ -563,7 +729,7 @@ div {
 }
 
 .box-productos_rugo .text-rugo h1:nth-child(2) {
-    font-size: 5rem;
+
     left: 10%;
 
     position: absolute;
@@ -639,7 +805,58 @@ div {
 }
 
 .text-rugo_slide a:hover {
-    background: rgba(211, 6, 61, 0.562);
+    background: rgba(211, 6, 61, 0.63);
+}
+
+/*Cinta de direcciones de sucursales*/
+
+.direccion_tiendas{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    height: 18rem;
+    width: 90%;
+    column-gap: 1rem;
+    position: relative;
+    justify-content: center;
+    border-radius: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: .2rem solid var(--textcolor);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.direccion_tiendas .info_tienda{
+    padding: 0 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+.direccion_tiendas .info_tienda:nth-child(2){
+    border-left: .3rem solid var(--secondarycolor);
+    border-right: .3rem solid var(--secondarycolor);
+}
+
+.direccion_tiendas .info_tienda:nth-child(3){
+    
+    border-right: .3rem solid var(--secondarycolor);
+}
+
+
+.direccion_tiendas .info_tienda i{
+    font-size: 3.5rem;
+    color: var(--alternativecolor);
+}
+
+.direccion_tiendas .info_tienda h1{
+    font-size: 2rem;
+    color: var(--rojo);
+}
+
+.direccion_tiendas .info_tienda h2{
+    font-size: 1.8rem;
+    color: var(--secondarycolor);
 }
 
 /* BANNER SEGUNDO*/
@@ -754,8 +971,6 @@ a.info-click:hover {
     border-radius: 50%;
 }
 
-
-
 svg {
     fill: rgba(0, 0, 0, 0.288);
     position: absolute;
@@ -805,7 +1020,7 @@ svg {
         -webkit-text-stroke: .8px var(--blackcolor);
     }
 
-    .box-banner .btn_banner{
+    .box-banner .btn_banner {
         width: 15rem;
         height: 15rem;
         font-size: 2.5rem;
@@ -824,8 +1039,26 @@ svg {
         margin: 0;
         border: .2rem solid var(--whitecolor);
     }
-    
 
+    .box-productos_descuentos .text h1 {
+        font-size: 4rem;
+    }
+
+    .text h2 {
+        font-size: 3.6rem;
+    }
+
+    .text h3 {
+        font-size: 2rem;
+    }
+
+    .text h4 {
+        font-size: .9rem;
+    }
+
+    .text .raspadita {
+        font-size: 8rem;
+    }
 }
 
 @media (max-width: 1555px) {
@@ -843,7 +1076,64 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 9rem;
+    }
 
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 38rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 4.2rem;
+        letter-spacing: .2rem;
+        -webkit-text-stroke: .8px var(--blackcolor);
+    }
+
+    .box-banner .btn_banner {
+        width: 13rem;
+        height: 13rem;
+        font-size: 2.2rem;
+    }
+
+    /*Banner de Raspadita*/
+
+    .section-promociones {
+
+        height: 33rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .box-productos_descuentos .text h1 {
+        font-size: 3rem;
+    }
+
+    .text h2 {
+        font-size: 3.4rem;
+    }
+
+    .text h3 {
+        font-size: 1.8rem;
+    }
+
+    .text h4 {
+        font-size: .8rem;
+    }
+
+    .text .raspadita {
+        font-size: 7.5rem;
     }
 
 }
@@ -868,6 +1158,56 @@ svg {
         color: var(--rojo);
         -webkit-text-stroke: 1px var(--whitecolor);
     }
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 35rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 3.8rem;
+        letter-spacing: .2rem;
+        -webkit-text-stroke: .8px var(--blackcolor);
+    }
+
+    .box-banner .btn_banner {
+        width: 13rem;
+        height: 13rem;
+        font-size: 2rem;
+    }
+
+    /*Banner RUGO*/
+
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 55rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 4rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: 1.1rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:1366px) {
@@ -891,6 +1231,127 @@ svg {
         -webkit-text-stroke: 1px var(--whitecolor);
     }
 
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 35rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 3.5rem;
+        letter-spacing: .2rem;
+        -webkit-text-stroke: .8px var(--blackcolor);
+    }
+
+    .box-banner .btn_banner {
+        width: 13rem;
+        height: 13rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:1250px) {
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 33rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 3.2rem;
+        letter-spacing: .2rem;
+        -webkit-text-stroke: .8px var(--blackcolor);
+    }
+
+    .box-banner .btn_banner {
+        width: 12rem;
+        height: 12rem;
+        font-size: 1.8rem;
+        outline: .3rem solid var(--whitecolor);
+    }
+
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 31rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .box-productos_descuentos .text h1 {
+        font-size: 2.7rem;
+    }
+
+    .text h2 {
+        font-size: 3.1rem;
+    }
+
+    .text h3 {
+        font-size: 1.5rem;
+    }
+
+    .text h4 {
+        font-size: .8rem;
+    }
+
+    .text .raspadita {
+        font-size: 7rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 50rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 3.5rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+
+
+    /* BANNER SEGUNDO*/
+
+    .container-banner {
+        height: 30rem;
+    }
+
+    .container-banner .info-click {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:1200px) {
@@ -914,6 +1375,55 @@ svg {
         -webkit-text-stroke: 1px var(--whitecolor);
     }
 
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 29rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .box-productos_descuentos .text h1 {
+        font-size: 2.7rem;
+    }
+
+    .text h2 {
+        font-size: 3.1rem;
+    }
+
+    .text h3 {
+        font-size: 1.5rem;
+    }
+
+    .text h4 {
+        font-size: .8rem;
+    }
+
+    .text .raspadita {
+        font-size: 7rem;
+    }
+}
+
+@media(max-width:1160px) {
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 2.8rem;
+        letter-spacing: .2rem;
+
+    }
+
+    .box-banner .btn_banner {
+        width: 11rem;
+        height: 11rem;
+        font-size: 1.6rem;
+        outline: .3rem solid var(--whitecolor);
+        top: 50%;
+    }
 }
 
 @media (max-width:1100px) {
@@ -942,6 +1452,108 @@ svg {
         font-size: 6rem;
         color: var(--rojo);
         -webkit-text-stroke: 1px var(--whitecolor);
+    }
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 30rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 2.8rem;
+        letter-spacing: .2rem;
+
+    }
+
+    .box-banner .btn_banner {
+        width: 11rem;
+        height: 11rem;
+        font-size: 1.6rem;
+        outline: .3rem solid var(--whitecolor);
+        top: 60%;
+    }
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 27rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .img-promocion {
+        width: 35%;
+        z-index: 3000;
+    }
+
+    .box-productos_descuentos .text h1 {
+        font-size: 2.4rem;
+    }
+
+    .text h2 {
+        font-size: 2.7rem;
+    }
+
+    .text h3 {
+        font-size: 1.2rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 40%;
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:1024px) {
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 45rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 3.2rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+
+    /* BANNER SEGUNDO*/
+
+    .container-banner {
+        height: 25rem;
+    }
+
+    .container-banner .info-click {
+        font-size: 2rem;
     }
 }
 
