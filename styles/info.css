@@ -36,6 +36,11 @@
     text-align: center;
     justify-content: center;
 }
+.tags:hover{
+    -webkit-box-shadow: inset 0px -91px 77px -71px rgba(138,136,138,1);
+    -moz-box-shadow: inset 0px -91px 77px -71px rgba(138,136,138,1);
+    box-shadow: inset 0px -91px 77px -71px rgba(138,136,138,1);
+}
 
 .seleccion {
     background-color: var(--secondarycolor);

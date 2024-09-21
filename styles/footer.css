@@ -466,11 +466,26 @@ p {
 
 @media (max-width:540px) {
     .container-footer .box-information {
+        height: 37rem;
         display: none;
+    }
+    .container-footer{
+        border-top: 10px double #FFFFFF;
+        height: 13rem;
     }
 
     .container-footer .box-socials {
         width: 100%;
+        height: auto;
+        position: absolute;
+        
+
+    }
+    .socials-details{
+        position: absolute;
+        margin-left: 10%;
+        width: 50%;
+        padding-top: 5%;
     }
 
     /*
@@ -506,4 +521,12 @@ p {
         color: var(--bgcolor);
         background: var(--secondarycolor);
     }
+    .socials-details{
+        position: absolute;
+        padding-top: 6% ;
+        margin-left: 6%;
+        width: 60%;
+        transform: translate(50%);
+    }
+
 }
