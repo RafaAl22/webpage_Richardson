@@ -39,18 +39,19 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .btn-flotante {
-        font-size: 14px;
-        bottom: 20px;
-        right: 20px;
+    .btn-flotante i {
+        font-size: 6rem;
+        bottom: 13px;
+        right: 13px;
     }
 }
 
-@media (max-width:500px){
+@media (max-width:540px){
     
     .btn-flotante i{
         font-size: 6rem;
         right: 20px;
+        bottom: 18px;
     }
 }
 
