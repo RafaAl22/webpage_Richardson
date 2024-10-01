@@ -80,7 +80,7 @@
 .card-slide .circle-img img {
 
     border-radius: 15%;
-    object-fit: contain;
+    object-fit: cover;
     border: .9em solid transparent;
     outline: .6rem solid var(--whitecolor);
     width: 34rem;

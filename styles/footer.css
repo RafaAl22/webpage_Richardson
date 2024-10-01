@@ -80,20 +80,22 @@ p {
     position: relative;
     display: block;
     top: 15%;
-    animation:pulse-animation 3s infinite ease-in-out;
+    animation: pulse-animation 3s infinite ease-in-out;
     left: 15%;
 }
 
 
 
 @keyframes pulse-animation {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
@@ -154,7 +156,7 @@ p {
     text-align: center;
     z-index: 110;
 
-    
+
 }
 
 .info-contact .contact-details {
@@ -215,13 +217,13 @@ p {
     z-index: 999;
 }
 
-.sucursales-swiper{
-   /*
+.sucursales-swiper {
+    /*
     left: 50%;
     transform: translateX(-5%);*/
     position: relative;
-   /* top: 40%;*/
-   /* transform: translateY(-50%);*/
+    /* top: 40%;*/
+    /* transform: translateY(-50%);*/
     width: 70%;
     overflow: hidden;
     /*border:  solid green;*/
@@ -229,13 +231,13 @@ p {
     transform: translateX(-50%);
 }
 
-.sucursales-slide{
+.sucursales-slide {
     /*border: solid black;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;*/
-    
-    
+
+
     overflow: visible;
     text-align: center;
     padding: 2rem;

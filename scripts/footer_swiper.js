@@ -8,4 +8,5 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
     loop: false,
     slidesPerView: 1,
-  });
+});
+

@@ -4,37 +4,45 @@ var swiper = new Swiper(".mySwiper", {
         hide: true,
 
     },
-    /*autoplay:{
+    autoplay:{
         delay:5000
-    },*/
+    },
     grabCursor: true,
 
     /*spaceBetween: 30,*/
 });
 
+/*Swiper RUGO */
 var swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 1,
     spaceBetween: 8,
-    
     breakpoints: {
         640: {
             slidesPerView: 2,
-            spaceBetween: 16,
+            spaceBetween: 10,
         },
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 32,
+        720: {
+            slidesPerView: 3,
+            spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 5,
-            spaceBetween: 40,
+            slidesPerView: 4,
+            spaceBetween: 20,
         },
+        1500: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        }
     },
     grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next2",
         prevEl: ".swiper-button-prev2",
     },
+    autoplay:{
+        delay: 5000
+    },
+    loop: true,
 });
 
 var swiper4 = new Swiper(".mySwiper4", {

@@ -105,7 +105,8 @@ div {
     margin: 0;
     padding: 0;
     display: block;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .top-box {
@@ -126,10 +127,11 @@ div {
 .contenido .box-banner {
     position: relative;
     margin: 0;
-    height: 45rem;
+    height: 50rem;
     padding: 0;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .box-banner .img_banner {
@@ -140,7 +142,7 @@ div {
     transform: translateX(-50%);
     pointer-events: none;
     z-index: 1107;
-    filter: drop-shadow( 20px 20px 10px #000);
+    filter: drop-shadow(20px 20px 10px #000);
 }
 
 .circulo1,
@@ -201,7 +203,7 @@ div {
 
 .box-banner .btn_banner {
     position: absolute;
-    z-index: 3000;
+    z-index: 2000;
     width: 18rem;
     height: 18rem;
     border-radius: 50%;
@@ -244,7 +246,7 @@ div {
     color: var(--whitecolor);
     font-size: 6rem;
     letter-spacing: .3rem;
-    -webkit-text-stroke: .8px var(--blackcolor);
+
 }
 
 .text-container_banner h1 span {
@@ -271,24 +273,23 @@ div {
 /*Galeria de fotos*/
 
 .galeria-container {
-
-    top: 10rem;
+    height: 100rem;
+    top: 10%;
     position: relative;
 }
 
 .galeria-container h1 {
     font-size: 2.5rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     margin-top: 5rem;
     text-align: center;
 }
 
 .galeria-container .galeria {
     display: flex;
-    overflow: hidden;
+    overflow: visible;
     height: 50vw;
     background: var(--textcolor);
-
 }
 
 .galeria:hover img {
@@ -302,7 +303,6 @@ div {
     border: .2rem solid var(--textcolor);
     box-sizing: border-box;
     transition: opacity .2s;
-
 }
 
 .galeria img:hover {
@@ -345,7 +345,7 @@ div {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    
+
 }
 
 
@@ -434,7 +434,6 @@ div {
     position: absolute;
     z-index: 3000;
     width: 50%;
-
     right: 0;
     height: 100%;
 }
@@ -534,11 +533,10 @@ div {
     z-index: 2000;
     object-fit: contain;
     border-radius: 2rem;
-    
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.container-swiper .banner-asistencia .img-asistencia{
+.container-swiper .banner-asistencia .img-asistencia {
     width: 18%;
     right: 23%;
     top: 60%;
@@ -546,7 +544,7 @@ div {
     z-index: 2988;
 }
 
-.container-swiper .banner-asistencia .img-asistencia2{
+.container-swiper .banner-asistencia .img-asistencia2 {
     width: 20%;
     right: -1%;
     top: 25%;
@@ -554,12 +552,12 @@ div {
     rotate: 15deg;
 }
 
-.container-swiper .banner-asistencia .img-asistencia3{
+.container-swiper .banner-asistencia .img-asistencia3 {
     right: 14%;
     z-index: 2989;
 }
 
-.container-swiper .banner-asistencia .img-asistencia4{
+.container-swiper .banner-asistencia .img-asistencia4 {
     right: 3%;
     width: 11%;
     top: 75%;
@@ -627,14 +625,18 @@ div {
     position: absolute;
     z-index: 3000;
     width: 50%;
-    left: 0;
-    height: 100%;
+    left: 27%;
+    top: 50%;
+    border-radius: 2rem;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.432);
+    height: 90%;
     align-content: center;
     text-align: center;
 }
 
 .container-swiper .banner-asistencia .text h1 {
-    
+
     text-align: center;
     font-size: 4rem;
     color: var(--whitecolor);
@@ -657,10 +659,10 @@ div {
     font-weight: 400;
     font-size: 1.3rem;
     bottom: 0;
-    
+
 }
 
-.container-swiper .banner-asistencia .text span{
+.container-swiper .banner-asistencia .text span {
     font-size: 2rem;
     color: var(--whitecolor);
     font-weight: 600;
@@ -671,30 +673,30 @@ div {
 
 /*Cinta con lema de ferretería*/
 
-.cinta-lema{
+.cinta-lema {
     display: flex;
     height: auto;
     width: 100%;
-    background:#97979746;
+    background: #97979746;
     justify-content: center;
     position: relative;
     align-items: center;
 }
 
-.cinta-lema img{
+.cinta-lema img {
     width: 10%;
     object-fit: cover;
     display: none;
 }
 
-.cinta-lema h1{
+.cinta-lema h1 {
     font-size: 6rem;
     color: var(--azulrugo);
     font-family: "Allura", system-ui;
     font-weight: 800;
 }
 
-.cinta-lema h1 span{
+.cinta-lema h1 span {
     color: var(--rojo);
     font-family: "Allura", system-ui;
     font-weight: 800;
@@ -707,6 +709,7 @@ div {
     width: 100%;
     height: 60rem;
     background-image: url('/src/Inicio/Portada RUGO.jpg');
+    background-color: #f6f5f1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -729,23 +732,19 @@ div {
 }
 
 .box-productos_rugo .text-rugo h1:nth-child(2) {
-
     left: 10%;
-
     position: absolute;
 
 }
 
-
 .box-productos_rugo .text-rugo span {
     color: var(--azulrugo);
     font-weight: 600;
-
 }
 
 .box-productos_rugo .swiper-rugo {
     position: relative;
-    width: 65%;
+    width: 60%;
     top: 60%;
     height: auto;
     overflow: hidden;
@@ -758,14 +757,13 @@ div {
 
 .box-productos_rugo .swiper-rugo .box-rugo {
     width: 100%;
-
 }
 
 .box-productos_rugo .swiper-rugo .slide-rugo {
     width: 100%;
     border: .3rem solid var(--textcolor);
     text-align: center;
-
+    height: auto;
 }
 
 .box-productos_rugo .swiper-rugo .slide-rugo img {
@@ -810,7 +808,7 @@ div {
 
 /*Cinta de direcciones de sucursales*/
 
-.direccion_tiendas{
+.direccion_tiendas {
     padding: 1rem 0;
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
@@ -822,39 +820,40 @@ div {
     border-radius: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    border: .2rem solid var(--textcolor);
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.direccion_tiendas .info_tienda{
+.direccion_tiendas .info_tienda {
     padding: 0 1rem;
     align-content: center;
     text-align: center;
+    height: 100%;
+    position: relative;
 }
 
-.direccion_tiendas .info_tienda:nth-child(2){
+.direccion_tiendas .info_tienda:nth-child(2) {
     border-left: .3rem solid var(--secondarycolor);
     border-right: .3rem solid var(--secondarycolor);
 }
 
-.direccion_tiendas .info_tienda:nth-child(3){
-    
+.direccion_tiendas .info_tienda:nth-child(3) {
+
     border-right: .3rem solid var(--secondarycolor);
 }
 
 
-.direccion_tiendas .info_tienda i{
+.direccion_tiendas .info_tienda i {
     font-size: 3.5rem;
     color: var(--alternativecolor);
 }
 
-.direccion_tiendas .info_tienda h1{
+.direccion_tiendas .info_tienda h1 {
     font-size: 2rem;
     color: var(--rojo);
 }
 
-.direccion_tiendas .info_tienda h2{
+.direccion_tiendas .info_tienda h2 {
     font-size: 1.8rem;
     color: var(--secondarycolor);
 }
@@ -885,7 +884,6 @@ div {
     display: block;
     width: 98%;
     margin: 0;
-
     padding-right: 5%;
     padding-bottom: 10%;
     text-align: end;
@@ -922,11 +920,9 @@ div {
     font-weight: 300;
     text-align: end;
     align-content: end;
-
 }
 
 .boton-banner {
-
     display: flex;
 }
 
@@ -1002,6 +998,11 @@ svg {
 /*Responsive de página de inicio*/
 @media (max-width:1660px) {
 
+    /*Portada de inicio*/
+    .banner {
+        height: 55rem;
+    }
+
     /*Banner de TOP*/
     .contenido .box-banner {
         position: relative;
@@ -1017,7 +1018,7 @@ svg {
         color: var(--whitecolor);
         font-size: 4.5rem;
         letter-spacing: .2rem;
-        -webkit-text-stroke: .8px var(--blackcolor);
+
     }
 
     .box-banner .btn_banner {
@@ -1029,7 +1030,6 @@ svg {
     /*Banner de Raspadita*/
 
     .section-promociones {
-
         height: 35rem;
         max-height: 70rem;
         width: 100%;
@@ -1040,7 +1040,7 @@ svg {
         border: .2rem solid var(--whitecolor);
     }
 
-    .box-productos_descuentos .text h1 {
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
         font-size: 4rem;
     }
 
@@ -1059,9 +1059,14 @@ svg {
     .text .raspadita {
         font-size: 8rem;
     }
+
+    /*Contenedor de galería*/
+    .galeria-container {
+        height: 85rem;
+    }
 }
 
-@media (max-width: 1555px) {
+@media (max-width: 1600px) {
     .logo-container img {
         width: 41rem;
         height: 100%;
@@ -1069,12 +1074,9 @@ svg {
 
     .texto-container h1 {
         font-size: 11rem;
-
-        font-weight: 900;
     }
 
     .texto-container span {
-        margin-left: 2rem;
         font-size: 9rem;
     }
 
@@ -1093,7 +1095,7 @@ svg {
         color: var(--whitecolor);
         font-size: 4.2rem;
         letter-spacing: .2rem;
-        -webkit-text-stroke: .8px var(--blackcolor);
+
     }
 
     .box-banner .btn_banner {
@@ -1105,7 +1107,6 @@ svg {
     /*Banner de Raspadita*/
 
     .section-promociones {
-
         height: 33rem;
         max-height: 70rem;
         width: 100%;
@@ -1116,7 +1117,7 @@ svg {
         border: .2rem solid var(--whitecolor);
     }
 
-    .box-productos_descuentos .text h1 {
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
         font-size: 3rem;
     }
 
@@ -1136,6 +1137,8 @@ svg {
         font-size: 7.5rem;
     }
 
+
+
 }
 
 @media (max-width:1440px) {
@@ -1146,18 +1149,18 @@ svg {
 
     .texto-container h1 {
         font-size: 9rem;
-        font-family: "Dancing Script", cursive;
-        color: var(--secondarycolor);
-        -webkit-text-stroke: .8px var(--whitecolor);
-        font-weight: 900;
     }
 
     .texto-container span {
-        margin-left: 2rem;
         font-size: 8rem;
-        color: var(--rojo);
-        -webkit-text-stroke: 1px var(--whitecolor);
     }
+
+    /*Cinta lema*/
+
+    .cinta-lema h1 {
+        font-size: 5rem;
+    }
+
 
     /*Banner de TOP*/
     .contenido .box-banner {
@@ -1174,7 +1177,7 @@ svg {
         color: var(--whitecolor);
         font-size: 3.8rem;
         letter-spacing: .2rem;
-        -webkit-text-stroke: .8px var(--blackcolor);
+
     }
 
     .box-banner .btn_banner {
@@ -1208,9 +1211,20 @@ svg {
     .slide-rugo .text-rugo_slide a {
         font-size: 1rem;
     }
+
+    /*Contenedor de galería*/
+    .galeria-container {
+        height: 70rem;
+    }
 }
 
 @media (max-width:1366px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 51rem;
+    }
+
     .logo-container img {
         width: 33rem;
         height: 100%;
@@ -1218,17 +1232,10 @@ svg {
 
     .texto-container h1 {
         font-size: 8rem;
-        font-family: "Dancing Script", cursive;
-        color: var(--secondarycolor);
-        -webkit-text-stroke: .8px var(--whitecolor);
-        font-weight: 900;
     }
 
     .texto-container span {
-        margin-left: 2rem;
         font-size: 7rem;
-        color: var(--rojo);
-        -webkit-text-stroke: 1px var(--whitecolor);
     }
 
     /*Banner de TOP*/
@@ -1246,7 +1253,7 @@ svg {
         color: var(--whitecolor);
         font-size: 3.5rem;
         letter-spacing: .2rem;
-        -webkit-text-stroke: .8px var(--blackcolor);
+
     }
 
     .box-banner .btn_banner {
@@ -1274,7 +1281,7 @@ svg {
         color: var(--whitecolor);
         font-size: 3.2rem;
         letter-spacing: .2rem;
-        -webkit-text-stroke: .8px var(--blackcolor);
+
     }
 
     .box-banner .btn_banner {
@@ -1297,7 +1304,12 @@ svg {
         border: .2rem solid var(--whitecolor);
     }
 
-    .box-productos_descuentos .text h1 {
+    .container-swiper .box-productos_descuentos .img-promocion {
+        width: 35%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
         font-size: 2.7rem;
     }
 
@@ -1315,6 +1327,33 @@ svg {
 
     .text .raspadita {
         font-size: 7rem;
+    }
+
+    /*Cinta lema*/
+
+    .cinta-lema h1 {
+        font-size: 4rem;
+    }
+
+    /*Banner Asistencia técnica*/
+
+
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 3.6rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 2.1rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: 1rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.6rem;
     }
 
     /*Banner RUGO*/
@@ -1332,6 +1371,7 @@ svg {
 
     .box-productos_rugo .text-rugo h1 {
         font-size: 3.5rem;
+
     }
 
     .slide-rugo .text-rugo_slide h2 {
@@ -1342,16 +1382,43 @@ svg {
         font-size: .8rem;
     }
 
+    /*Cinta de direcciones*/
+
+    .direccion_tiendas {
+        height: 14rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 2.5rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: 1.5rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: 1.3rem;
+        color: var(--secondarycolor);
+    }
+
+    /*Contenedor de galería*/
+    .galeria-container {
+        height: 60rem;
+    }
+
+
 
     /* BANNER SEGUNDO*/
 
-    .container-banner {
+    /*.container-banner {
         height: 30rem;
     }
 
     .container-banner .info-click {
         font-size: 2rem;
-    }
+    }*/
 }
 
 @media (max-width:1200px) {
@@ -1362,17 +1429,10 @@ svg {
 
     .texto-container h1 {
         font-size: 6rem;
-        font-family: "Dancing Script", cursive;
-        color: var(--secondarycolor);
-        -webkit-text-stroke: .8px var(--whitecolor);
-        font-weight: 900;
     }
 
     .texto-container span {
-        margin-left: 2rem;
         font-size: 5rem;
-        color: var(--rojo);
-        -webkit-text-stroke: 1px var(--whitecolor);
     }
 
     /*Banner Raspadita*/
@@ -1387,7 +1447,13 @@ svg {
         border: .2rem solid var(--whitecolor);
     }
 
-    .box-productos_descuentos .text h1 {
+    .container-swiper .box-productos_descuentos .img-promocion {
+        width: 33%;
+        z-index: 2500;
+    }
+
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
         font-size: 2.7rem;
     }
 
@@ -1406,15 +1472,40 @@ svg {
     .text .raspadita {
         font-size: 7rem;
     }
+
+    /*Banner asistencia Técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 3.3rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1.9rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .8rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.4rem;
+    }
 }
 
 @media(max-width:1160px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 48rem;
+    }
+
+
     .text-container_banner h1 {
         font-family: "News Cycle", sans-serifs;
         color: var(--whitecolor);
         font-size: 2.8rem;
         letter-spacing: .2rem;
-
     }
 
     .box-banner .btn_banner {
@@ -1424,6 +1515,12 @@ svg {
         outline: .3rem solid var(--whitecolor);
         top: 50%;
     }
+
+    /*Banner TOP*/
+    .contenido .box-banner {
+        height: 30rem;
+    }
+
 }
 
 @media (max-width:1100px) {
@@ -1456,12 +1553,7 @@ svg {
 
     /*Banner de TOP*/
     .contenido .box-banner {
-        position: relative;
-        margin: 0;
-        height: 30rem;
-        padding: 0;
-        width: 100%;
-        overflow: hidden;
+        height: 28rem;
     }
 
     .text-container_banner h1 {
@@ -1469,7 +1561,6 @@ svg {
         color: var(--whitecolor);
         font-size: 2.8rem;
         letter-spacing: .2rem;
-
     }
 
     .box-banner .btn_banner {
@@ -1482,7 +1573,7 @@ svg {
 
     /*Banner Raspadita*/
     .section-promociones {
-        height: 27rem;
+        height: 26rem;
         max-height: 70rem;
         width: 100%;
         position: relative;
@@ -1492,12 +1583,12 @@ svg {
         border: .2rem solid var(--whitecolor);
     }
 
-    .img-promocion {
+    .container-swiper .box-productos_descuentos .img-promocion {
         width: 35%;
         z-index: 3000;
     }
 
-    .box-productos_descuentos .text h1 {
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
         font-size: 2.4rem;
     }
 
@@ -1517,9 +1608,39 @@ svg {
         top: 40%;
         font-size: 5rem;
     }
+
+    /*Banner asistencia Técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 3rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1.6rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .8rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.4rem;
+    }
+
+    /*Contenedor de galería*/
+    .galeria-container {
+        height: 50rem;
+    }
 }
 
 @media (max-width:1024px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 45rem;
+    }
+
 
     /*Banner RUGO*/
     .box-productos_rugo {
@@ -1546,8 +1667,66 @@ svg {
         font-size: .8rem;
     }
 
-    /* BANNER SEGUNDO*/
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 24rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
 
+    .container-swiper .box-productos_descuentos .img-promocion {
+        width: 35%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 2.2rem;
+    }
+
+    .text h2 {
+        font-size: 2.3rem;
+    }
+
+    .text h3 {
+        font-size: 1rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 5.2rem;
+    }
+
+    /*Banner asistencia Técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 2.8rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .6rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.2rem;
+
+    }
+
+    /* BANNER SEGUNDO*/
+    /*
     .container-banner {
         height: 25rem;
     }
@@ -1555,12 +1734,420 @@ svg {
     .container-banner .info-click {
         font-size: 2rem;
     }
+        */
 }
 
-@media(max-width:853px) {}
+@media (max-width:950px) {
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 20rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .img-promocion {
+        width: 35%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 2.2rem;
+    }
+
+    .text h2 {
+        font-size: 2.3rem;
+    }
+
+    .text h3 {
+        font-size: 1rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 5.2rem;
+    }
+
+    /*Banner asistencia Técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 2.8rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .6rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.2rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 38rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 3rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:900px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 42rem;
+    }
+
+
+    /*Cinta con lema*/
+    .cinta-lema h1 {
+        font-size: 3rem;
+    }
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 20rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .img-promocion {
+        width: 35%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 2rem;
+    }
+
+    .text h2 {
+        font-size: 2.1rem;
+    }
+
+    .text h3 {
+        font-size: .9rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 5rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 37rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 2.7rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+
+    /*Cinta de direcciones*/
+
+    .direccion_tiendas {
+        height: 12rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 2.2rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: 1.2rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: 1.1rem;
+        color: var(--secondarycolor);
+    }
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 25rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-family: "News Cycle", sans-serifs;
+        color: var(--whitecolor);
+        font-size: 3rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.6rem;
+        outline: .3rem solid var(--whitecolor);
+        top: 50%;
+    }
+
+    /*Contenedor de galería*/
+    .galeria-container {
+        height: 40rem;
+    }
+
+    .galeria-container h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width:840px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 40rem;
+    }
+
+
+    /*Cinta con lema*/
+    .cinta-lema h1 {
+        font-size: 2.8rem;
+    }
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 20rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .img-promocion {
+        width: 35%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.8rem;
+    }
+
+    .text h2 {
+        font-size: 1.9rem;
+    }
+
+    .text h3 {
+        font-size: .9rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 4.7rem;
+    }
+
+    /*Banner asistencia Técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .6rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width:800px) {
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 20rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .container-swiper .box-productos_descuentos .img-promocion {
+        width: 40%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .text h2 {
+        font-size: 1.7rem;
+    }
+
+    .text h3 {
+        font-size: .9rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 4.7rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 35rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        width: 60%;
+    }
+
+    .slide-rugo .text-rugo_slide {
+        height: 5rem;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 2.3rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+
+    /*Cinta de direcciones*/
+
+    .direccion_tiendas {
+        height: 12rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 2rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: 1rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: .9rem;
+        color: var(--secondarycolor);
+    }
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 23rem;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text-container_banner h1 {
+        font-size: 2.8rem;
+        letter-spacing: .1rem;
+
+    }
+
+    .box-banner .btn_banner {
+        width: 9rem;
+        height: 9rem;
+        font-size: 1.4rem;
+        outline: .3rem solid var(--whitecolor);
+        top: 50%;
+    }
+}
 
 @media (max-width:720px) {
 
+    /*Portada de inicio*/
     .logo-container img {
         padding: 1rem;
         width: 20rem;
@@ -1571,7 +2158,7 @@ svg {
         font-size: 6rem;
         font-family: "Dancing Script", cursive;
         color: var(--secondarycolor);
-        -webkit-text-stroke: .8px var(--whitecolor);
+
         font-weight: 900;
     }
 
@@ -1579,12 +2166,274 @@ svg {
         margin-left: 2rem;
         font-size: 5rem;
         color: var(--rojo);
-        -webkit-text-stroke: 1px var(--whitecolor);
+
+    }
+
+    /*Cinta con lema*/
+    .cinta-lema h1 {
+        font-size: 2.5rem;
+    }
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 22rem;
+        max-height: 70rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: .2rem solid var(--whitecolor);
+    }
+
+    .container-swiper .box-productos_descuentos .img-promocion {
+        width: 44%;
+        z-index: 3000;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .text h2 {
+        font-size: 1.7rem;
+    }
+
+    .text h3 {
+        font-size: .9rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 4.4rem;
+    }
+
+    /*Banner asistencia técnica*/
+    .container-swiper .banner-asistencia .img-asistencia {
+        width: 20%;
+        right: 23%;
+        top: 60%;
+        rotate: -15deg;
+        z-index: 2988;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia2 {
+        width: 22%;
+        right: -1%;
+        top: 25%;
+        z-index: 2990;
+        rotate: 15deg;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia3 {
+        width: 17%;
+        right: 14%;
+        z-index: 2989;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia4 {
+        width: 13%;
+        right: 3%;
+        top: 75%;
+        z-index: 3000;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 35rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        width: 80%;
+    }
+
+    .slide-rugo .text-rugo_slide {
+        height: 4rem;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 2rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+
+    /*Cinta de direcciones*/
+    .direccion_tiendas .info_tienda:nth-child(2) {
+        border-left: .2rem solid var(--secondarycolor);
+        border-right: .2rem solid var(--secondarycolor);
+    }
+
+    .direccion_tiendas .info_tienda:nth-child(3) {
+
+        border-right: .2rem solid var(--secondarycolor);
+    }
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 20rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .text-container_banner h1 {
+        font-size: 2.8rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 9rem;
+        height: 9rem;
+        font-size: 1.4rem;
+        outline: .3rem solid var(--whitecolor);
+        top: 40%;
+    }
+
+    /*contenedor de galería*/
+    .galeria-container {
+        height: 30rem;
+    }
+}
+
+@media (max-width:700px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 35rem;
+    }
+
+
+    /*Banner Raspadita*/
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .text h2 {
+        font-size: 1.7rem;
+    }
+
+    .text h3 {
+        font-size: .9rem;
+    }
+
+    .text h4 {
+        font-size: .6rem;
+    }
+
+    .text .raspadita {
+        top: 30%;
+        font-size: 4.1rem;
+    }
+
+    /*Banner asistencia Técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        font-size: 2.1rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1.2rem;
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .6rem;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1.0rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 33rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        width: 45%;
+    }
+
+    .slide-rugo .text-rugo_slide {
+        height: 4rem;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 2rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .9rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .8rem;
+    }
+
+    /*contenedor de galeria*/
+    .galeria-container h1 {
+        font-size: 1.5rem;
     }
 
 }
 
+@media (max-width:639px) {
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 33rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        width: 25%;
+    }
+}
+
 @media (max-width:600px) {
+
+    /*Portada de inicio*/
+    .banner {
+        height: 32rem;
+    }
 
     .logo-container img {
         padding: 1rem;
@@ -1592,14 +2441,283 @@ svg {
         height: 100%;
     }
 
+    /*Banner Raspadita*/
+
+    .container-swiper .box-productos_descuentos .img-promocion {
+        width: 65%;
+        z-index: 3000;
+        top: 70%;
+        left: 30%;
+        rotate: 12deg;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text {
+
+        left: 0;
+
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 2.5rem;
+        color: var(--naranjatruper);
+        -webkit-text-stroke: .5px var(--whitecolor);
+
+    }
+
+    .text h2 {
+        font-size: 2.3rem;
+        color: var(--naranjatruper);
+        font-weight: 600;
+        -webkit-text-stroke: .45px var(--whitecolor);
+    }
+
+    .text h3 {
+        font-size: 1.2rem;
+        color: var(--naranjatruper);
+        font-weight: 800;
+        -webkit-text-stroke: .2px var(--textcolor);
+        background: white;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h4 {
+        font-size: .7rem;
+        left: 0;
+        background: var(--azulrugo);
+        width: auto;
+    }
+
+    .text .raspadita {
+        top: 40%;
+        font-size: 3.7rem;
+        left: 10%;
+        color: #ff8c00;
+        text-shadow: 9px 6px 3px var(--textcolor);
+        display: none;
+    }
+
+    /*Banner asistencia técnica*/
+    .container-swiper .banner-asistencia .img-asistencia {
+        width: 24%;
+        right: 24%;
+        top: 60%;
+        rotate: -15deg;
+        z-index: 2988;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia2 {
+        width: 26%;
+        right: -2%;
+        top: 25%;
+        z-index: 2990;
+        rotate: 15deg;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia3 {
+        width: 21%;
+        right: 15%;
+
+        z-index: 2989;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia4 {
+        width: 17%;
+        right: 4%;
+        top: 75%;
+        z-index: 3000;
+    }
+
+    .container-swiper .banner-asistencia .text h1 {
+        -webkit-text-stroke: .2px var(--textcolor);
+        font-size: 2rem;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1rem;
+    }
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .6rem;
+        left: 0;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 30rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        width: 20%;
+    }
+
+    /*Banner de TOP*/
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 18rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .text-container_banner h1 {
+        font-size: 2.1rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 7.5rem;
+        height: 7.5rem;
+        font-size: 1rem;
+        outline: .2rem solid var(--whitecolor);
+        top: 40%;
+    }
+
+    /*Contenedor de galería*/
+
+    .galeria-container {
+        height: 22rem;
+    }
+
+    .galeria-container .galeria {
+        display: flex;
+        height: 48vw;
+        background: var(--textcolor);
+    }
+
+    .galeria img {
+        max-width: 100%;
+        width: 30rem;
+        vertical-align: middle;
+        border: .1rem solid var(--textcolor);
+        box-sizing: border-box;
+        transition: opacity .2s;
+    }
 }
 
-@media (max-width:540px) {}
+@media (max-width:540px) {
+
+    /*Cinta con lema*/
+    .cinta-lema h1 {
+        font-size: 2.3rem;
+    }
+
+    /*Banner Raspadita*/
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 2.2rem;
+        color: var(--naranjatruper);
+        -webkit-text-stroke: .5px var(--whitecolor);
+    }
+
+    .text h2 {
+        font-size: 2.1rem;
+        color: var(--naranjatruper);
+        font-weight: 600;
+        -webkit-text-stroke: .45px var(--whitecolor);
+    }
+
+    .text h3 {
+        font-size: 1rem;
+        color: var(--naranjatruper);
+        font-weight: 800;
+        -webkit-text-stroke: .2px var(--textcolor);
+        background: white;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h4 {
+        font-size: .7rem;
+        left: 0;
+        background: var(--azulrugo);
+        width: auto;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 26rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 1.8rem;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        top: 52%;
+        width: 24%;
+    }
+
+    /*Cinta de direcciones*/
+    .direccion_tiendas {
+        height: 10rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 1.8rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: .8rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: .7rem;
+        color: var(--secondarycolor);
+    }
+
+    /*Banner de TOP*/
+
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 18rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .text-container_banner h1 {
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 6.8rem;
+        height: 6.8rem;
+        font-size: .9rem;
+        outline: .1rem solid var(--whitecolor);
+        top: 40%;
+    }
+}
 
 @media (max-width:500px) {
 
+    /*Portada de inicio*/
     .banner {
-        height: 25rem;
+        height: 30rem;
     }
 
     .logo-container {
@@ -1610,14 +2728,12 @@ svg {
         padding: 1rem;
         width: 16rem;
         height: 100%;
-
     }
 
     .texto-container h1 {
         font-size: 5rem;
         font-family: "Dancing Script", cursive;
         color: var(--secondarycolor);
-        -webkit-text-stroke: .8px var(--whitecolor);
         font-weight: 900;
     }
 
@@ -1628,33 +2744,612 @@ svg {
         -webkit-text-stroke: 1px var(--whitecolor);
     }
 
+    /*Banner asistencia técnica*/
+    .container-swiper .banner-asistencia .img-asistencia {
+        width: 28%;
+        z-index: 2988;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia2 {
+        width: 28%;
+        z-index: 2990;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia3 {
+        width: 27%;
+        z-index: 2989;
+    }
+
+    .container-swiper .banner-asistencia .img-asistencia4 {
+        width: 21%;
+        z-index: 3000;
+    }
+
+    .container-swiper .banner-asistencia .text {
+        left: 27%;
+        top: 50%;
+        border-radius: 2rem;
+    }
+
+    .container-swiper .banner-asistencia .text h1 {
+        -webkit-text-stroke: .2px var(--textcolor);
+        color: white;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: 1rem;
+        color: white;
+        -webkit-text-stroke: .2px var(--textcolor);
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .6rem;
+        color: white;
+        left: 0;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: 1rem;
+        color: white;
+    }
+
+    /*Banner RUGO*/
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 1.6rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .7rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .7rem;
+    }
+
+    /*Banner de TOP*/
+
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 14rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .box-banner .img_banner {
+        position: absolute;
+        width: 50%;
+    }
+
+
+    .text-container_banner h1 {
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 6.8rem;
+        height: 6.8rem;
+        font-size: .9rem;
+        outline: .1rem solid var(--whitecolor);
+        top: 40%;
+    }
+
+    /*Contenedor de galería*/
+
+    .galeria-container {
+        height: 16rem;
+    }
 }
 
-@media (max-width:500px) {
+@media (max-width:450px) {
+
+    /*Cinta con lema*/
+    .cinta-lema h1 {
+        font-size: 2.1rem;
+    }
+
+    /*Banner Raspadita*/
+
+    .section-promociones {
+        height: 20rem;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 2rem;
+        color: var(--naranjatruper);
+        -webkit-text-stroke: .5px var(--whitecolor);
+    }
+
+    .text h2 {
+        font-size: 2rem;
+        color: var(--naranjatruper);
+        font-weight: 600;
+        -webkit-text-stroke: .45px var(--whitecolor);
+    }
+
+    .text h3 {
+        font-size: .8rem;
+        color: var(--naranjatruper);
+        font-weight: 800;
+        -webkit-text-stroke: .2px var(--textcolor);
+        background: white;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h4 {
+        font-size: .5rem;
+        left: 0;
+        background: var(--azulrugo);
+        width: auto;
+    }
+
+    /*Banner asistencia técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        -webkit-text-stroke: .2px var(--textcolor);
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: .9rem;
+        color: white;
+        -webkit-text-stroke: .2px var(--textcolor);
+    }
 
 
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .5rem;
+        color: white;
+        left: 0;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: .8rem;
+        color: white;
+    }
+
+    /*Banner RUGO*/
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 1.4rem;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        top: 52%;
+        width: 22%;
+    }
+
+    /*Cinta de direcciones*/
+    .direccion_tiendas {
+        height: 8rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 1.6rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: .7rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: .6rem;
+        color: var(--secondarycolor);
+    }
+
+    .direccion_tiendas .info_tienda:nth-child(2) {
+        border-left: .1rem solid var(--secondarycolor);
+        border-right: .1rem solid var(--secondarycolor);
+    }
+
+    .direccion_tiendas .info_tienda:nth-child(3) {
+
+        border-right: .1rem solid var(--secondarycolor);
+    }
+
+    /*Banner de TOP*/
+
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 14rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .text-container_banner h1 {
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 6rem;
+        height: 6rem;
+        font-size: .8rem;
+        outline: .1rem solid var(--whitecolor);
+        top: 50%;
+    }
+
+    /*contenedor de galeria*/
+    .galeria-container h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:400px) {
+    /*Cinta de direcciones*/
+    .direccion_tiendas {
+        height: 7.5rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 1.5rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: .6rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: .5rem;
+        color: var(--secondarycolor);
+    }
+}
+
+@media (max-width:380px) {
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 17rem;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.8rem;
+        color: var(--naranjatruper);
+        -webkit-text-stroke: .4px var(--whitecolor);
+    }
+
+    .text h2 {
+        font-size: 1.8rem;
+        color: var(--naranjatruper);
+        font-weight: 600;
+        -webkit-text-stroke: .4px var(--whitecolor);
+    }
+
+    .text h3 {
+        font-size: .8rem;
+        color: var(--naranjatruper);
+        font-weight: 800;
+        -webkit-text-stroke: .2px var(--textcolor);
+        background: white;
+    }
+
+    /*Banner asistencia técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        -webkit-text-stroke: .2px var(--textcolor);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: .7rem;
+        color: white;
+        -webkit-text-stroke: .2px var(--textcolor);
+    }
+
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .5rem;
+        color: white;
+        left: 0;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: .8rem;
+        color: white;
+    }
+
+    /*Banner RUGO*/
+
+    .box-productos_rugo .text-rugo h1 {
+        font-size: 1.2rem;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        top: 53%;
+        width: 22%;
+    }
+
+    /*Cinta de direcciones*/
+    .direccion_tiendas {
+        height: 7rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 1.4rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: .5rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: .4rem;
+        color: var(--secondarycolor);
+    }
+
+    /*Banner de TOP*/
+
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 12rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .box-banner .img_banner {
+        position: absolute;
+        width: 53%;
+    }
+
+
+    .text-container_banner h1 {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 5.7rem;
+        height: 5.7rem;
+        font-size: .8rem;
+        outline: .1rem solid var(--whitecolor);
+        top: 50%;
+    }
+
+    /*Contenedor de galería*/
+
+    .galeria-container {
+        height: 13rem;
+    }
+}
+
+@media (max-width:350px) {
+
+    /*Portada de inicio*/
     .banner {
-        height: 45rem;
+        height: 30rem;
+    }
+
+    .logo-container {
+        left: 45%;
     }
 
     .logo-container img {
         padding: 1rem;
-        width: 16rem;
+        width: 14rem;
         height: 100%;
     }
 
     .texto-container h1 {
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-family: "Dancing Script", cursive;
         color: var(--secondarycolor);
-        -webkit-text-stroke: .8px var(--whitecolor);
         font-weight: 900;
+        -webkit-text-stroke: .5px var(--whitecolor);
     }
 
     .texto-container span {
         margin-left: 2rem;
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--rojo);
-        -webkit-text-stroke: 1px var(--whitecolor);
+        -webkit-text-stroke: .5px var(--whitecolor);
+    }
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 17rem;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.5rem;
+        color: var(--naranjatruper);
+        -webkit-text-stroke: .2px var(--whitecolor);
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+        color: var(--naranjatruper);
+        font-weight: 600;
+        -webkit-text-stroke: .2px var(--whitecolor);
+    }
+
+    .text h3 {
+        font-size: .6rem;
+        color: var(--naranjatruper);
+        font-weight: 800;
+        -webkit-text-stroke: .2px var(--textcolor);
+        background: white;
+    }
+
+    /*Banner asistencia técnica*/
+
+    .container-swiper .banner-asistencia .text h1 {
+        -webkit-text-stroke: .2px var(--textcolor);
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .container-swiper .banner-asistencia .text h2 {
+        font-size: .5rem;
+        color: white;
+        -webkit-text-stroke: .2px var(--textcolor);
+    }
+
+    .container-swiper .banner-asistencia .text h4 {
+        font-size: .5rem;
+        color: white;
+        left: 0;
+    }
+
+    .container-swiper .banner-asistencia .text span {
+        font-size: .8rem;
+        color: white;
+    }
+
+    /*Banner RUGO*/
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        top: 52%;
+        width: 25%;
+    }
+
+    .slide-rugo .text-rugo_slide {
+        height: 3rem;
+    }
+
+    .slide-rugo .text-rugo_slide h2 {
+        font-size: .5rem;
+    }
+
+    .slide-rugo .text-rugo_slide a {
+        font-size: .5rem;
+    }
+
+    /*Banner de TOP*/
+
+    .contenido .box-banner {
+        position: relative;
+        margin: 0;
+        height: 12rem;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    .box-banner .img_banner {
+        position: absolute;
+        width: 55%;
+        left: 75%;
+    }
+
+    .text-container_banner h1 {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-banner .btn_banner {
+        width: 5rem;
+        height: 5rem;
+        font-size: .7rem;
+        outline: .1rem solid var(--whitecolor);
+        top: 50%;
+    }
+
+    /*Contenedor de galería*/
+
+    .galeria-container {
+        height: 11rem;
+    }
+}
+
+@media (max-width:320px) {
+
+    /*Banner Raspadita*/
+    .section-promociones {
+        height: 15rem;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h1 {
+        font-size: 1.3rem;
+        color: var(--naranjatruper);
+        -webkit-text-stroke: .15px var(--whitecolor);
+    }
+
+    .text h2 {
+        font-size: 1.3rem;
+        color: var(--naranjatruper);
+        font-weight: 600;
+        -webkit-text-stroke: .15px var(--whitecolor);
+    }
+
+    .text h3 {
+        font-size: .6rem;
+        color: var(--naranjatruper);
+        font-weight: 800;
+        -webkit-text-stroke: .2px var(--textcolor);
+        background: white;
+    }
+
+    .section-promociones .container-swiper .box-productos_descuentos .text h4 {
+        font-size: .45rem;
+    }
+
+    /*Banner RUGO*/
+    .box-productos_rugo {
+        margin: 0;
+        width: 100%;
+        height: 22rem;
+        background-image: url('/src/Inicio/Portada RUGO.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 900;
+        overflow: hidden;
+    }
+
+    .box-productos_rugo .swiper-rugo {
+        position: relative;
+        top: 54%;
+        width: 28%;
+    }
+
+    .slide-rugo .text-rugo_slide {
+        height: 2.5rem;
+    }
+
+    /*Cinta de direcciones*/
+    .direccion_tiendas {
+        height: 7rem;
+    }
+
+    .direccion_tiendas .info_tienda i {
+        font-size: 1.2rem;
+        color: var(--alternativecolor);
+    }
+
+    .direccion_tiendas .info_tienda h1 {
+        font-size: .4rem;
+        color: var(--rojo);
+    }
+
+    .direccion_tiendas .info_tienda h2 {
+        font-size: .3rem;
+        color: var(--secondarycolor);
     }
 }
