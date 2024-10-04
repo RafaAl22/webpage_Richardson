@@ -36,10 +36,11 @@
     text-align: center;
     justify-content: center;
 }
-.tags:hover{
-    -webkit-box-shadow: inset 0px -91px 77px -71px rgba(138,136,138,1);
-    -moz-box-shadow: inset 0px -91px 77px -71px rgba(138,136,138,1);
-    box-shadow: inset 0px -91px 77px -71px rgba(138,136,138,1);
+
+.tags:hover {
+    -webkit-box-shadow: inset 0px -91px 77px -71px rgba(138, 136, 138, 1);
+    -moz-box-shadow: inset 0px -91px 77px -71px rgba(138, 136, 138, 1);
+    box-shadow: inset 0px -91px 77px -71px rgba(138, 136, 138, 1);
 }
 
 .seleccion {
@@ -60,7 +61,7 @@
 .pregunta-header {
     display: flex;
     text-align: center;
-    filter: drop-shadow( 5px 5px 5px #0000009d);
+    filter: drop-shadow(5px 5px 5px #0000009d);
 }
 
 .pregunta-header i {
@@ -82,7 +83,7 @@
     font-size: 6rem;
     color: var(--textcolor);
     border-radius: 50%;
-    
+
 }
 
 .respuesta-container {
@@ -90,19 +91,19 @@
     justify-content: space-between;
     cursor: pointer;
     text-align: justify;
-    
+
 }
 
-.respuesta-container_1{
+.respuesta-container_1 {
     justify-content: space-between;
     display: flex;
     width: 100%;
-    
+
 }
 
 .respuesta-container a {
     transition: .3s ease;
-    
+
 }
 
 .encabezado {
@@ -141,14 +142,14 @@
     font-size: 2rem;
     color: var(--textcolor);
     font-weight: 600;
-    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
+    filter: drop-shadow(5px 5px 5px #0f0c3d9d);
 }
 
 .numeros-container .numeros-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--textcolor);
-    
+
 }
 
 .numeros-container {
@@ -160,7 +161,7 @@
     padding: 2rem;
 }
 
-.numeros-container .numeros-sucursal{
+.numeros-container .numeros-sucursal {
 
     display: block;
     justify-content: center;
@@ -196,7 +197,7 @@
 
 .respuesta-container-expandir .lista-numeros {
     margin-left: 2rem;
-    
+
 }
 
 /*Diseño responsive de página de información al usuario*/
@@ -214,7 +215,7 @@
 
 }
 
-@media(max-width:1300px){
+@media(max-width:1300px) {
     .informacion {
         margin-top: 6%;
         width: 100%;
@@ -229,12 +230,13 @@
         width: 100%;
         position: relative;
     }
+
     .encabezado {
         font-size: 2.3rem;
         color: var(--textcolor);
         font-weight: 500;
     }
-    
+
     .respuesta {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -242,10 +244,16 @@
         font-weight: 350;
         color: var(--textcolor);
     }
-    
+
 }
 
-@media(max-width:800px){
+@media(max-width:800px) {
+
+    .tags {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
     .informacion {
         margin-top: 12%;
         width: 100%;
@@ -262,7 +270,7 @@
         color: var(--textcolor);
         font-weight: 500;
     }
-    
+
     .respuesta {
         padding-top: 1.8rem;
         padding-bottom: 2rem;
@@ -272,7 +280,7 @@
     }
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
     .informacion {
         margin-top: 14%;
         width: 100%;
@@ -281,12 +289,17 @@
         padding-top: 1rem;
     }
 
-    .pregunta-box{
+    .pregunta-box {
         padding: 2rem;
     }
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
+
+    .tags {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
 
     .numeros-container {
         display: grid;
@@ -298,10 +311,10 @@
         padding: 2rem;
     }
 
-    .numeros-container .numeros-sucursal{
+    .numeros-container .numeros-sucursal {
 
         display: flex;
-        
+
     }
 
     .numeros-container .numeros-box {
@@ -313,7 +326,7 @@
         border-radius: 2rem;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         transition: .5s ease;
-        
+
     }
 
     .numeros-box .numeros {
@@ -326,20 +339,20 @@
         color: var(--textcolor);
         font-weight: 600;
     }
-    
+
     .numeros-container .numeros-box h3 {
         font-size: 1.5rem;
         font-weight: 500;
         color: var(--textcolor);
     }
-    
+
 
     .encabezado {
         font-size: 2rem;
         color: var(--textcolor);
         font-weight: 500;
     }
-    
+
     .respuesta {
         padding-top: 1.6rem;
         padding-bottom: 2rem;
@@ -349,7 +362,7 @@
     }
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .informacion {
         margin-top: 18%;
         width: 100%;
@@ -357,7 +370,7 @@
     }
 }
 
-@media (max-width:425px){
+@media (max-width:425px) {
     .informacion {
         margin-top: 22%;
         width: 100%;
@@ -369,20 +382,20 @@
         color: var(--textcolor);
         font-weight: 600;
     }
-    
+
     .numeros-container .numeros-box h3 {
         font-size: 1.5rem;
         font-weight: 500;
         color: var(--textcolor);
     }
-    
+
 
     .encabezado {
         font-size: 1.7rem;
         color: var(--textcolor);
         font-weight: 500;
     }
-    
+
     .respuesta {
         padding-top: 1.6rem;
         padding-bottom: 2rem;
@@ -398,8 +411,8 @@
     }
 }
 
-@media(max-width: 375px){
-    .pregunta-box{
+@media(max-width: 375px) {
+    .pregunta-box {
         padding: 3rem 1.3rem;
     }
 }

@@ -1,6 +1,6 @@
 @import url("colores.css");
 
-section {
+.section-indice {
     margin-top: 8rem;
     position: relative;
     padding: 2rem 7% 1rem;
@@ -95,6 +95,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #ec600b;
 }
 
 .section-pretul {
@@ -102,6 +103,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #ec600b;
 }
 
 .section-klintek {
@@ -109,6 +111,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #016e69;
 }
 
 .section-foset {
@@ -116,6 +119,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #006db2;
 }
 
 .section-hermex {
@@ -123,6 +127,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #920c27;
 }
 
 .section-volteck {
@@ -130,6 +135,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #253692;
 }
 
 .section-fiero {
@@ -137,6 +143,7 @@ section {
     background-position: center;
     background-size: cover;
     display: none;
+    background-color: #d3063e;
 }
 
 /*Responsive productos Truper*/
@@ -283,6 +290,10 @@ section {
 
 @media(max-width:375px){
 
+    .section-indice{
+        height: auto;
+        max-height: 250vh;
+    }
 
     .marcas-container .marcas-box:nth-child(1),
     .marcas-box:nth-child(2){

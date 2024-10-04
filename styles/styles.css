@@ -13,6 +13,42 @@
     scrollbar-gutter: stable;
 }
 
+/*Para barra de búsqueda*/
+
+.search-container{
+
+    display: flex;
+    border: .2rem solid var(--whitecolor);
+    width: auto;
+    position: absolute;
+    top: 25%;
+    right: 1%;
+    border-radius: 10rem;
+    padding: .5rem 1rem;
+    
+}
+
+.btn-search{
+    display: none;
+    border: 0;
+    outline: 0;
+    transition: .5s ease-in;
+    background: transparent;
+    color: var(--whitecolor);
+    
+}
+
+#icon-search,
+#icon-close{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--whitecolor);
+}
+
+#icon-close{
+    display: none;
+}
+
 /*para realizar boton flotante*/
 .btn-flotante i{
     border-radius: 50%;
@@ -103,7 +139,6 @@ p{
 
 section{
     min-height: 100vh;
-    
     margin-top: 8%;
 }
 

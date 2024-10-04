@@ -57,7 +57,7 @@ h1 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -80%);
-    padding: 1rem 0;
+    padding: 1rem .5rem;
     height: auto;
 }
 
@@ -66,6 +66,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
     color: var(--darkcolor);
+    flex-wrap: wrap;
 }
 
 
@@ -97,12 +98,12 @@ h1 {
     width: 97%;
     height: 100%;
     max-height: 45rem;
-    object-fit: contain;
+    object-fit: cover;
     right: 0;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 2rem;
     transition: .3s ease;
-    
+
 }
 
 
@@ -150,7 +151,7 @@ h1 {
     position: absolute;
     width: 100%;
     display: flex;
-    
+
 }
 
 .img-box .img-slide {
@@ -161,8 +162,8 @@ h1 {
     text-align: center;
     padding: 1rem;
     position: relative;
-    
-    
+
+
 }
 
 .img-container .img-slide img {
@@ -242,16 +243,16 @@ h1 {
     position: relative;
     justify-content: space-between;
     transition: .5s ease;
-    
+
     padding-left: 2rem;
 
 }
 
 .specs-container .specs-header:hover {
-    
+
     transition: .2s ease;
     cursor: pointer;
-    border-radius: 3rem;
+
 }
 
 .specs-container .specs-header:hover h1,
@@ -383,47 +384,47 @@ h1 {
 /*backgrounds para encabezados de productos según marca*/
 .hermex {
     background: var(--rojo);
-    border-radius: 3rem;
+
 }
 
 .yale {
     background: var(--amarillopretul);
-    border-radius: 3rem;
+
 }
 
 .volteck {
     background: var(--azulvolteck);
-    border-radius: 3rem;
+
 }
 
 .fiero {
     background: var(--rojo);
-    border-radius: 3rem;
+
 }
 
 .truper {
     background: var(--naranjatruper);
-    border-radius: 3rem;
+
 }
 
 .pretul {
     background: var(--textcolor);
-    border-radius: 3rem;
+
 }
 
 .klintek {
     background: var(--verdeklintek);
-    border-radius: 3rem;
+
 }
 
 .foset {
     background: var(--azulfoset);
-    border-radius: 3rem;
+
 }
 
-.rugo{
+.rugo {
     background: var(--azulrugo);
-    border-radius: 3rem;
+
 }
 
 
@@ -433,36 +434,16 @@ h1 {
 @media(max-width:1600px) {
 
     .detalle-container {
-        position: relative;
-        display: flex;
-        top: 5rem;
-        width: 100%;
         height: 65rem;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3rem;
-        border: .1rem solid var(--textcolor);
-        padding: 0;
     }
 
     .info-container h1 {
-
-
-        font-weight: 400;
         font-size: 2.8rem;
-        text-align: center;
-        color: var(--darkcolor);
     }
-
 
     .info-container ul li {
         font-size: 1.8rem;
-        text-align: left;
-        position: relative;
-
-        color: var(--darkcolor);
     }
-
 
     .info-container .img-info {
         max-height: 32rem;
@@ -471,188 +452,107 @@ h1 {
     .info-container .img-info img {
         width: 90%;
         height: 90%;
-        object-fit: cover;
-        right: 0;
-        transition: .5s ease;
     }
 
     .marca-container h2 {
-        background: var(--whitecolor);
-        color: var(--textcolor);
-
-        height: 10%;
-        padding: 1rem;
-        left: 1rem;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
         font-size: 2.8rem;
     }
 
     .specs-container .specs-header h1 {
         font-size: 2rem;
-        padding-top: .8rem;
-        position: relative;
-        font-weight: 450;
-        color: var(--textcolor);
     }
 
     .specs-container .specs h1 {
         font-size: 1.6rem;
-        font-weight: 600;
     }
 
     .specs-container .specs h2 {
         font-size: 1.6rem;
-        color: var(--textcolor);
     }
 
 }
 
 @media(max-width:1440px) {
     .detalle-container {
-        position: relative;
-        display: flex;
-        top: 5rem;
-        width: 100%;
         height: 60rem;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3rem;
-        border: .1rem solid var(--textcolor);
-        padding: 0;
     }
 
     .info-container h1 {
-        font-weight: 400;
         font-size: 2.5rem;
-        text-align: center;
-        color: var(--darkcolor);
     }
 
 
     .info-container ul li {
         font-size: 1.5rem;
-        text-align: left;
-        position: relative;
-
-        color: var(--darkcolor);
     }
 
 }
 
 @media (max-width:1250px) {
+
+    .info-container .info {
+        padding: 1rem 2rem;
+    }
+
     .detalle-container {
-        position: relative;
-        display: flex;
-        top: 5rem;
-        width: 100%;
         height: 55rem;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3rem;
-        border: .1rem solid var(--textcolor);
-        padding: 0;
     }
 
     .marca-container img {
         width: 30%;
-        position: relative;
-        background: var(--whitecolor);
-        border-radius: 2rem;
-        padding: 1rem;
-        right: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
 
     .info-container h1 {
-        font-weight: 400;
         font-size: 2.1rem;
-        text-align: center;
-        color: var(--darkcolor);
     }
 
 
     .info-container ul li {
-        font-size: 1.5rem;
-        text-align: left;
-        position: relative;
-
-        color: var(--darkcolor);
+        font-size: 1.4rem;
+        
     }
 
     .specs-container .specs-header h1 {
         font-size: 1.8rem;
-        padding-top: .8rem;
-        position: relative;
-        font-weight: 450;
-        color: var(--textcolor);
+        padding: auto;
     }
 
     .specs-container .specs h1 {
         font-size: 1.4rem;
-        font-weight: 600;
+        
     }
 
     .specs-container .specs h2 {
         font-size: 1.4rem;
-        color: var(--textcolor);
+        
     }
 }
 
 @media (max-width:1024px) {
     .detalle-container {
-        position: relative;
-        display: flex;
-        top: 5rem;
-        width: 100%;
         height: 50rem;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3rem;
-        border: .1rem solid var(--textcolor);
-        padding: 0;
     }
 
     .marca-container h2 {
-        background: var(--whitecolor);
-        color: var(--textcolor);
-
-        height: 10%;
-        padding: 1rem;
-        left: 1rem;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
         font-size: 2.5rem;
     }
 
     .info-container .info {
         width: 99%;
-        align-items: center;
-        display: block;
-        position: relative;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(.5rem);
-        border-radius: 3rem;
-        top: 45%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -80%);
-        padding: 1rem 0;
+        padding: 1rem;
     }
 
     .info-container h1 {
-        font-weight: 400;
         font-size: 1.8rem;
-        text-align: center;
-        color: var(--darkcolor);
     }
 
 
     .info-container ul li {
         font-size: 1.25rem;
-        text-align: left;
-        position: relative;
-
-        color: var(--darkcolor);
+        
     }
 
     .info-container .img-info {
@@ -674,53 +574,33 @@ h1 {
 
     .specs-container .specs-header h1 {
         font-size: 1.6rem;
-        padding-top: .8rem;
-        position: relative;
         font-weight: 450;
-        color: var(--textcolor);
     }
 
     .specs-container .specs {
-        width: 100%;
-        display: flex;
-        padding-right: 0;
-        padding-left: 2rem;
-        justify-content: space-between;
         height: 5.5rem;
-        border-bottom: .2rem solid var(--plata);
-        align-items: center;
     }
 
     .specs-container .specs h1 {
-        font-size: 1.2rem;
-        font-weight: 600;
+        font-size: 1.3rem;
     }
 
     .specs-container .specs h2 {
-        font-size: 1.2rem;
-        color: var(--textcolor);
+        font-size: 1.3rem;
     }
 
     .specs-container .specs-header i {
         font-size: 3.5rem;
-        color: var(--textcolor);
-        position: relative;
-        transition: .5s ease;
     }
 }
 
 @media (max-width:768px) {
     .detalle-container {
-        position: relative;
+        
         display: block;
         top: 5rem;
-        width: 100%;
         height: 120rem;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3rem;
-        border: .1rem solid var(--textcolor);
-        padding: 0;
+        
     }
 
     .img-container {
@@ -732,24 +612,12 @@ h1 {
     }
 
     .img-container .img-slide img {
-        width: 70%;
-        object-fit: cover;
-        border-radius: 2rem;
-        transition: 1.25s ease;
-        -webkit-transition: all .9s ease;
-        /* Safari y Chrome */
-        -moz-transition: all .9s ease;
-        /* Firefox */
-        -o-transition: all .9s ease;
-        /* IE 9 */
-        -ms-transition: all .9s ease;
-        /* Opera */
+        width: 68%;
+        
     }
 
     .marca-container {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
+        
         top: 1%;
     }
 
@@ -757,40 +625,25 @@ h1 {
     .info-container {
         width: 100%;
         height: 40%;
-        position: relative;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0;
         display: grid;
     }
 
     .info-container .info {
-        width: 100%;
-        align-items: center;
-        display: block;
-        position: relative;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(.5rem);
-        border-radius: 3rem;
-        top: 5%;
+        top: 1%;
         left: 50%;
         transform: translate(-50%);
-        padding: 1rem ;
+        padding: 1rem 2rem;
         height: 100%;
     }
 
     .info-container h1 {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 2rem;
-        text-align: center;
-        color: var(--darkcolor);
     }
-
 
     .info-container ul li {
         font-size: 1.5rem;
-        text-align: left;
-        position: relative;
-        color: var(--darkcolor);
     }
 
     .info-container .img-info {
@@ -799,8 +652,6 @@ h1 {
         display: grid;
         grid-template-columns: 45% 45%;
         column-gap: 1rem;
-        width: 100%;
-        overflow: visible;
         left: 50%;
         transform: translateX(-45%);
         top: 10%;
@@ -811,18 +662,14 @@ h1 {
         height: 100%;
         max-height: 45rem;
         object-fit: cover;
-
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        border-radius: 2rem;
-        transition: .3s ease;
+        
     }
 
     .detalle-producto .mas_info-container {
-        position: relative;
+        
         display: block;
         width: 100%;
         top: 6rem;
-
     }
 
     .detalle-producto .specs-container {
@@ -880,19 +727,17 @@ h1 {
     section {
         padding: 0;
         margin: 0;
+        
     }
 
     .detalle-container {
-        position: relative;
-        display: block;
         top: 0;
-        width: 100%;
         height: 120rem;
-        left: 51%;
-        transform: translateX(-49%);
-        border-radius: 0;
         border: none;
-        padding: 0;
+    }
+
+    .detalle-producto .specs-container {
+        padding: 1rem .5rem;
     }
 
 
@@ -901,23 +746,24 @@ h1 {
 @media (max-width:500px) {
 
     section {
+        
         padding: 0;
         margin: 0;
         overflow: hidden;
         overflow-y: visible;
+        scrollbar-width: none;
+        position: relative;
     }
 
     .detalle-container {
-        position: relative;
-        display: block;
-        top: 0;
         width: 100%;
         height: 110rem;
+        overflow-wrap: break-word;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 0;
         border: none;
-        padding: 0;
+        
     }
 
     .img-container .img-slide img {
@@ -937,7 +783,6 @@ h1 {
 
     .img-swiper .swiper-button-next {
         right: 1rem;
-
         position: absolute;
         color: var(--whitecolor);
     }
@@ -946,6 +791,15 @@ h1 {
         left: 1rem;
         position: absolute;
         color: var(--whitecolor);
+    }
+
+    .info-container .info {
+        padding: 1rem 2.5rem;
+        height: 100%;
+    }
+
+    .detalle-producto .specs-container {
+        padding: .5rem ;
     }
 
 }
@@ -961,6 +815,7 @@ h1 {
         transform: translateX(-50%);
         border-radius: 0;
         padding: 0;
+        
     }
 }
 
@@ -986,7 +841,6 @@ h1 {
 
     .img-swiper .swiper-button-next {
         right: .5rem;
-
         position: absolute;
         color: var(--whitecolor);
     }
@@ -998,5 +852,5 @@ h1 {
         bottom: 2rem;
         padding-top: 0;
         top: 0;
-    } 
+    }
 }

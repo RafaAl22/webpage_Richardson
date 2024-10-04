@@ -174,7 +174,8 @@
 
 @media(max-width:540px) {
     .categoria-section {
-        top: 15rem;
+        top: 10rem;
+        margin-bottom: 3rem;
     }
 
     .categoria-container {

@@ -471,7 +471,8 @@ p {
         height: 37rem;
         display: none;
     }
-    .container-footer{
+
+    .container-footer {
         border-top: 10px double #FFFFFF;
         height: 13rem;
     }
@@ -480,14 +481,17 @@ p {
         width: 100%;
         height: auto;
         position: absolute;
-        
-
     }
-    .socials-details{
+
+    .socials-details {
         position: absolute;
         margin-left: 10%;
         width: 50%;
         padding-top: 5%;
+    }
+
+    .container-footer .box-socials .nav-links{
+        display: none;
     }
 
     /*
@@ -523,9 +527,10 @@ p {
         color: var(--bgcolor);
         background: var(--secondarycolor);
     }
-    .socials-details{
+
+    .socials-details {
         position: absolute;
-        padding-top: 6% ;
+        padding-top: 6%;
         margin-left: 6%;
         width: 60%;
         transform: translate(50%);
