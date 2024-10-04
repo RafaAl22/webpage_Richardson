@@ -15,17 +15,27 @@
 
 /*Para barra de búsqueda*/
 
-.search-container{
+.search-box{
+    position: absolute;
+    top: 12%;
+    right:0 ;
+    margin: 0;
+    width: auto;
+    max-width: 13%;
 
+}
+
+.search-container{
     display: flex;
     border: .2rem solid var(--whitecolor);
     width: auto;
-    position: absolute;
+    position: relative;
     top: 25%;
     right: 1%;
     border-radius: 10rem;
     padding: .5rem 1rem;
-    
+    width: 100%;
+    justify-content: space-between;
 }
 
 .btn-search{
@@ -35,11 +45,15 @@
     transition: .5s ease-in;
     background: transparent;
     color: var(--whitecolor);
+    font-size: 1.5rem;
+    width: 85%;
+    padding: .2rem 1rem;
     
 }
 
 #icon-search,
 #icon-close{
+    width: 15%;
     font-size: 3rem;
     cursor: pointer;
     color: var(--whitecolor);
@@ -47,6 +61,26 @@
 
 #icon-close{
     display: none;
+}
+
+#resultado{
+    color: var(--whitecolor);
+    font-size: 1.5rem;
+    list-style: none;
+    height: 25rem;
+    overflow-y: auto;
+    scroll-behavior:smooth;
+    scrollbar-width: thin;
+}
+
+#resultado li{
+    border-bottom: .1rem solid var(--textcolor);
+    padding: .5rem 0;
+}
+
+#resultado a{
+    color: var(--whitecolor);
+    font-weight: 600;
 }
 
 /*para realizar boton flotante*/
