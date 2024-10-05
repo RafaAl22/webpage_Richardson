@@ -12,5 +12,7 @@ deployment:
     - /bin/cp informacion.html $DEPLOYPATH
     - /bin/cp marcas.html $DEPLOYPATH
     - /bin/cp nosotros.html $DEPLOYPATH
-    
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R detalle_productos $DEPLOYPATH
+    - /bin/cp -R categoria_productos $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R scripts $DEPLOYPATH
