@@ -16,7 +16,6 @@ btn_close.addEventListener('click', function () {
     buscar.value = '';
 })
 
-
 //Para filtrar cada producto
 const buscar = document.querySelector('#btn-search');
 const resultado = document.querySelector('#resultado');
@@ -304,31 +303,38 @@ const productos = [
 
 const filtrar = () => {
     resultado.setAttribute("style", "display:block")
-
     resultado.innerHTML = '';
-
     const texto = buscar.value.toLowerCase();
 
     for (let i of productos) {
         let producto = i.nombre.toLowerCase();
         if (producto.indexOf(texto) !== -1) {
             resultado.innerHTML += `
-                <li>${i.nombre} <a href=${i.url} target="_blank">Ver Producto</a></li>
+                <li>${i.nombre} <a href=${i.url} target="_blank"> Ver Producto</a></li>
             `
         }
-        
     }
 
     if (resultado.innerHTML === '') {
         resultado.innerHTML += `
-                <li>Producto no encontrado</li>
+                <li>No se encuentran coincidencias</li>
             `
     }
 
-    if(buscar.value == ''){
+    if (buscar.value == '') {
         resultado.setAttribute("style", "display:none")
     }
 }
+
+window.addEventListener("keyup", function (event) {
+    if (event.keyCode === 27) {
+        search_bar.setAttribute("style", "display:none");
+        btn_search.setAttribute("style", "display:block");
+        btn_close.setAttribute("style", "display:none");
+        resultado.setAttribute("style", "display:none");
+        buscar.value = '';
+    }
+});
 
 search_bar.addEventListener('keyup', filtrar);
 
