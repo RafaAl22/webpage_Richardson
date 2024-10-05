@@ -1,1 +1,3 @@
-ScrollReveal().reveal('.scroll_card', {interval: 100});
+ScrollReveal().reveal('.scroll_card', {interval: 25});
+
+ScrollReveal().reveal('.search-container', {interval: 100});
