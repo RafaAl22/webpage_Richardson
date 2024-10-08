@@ -4,17 +4,27 @@
     scrollbar-gutter: stable;
 }
 
-h1 {
-    margin-top: 7%;
-    font-size: 3.5rem;
-    font-weight: 700;
-    padding-bottom: 2rem;
-    color: var(--textcolor);
+body {
+    background-image: linear-gradient(to top, #080531, #0d204f, #13386f, #115290, #006db2);
+}
+
+.section-cat h1 {
+    position: relative;
+    font-size: 3.1rem;
     text-align: center;
+    font-weight: 600;
+    color: var(--textcolor);
+    top: -7rem;
     filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+    background: var(--whitecolor);
+    border-radius: 2rem;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .section-cat {
+    top: 7rem;
     position: relative;
     min-height: 100vh;
     padding: 0;
@@ -43,10 +53,11 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 2rem;
     display: block;
+    background: var(--whitecolor);
 }
 
 .cat-box:hover {
-    transition-duration: 700ms;
+    transition-duration: 500ms;
     -webkit-box-shadow: -1px 0px 9px 7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 0px 9px 7px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 0px 9px 7px rgba(0, 0, 0, 0.75);
@@ -102,20 +113,22 @@ h1 {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--textcolor);
-    border: .2rem solid var(--shadow-color);
     border-radius: 2rem;
     padding: .5rem;
     bottom: 10%;
-    background: var(--shadow-color);
+    background: var(--whitecolor);
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     transition: .3s ease;
+    border: .2rem solid var(--textcolor);
 }
 
 .info-container a:hover {
-    background: #ccc7c733;
+    background: var(--textcolor);
+    color: var(--whitecolor);
     transition: .3s ease;
+    border: .2rem solid var(--whitecolor);
 }
 
 /*Colores por marca*/
@@ -160,7 +173,7 @@ h1 {
 /*Responsive de productos de una categoría*/
 
 @media(max-width:1440px) {
-    h1 {
+    .section-cat h1 {
         font-size: 2.5rem;
     }
 
@@ -195,7 +208,7 @@ h1 {
 }
 
 @media(max-width:1160px) {
-    h1 {
+    .section-cat h1 {
         font-size: 1.8rem;
     }
 
@@ -434,7 +447,7 @@ h1 {
         margin-top: 28%;
     }
 
-    .cat-container{
+    .cat-container {
         bottom: 2rem;
     }
 

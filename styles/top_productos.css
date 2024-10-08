@@ -1,11 +1,13 @@
 @import url("colores.css");
 
-
+body{
+    background-image: linear-gradient(to top, #080531, #0d204f, #13386f, #115290, #006db2);
+}
 
 .section-top_products {
     padding: 0;
     overflow: hidden;
-
+    
 }
 
 .section-top_products h1 {
@@ -16,6 +18,13 @@
     margin-bottom: 6rem;
     font-weight: 600;
     color: var(--textcolor);
+    padding: .5rem ;
+    background: var(--whitecolor);
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    position: relative;
 }
 
 .producto-container {
@@ -117,6 +126,8 @@
     font-weight: 600;
     font-size: 1.9rem;
     filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+    background: var(--whitecolor);
+    border-radius: 1rem;
 }
 
 .tittle-container img {
@@ -126,7 +137,7 @@
 }
 
 .descripcion-container .feature-container {
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
     display: block;
     position: absolute;
@@ -169,6 +180,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     height: auto;
+    color: var(--whitecolor);
     padding-top: .8rem;
     filter: drop-shadow(2px 2px 2px #0f0c3d9d);
 }
@@ -180,7 +192,7 @@
     border-radius: 2rem;
     padding: .5rem;
     letter-spacing: normal;
-    background: transparent;
+    background: var(--whitecolor);
     margin: 0;
     position: relative;
     font-weight: 500;
@@ -194,6 +206,8 @@
 .btn:hover {
     background: var(--textcolor);
     color: var(--whitecolor);
+    border: solid .1rem var(--whitecolor);
+
 }
 
 .producto.bgtruper {
@@ -640,9 +654,9 @@
 @media(max-width:425px) {
 
     .section-top_products {
-        
+
         top: 5rem;
-        
+
     }
 
     .producto-container .producto {
@@ -677,7 +691,7 @@
         font-size: .7rem;
     }
 
-    
+
 }
 
 @media (max-width:350px) {
@@ -689,12 +703,12 @@
     .producto .img-producto {
         position: relative;
         border-radius: .5rem;
-        
+
         transform: translateX(-10%);
         transition: .3s ease-out;
     }
 
-    
+
 
     .feature-container ul li {
         font-size: .5rem;

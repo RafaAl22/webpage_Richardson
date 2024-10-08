@@ -1,5 +1,9 @@
 @import url(/styles/colores.css);
 
+body{
+    background-image: linear-gradient(to top, #080531, #0d204f, #13386f, #115290, #006db2);
+}
+
 .categoria-section h1 {
     position: relative;
     font-size: 3.1rem;
@@ -8,6 +12,8 @@
     color: var(--textcolor);
     top: -7rem;
     filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
+    background: var(--whitecolor);
+    border-radius: 2rem;
 }
 
 .categoria-section {
@@ -15,6 +21,7 @@
     position: relative;
     top: 5.5rem;
     padding: 2rem 7% 1rem;
+    
 }
 
 .categoria-container {
@@ -25,11 +32,11 @@
     column-gap: 1.5rem;
     row-gap: 6rem;
     justify-content: center;
-
+    
 }
 
-
 .categoria {
+    background: var(--whitecolor);
     width: auto;
     height: 22rem;
     justify-content: center;
@@ -37,12 +44,12 @@
     border-radius: 2rem;
     transition: .3s ease;
     position: relative;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(24, 24, 24) 0px 20px 30px -10px;
 }
 
 .categoria:hover {
     transition: .1s ease;
-    background: var(--shadow-color);
+    background: #d8d8d8;
 }
 
 .categoria:hover img {
@@ -75,7 +82,7 @@
     color: var(--textcolor);
     font-weight: 600;
     cursor: pointer;
-    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
+    
 }
 
 
@@ -176,6 +183,7 @@
     .categoria-section {
         top: 10rem;
         margin-bottom: 3rem;
+        
     }
 
     .categoria-container {
@@ -187,6 +195,7 @@
         grid-template-columns: 50% 50%;
         column-gap: 1.5rem;
         row-gap: 6rem;
+        
     }
 
     .categoria {

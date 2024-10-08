@@ -158,6 +158,11 @@ iframe {
     color: #fff;
 }
 
+.cards-box:nth-last-child(1){
+    left: 100%;
+    transform: translateX(-50%);
+}
+
 .cards-box {
     border: solid var(--shadow-color);
     margin: 0;
