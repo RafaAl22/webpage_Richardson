@@ -42,3 +42,26 @@ menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
 };
+
+
+//Transiciones con scroll reveal
+
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+});
+
+ScrollReveal().reveal('.cat-box', {scale: .95, duration: 500});
+ScrollReveal().reveal('.scroll_card', {interval: 45, duration: 500});
+ScrollReveal().reveal('.pregunta-box, .valores-box', {scale: .95, duration:1100});
+ScrollReveal().reveal('.tags, .nosotros h1', {origin: 'left', duration:1000});
+ScrollReveal().reveal('.marcas, .cards-box, .logo-img', {scale: .45, duration: 1000,});
+ScrollReveal().reveal('.texto-container, .info-container span', { origin: 'bottom', duration: 2100,});
+ScrollReveal().reveal('.cinta-lema, .text-rugo h1, .footer img, .texts h1', { origin: 'left', duration: 2500,});
+ScrollReveal().reveal('.img_banner, .info-container h2', { origin: 'right', duration: 2000,});
+ScrollReveal().reveal('.search-box', { origin: 'top', duration: 3500,});
+ScrollReveal().reveal('.section-cat h1, .categoria-section h1, .text-container_banner', { origin: 'top', duration: 500,});
+ScrollReveal().reveal('.item', {origin: 'right', duration:2000});
+
+
+

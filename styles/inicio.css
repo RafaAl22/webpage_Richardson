@@ -681,6 +681,7 @@ div {
     justify-content: center;
     position: relative;
     align-items: center;
+    overflow: hidden;
 }
 
 .cinta-lema img {
@@ -832,7 +833,7 @@ div {
     position: relative;
 }
 
-.direccion_tiendas .info_tienda:nth-child(1){
+.direccion_tiendas .info_tienda:nth-child(1) {
     border-left: .3rem solid var(--secondarycolor);
 }
 
@@ -2281,6 +2282,11 @@ svg {
     }
 
     /*Cinta de direcciones*/
+
+    .direccion_tiendas .info_tienda:nth-child(1) {
+        border-left: .2rem solid var(--secondarycolor);
+    }
+
     .direccion_tiendas .info_tienda:nth-child(2) {
         border-left: .2rem solid var(--secondarycolor);
         border-right: .2rem solid var(--secondarycolor);
@@ -2952,6 +2958,10 @@ svg {
         color: var(--secondarycolor);
     }
 
+    .direccion_tiendas .info_tienda:nth-child(1){
+        border-left: .1rem solid var(--secondarycolor);
+    }
+
     .direccion_tiendas .info_tienda:nth-child(2) {
         border-left: .1rem solid var(--secondarycolor);
         border-right: .1rem solid var(--secondarycolor);
@@ -2994,6 +3004,7 @@ svg {
 }
 
 @media (max-width:400px) {
+
     /*Cinta de direcciones*/
     .direccion_tiendas {
         height: 7.5rem;

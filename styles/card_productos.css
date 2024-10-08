@@ -30,7 +30,7 @@
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 .card-container {
@@ -561,7 +561,7 @@
     .section-fiero,
     .section-volteck,
     .section-klintek {
-        
+
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -720,7 +720,7 @@
         bottom: 0;
         position: relative;
         align-items: center;
-        
+
     }
 
     .card-container .card-wrapper {
@@ -729,6 +729,7 @@
         transform: translate(-50%, -50%);
         width: 85%;
         margin: 0;
+        
     }
 
 }
@@ -772,6 +773,14 @@
     }
 }
 
+@media(max-width:400px) {
+    .card-container .card-wrapper .card-box{
+        
+        
+        overflow: visible;
+    }
+}
+
 @media (max-width:450px) {
 
     .section-foset,
@@ -783,6 +792,8 @@
     .section-klintek {
         top: 5rem;
     }
+
+    
 }
 
 @media (max-width:350px) {

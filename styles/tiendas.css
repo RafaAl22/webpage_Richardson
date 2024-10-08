@@ -43,7 +43,7 @@
     border-radius: 2rem;
     position: relative;
     display: block;
-    
+
     height: auto;
 
 }
@@ -158,7 +158,7 @@ iframe {
     color: #fff;
 }
 
-.cards-box:nth-last-child(1){
+.cards-box:nth-last-child(1) {
     left: 100%;
     transform: translateX(-50%);
 }
@@ -291,7 +291,7 @@ iframe {
     left: 240%;
 }
 
-.nav_transparente{
+.nav_transparente {
     background: transparent;
     color: var(--whitecolor);
 }
@@ -301,11 +301,11 @@ iframe {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.header.sticky .navbar a{
+.header.sticky .navbar a {
     color: var(--whitecolor);
 }
 
-.footer{
+.footer {
     top: 0;
 }
 
@@ -644,7 +644,7 @@ iframe {
 @media (max-width:900px) {
     .cards-container {
         display: grid;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 45% 45%;
         row-gap: 3rem;
         column-gap: 5rem;
         width: 100%;
@@ -654,7 +654,7 @@ iframe {
 
     .img-box {
         width: 100%;
-        height: 25rem;
+        height: 27rem;
         border-radius: 25%;
         position: absolute;
         top: 50%;
@@ -679,7 +679,7 @@ iframe {
 
     .cards-box .cards {
         width: 100%;
-        height: 25rem;
+        height: 27rem;
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(.5rem);
         display: flex;
@@ -765,7 +765,6 @@ iframe {
         transform: translateY(-80%);
     }
 
-
     .tiendas-container .tiendas-box {
         display: block;
         margin: 0;
@@ -774,7 +773,7 @@ iframe {
         width: 100%;
         position: relative;
         justify-content: center;
-        top: 7rem;
+        top: 3rem;
     }
 
     .tiendas-box .tiendas {
@@ -790,7 +789,6 @@ iframe {
         overflow: visible;
         padding: 0;
     }
-
 
     .tiendas .img-container {
         margin: 0;
@@ -875,6 +873,14 @@ iframe {
 }
 
 @media (max-width:700px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        row-gap: 5rem;
+        column-gap: 1.5rem;
+    }
+
     .cards-box .cards {
         width: 100%;
         height: 19rem;
@@ -943,6 +949,14 @@ iframe {
 }
 
 @media (max-width:600px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 5rem;
+        column-gap: 1.5rem;
+    }
+
     .cards-box .cards {
         width: 100%;
         height: 17rem;
@@ -1010,7 +1024,7 @@ iframe {
         width: 100%;
         position: relative;
         justify-content: center;
-        top: 8rem;
+        top: 3rem;
     }
 }
 
@@ -1027,7 +1041,7 @@ iframe {
 
     .cards-box .cards {
         width: 100%;
-        height: 15rem;
+        height: 20rem;
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(.5rem);
         display: block;
@@ -1046,10 +1060,15 @@ iframe {
         position: relative;
     }
 
+    .cards-box:nth-last-child(1) {
+        left: 50%;
+
+    }
+
 
     .img-box {
         width: 100%;
-        height: 15rem;
+        height: 20rem;
         border-radius: 3rem;
         position: absolute;
         top: 50%;

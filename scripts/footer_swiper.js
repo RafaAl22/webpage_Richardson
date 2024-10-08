@@ -6,7 +6,10 @@ var swiper2 = new Swiper(".mySwiper2", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    loop: false,
+    loop: true,
     slidesPerView: 1,
+    autoplay: {
+        delay: 4000,
+    },
 });
 

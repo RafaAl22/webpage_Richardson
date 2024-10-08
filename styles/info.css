@@ -155,7 +155,7 @@
 .numeros-container {
     display: grid;
     padding-bottom: 3rem;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: center;
     column-gap: 2rem;
     padding: 2rem;

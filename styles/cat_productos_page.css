@@ -205,16 +205,22 @@ body {
         height: auto;
         padding: 1rem;
     }
+
+    .section-cat h1 {
+        
+        top: -5rem;
+        
+    }
+    
 }
 
 @media(max-width:1160px) {
     .section-cat h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        top: -4rem;
     }
 
-    .section-cat {
-        margin-top: 8%;
-    }
+    
 
     .info-container h2 {
         font-size: 1.8rem;
@@ -242,8 +248,10 @@ body {
 }
 
 @media (max-width:900px) {
-    .section-cat {
-        margin-top: 10%;
+
+    .section-cat h1 {
+        
+        top: -3rem;
     }
 
     .info-container h2 {
@@ -262,6 +270,12 @@ body {
 }
 
 @media (max-width:800px) {
+
+    .section-cat h1 {
+        
+        top: -2rem;
+    }
+
     .cat-box .marca-container {
         position: absolute;
         width: 6.5rem;
@@ -286,8 +300,9 @@ body {
 }
 
 @media (max-width:700px) {
-    .section-cat {
-        margin-top: 12%;
+    .section-cat h1 {
+        
+        top: -1rem;
     }
 
     .cat-container {
@@ -318,10 +333,6 @@ body {
 }
 
 @media(max-width:600px) {
-    .section-cat {
-        margin-top: 14%;
-
-    }
 
     .cat-box {
         position: relative;
@@ -368,15 +379,47 @@ body {
     }
 }
 
+@media(max-width:500px){
+    .info-container h2 {
+        font-size: 1.4rem;
+        
+    }
+
+    .cat-box .info-container a {
+        font-size: 1.1rem;
+        
+
+    }
+}
+
 @media(max-width:480px) {
-    .section-cat {
-        margin-top: 22%;
+    .section-cat h1 {
+        top: -.5rem;
+    }
+
+    .info-container h2 {
+        font-size: 1.3rem;
+        
+    }
+
+}
+
+@media(max-width:400px){
+    .info-container h2 {
+        font-size: 1.2rem;
+        
+    }
+
+    .cat-box .info-container a {
+        font-size: .8rem;
+        font-weight: 550;
+        
     }
 }
 
 @media(max-width:375px) {
     .section-cat {
-        margin-top: 25%;
+        margin-top: 5%;
     }
 
     .cat-container {
@@ -413,17 +456,25 @@ body {
         position: relative;
     }
 
-    .info-container h2 {
-        font-size: 1.1rem;
-        font-weight: 550;
-        color: var(--textcolor);
+    .info-container{
+        padding: 0;
     }
 
-    .cat-box .info-container a {
+    .info-container h2 {
+        width: 100%;
         font-size: 1rem;
         font-weight: 500;
         color: var(--textcolor);
-        bottom: .3rem;
+        margin: 0;
+        
+        
+    }
+
+    .cat-box .info-container a {
+        font-size: .9rem;
+        font-weight: 550;
+        color: var(--textcolor);
+        bottom: .2rem;
     }
 
     .info-container {
@@ -444,7 +495,7 @@ body {
 @media (max-width:320px) {
 
     .section-cat {
-        margin-top: 28%;
+        margin-top: 8%;
     }
 
     .cat-container {
