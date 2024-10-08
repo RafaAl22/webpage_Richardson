@@ -242,6 +242,16 @@
         left: 50%;
     }
 
+    .section-foset,
+    .section-truper,
+    .section-pretul,
+    .section-hermex,
+    .section-fiero,
+    .section-volteck,
+    .section-klintek {
+        top: 8rem;
+    }
+
 }
 
 @media (max-width:1600px) {
@@ -303,15 +313,7 @@
         text-align: center;
     }
 
-    .section-foset,
-    .section-truper,
-    .section-pretul,
-    .section-hermex,
-    .section-fiero,
-    .section-volteck,
-    .section-klintek {
-        top: 8rem;
-    }
+    
 
 
 }
