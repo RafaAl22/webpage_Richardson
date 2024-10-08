@@ -811,7 +811,7 @@ div {
 .direccion_tiendas {
     padding: 1rem 0;
     display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 30% 30% 30%;
     height: 18rem;
     width: 90%;
     column-gap: 1rem;
@@ -830,6 +830,10 @@ div {
     text-align: center;
     height: 100%;
     position: relative;
+}
+
+.direccion_tiendas .info_tienda:nth-child(1){
+    border-left: .3rem solid var(--secondarycolor);
 }
 
 .direccion_tiendas .info_tienda:nth-child(2) {
