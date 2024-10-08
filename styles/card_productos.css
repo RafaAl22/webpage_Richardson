@@ -303,7 +303,15 @@
         text-align: center;
     }
 
-
+    .section-foset,
+    .section-truper,
+    .section-pretul,
+    .section-hermex,
+    .section-fiero,
+    .section-volteck,
+    .section-klintek {
+        top: 8rem;
+    }
 
 
 }
