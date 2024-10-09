@@ -24,7 +24,7 @@
     }
 }
 
-.flecha {
+.flecha_text {
     bottom: 112px;
     right: 67px;
     position: fixed;
@@ -211,5 +211,30 @@ opacity: 0;
     .btn_sur i,
     .btn_leon i{
         font-size: 1.7rem;
+    }
+    .consultar_texto{
+    
+        font-size: 15px;
+        right: 20px;
+        bottom: 110px;
+
+
+    }
+    .flecha_text {
+        bottom: 103px;
+        right: 43px;
+
+    }
+}
+@media (max-width: 320px){
+    .consultar_texto{
+    
+        font-size: 12px;
+        right: 20px;
+        bottom: 110px;
+    }
+    .flecha_text {
+        bottom: 103px;
+        right: 42px;
     }
 }

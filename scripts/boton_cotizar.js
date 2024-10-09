@@ -1,6 +1,6 @@
 /*Botón para cotizar a través de Whatsapp*/
-var flecha = document.getElementById('flecha');
-var text = document.getElementById('consultar_text');
+var flecha_text = document.getElementById('flecha_text');
+var consultar_text = document.getElementById('consultar_text');
 var codigo = document.getElementById('codigo');
 var encabezado = document.getElementById('encabezado');
 var btn_sur = document.getElementById('abrir_sur');
@@ -23,8 +23,8 @@ btn_whatsapp.addEventListener('click', function () {
     btn_norte.classList.remove('ocultar_btn');
     btn_leon.classList.remove('ocultar_btn');
     btn_cerrar.classList.remove('ocultar');
-    text.classList.add('ocultar');
-    flecha.classList.add('ocultar');
+    consultar_text.classList.add('ocultar');
+    flecha_text.classList.add('ocultar');
     btn_whatsapp.classList.add('ocultar');
 
 });
