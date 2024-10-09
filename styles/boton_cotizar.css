@@ -1,9 +1,9 @@
 @import url(/styles/colores.css);
 
-.consultar_texto{
+.consultar_texto {
     position: fixed;
-    font-size: 20px;
-    right: 40px;
+    font-size:2rem;
+    right: 3%;
     bottom: 120px;
     padding-left: 10px;
     padding-right: 10px;
@@ -12,27 +12,30 @@
     border-radius: 10px;
     animation: agrandar 3s infinite ease-in-out;
 }
-@keyframes agrandar{
-    0%{
+
+@keyframes agrandar {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
 .flecha {
     bottom: 112px;
-    right: 67px;
+    right: 5%;
     position: fixed;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 9px solid black;
 
-  }
+}
 
 .btn_whatsapp i,
 .btn_cerrar i {
@@ -148,15 +151,15 @@
     box-shadow: 0px 15px 20px rgb(0, 159, 154);
 }
 
-.ocultar_texto{
-opacity: 0;
+.ocultar_texto {
+    opacity: 0;
 }
 
 .ocultar_btn {
     opacity: 0;
     visibility: hidden;
     transition: all 200ms ease 10ms;
-    ;
+    
 }
 
 @media (max-width:768px) {
@@ -187,7 +190,7 @@ opacity: 0;
 
     .btn_norte i,
     .btn_sur i,
-    .btn_leon i{
+    .btn_leon i {
         font-size: 1.8rem;
     }
 }
@@ -209,7 +212,7 @@ opacity: 0;
 
     .btn_norte i,
     .btn_sur i,
-    .btn_leon i{
+    .btn_leon i {
         font-size: 1.7rem;
     }
 }
