@@ -1,7 +1,7 @@
 @import url(/styles/colores.css);
 
 body{
-    background-image: linear-gradient(to top, #080531, #0d204f, #13386f, #115290, #006db2);
+    background-image: linear-gradient(to bottom, #006db2, #0d5595, #0f3f78, #0b2a5c, #041741);
 }
 
 .categoria-section h1 {

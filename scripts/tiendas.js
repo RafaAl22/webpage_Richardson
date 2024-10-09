@@ -3,7 +3,7 @@
 var obj1 = document.getElementById("norte");
 var obj2 = document.getElementById("sur");
 var obj3 = document.getElementById("leon");
-var obj4 = document.getElementById("cedis");
+var obj4 = document.getElementById("mayoreo");
 
 document.getElementById("btn1").addEventListener("click", function(){
     obj1.classList.remove('ocultar');

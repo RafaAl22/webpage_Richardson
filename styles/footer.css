@@ -8,6 +8,7 @@ footer {
     z-index: 110;
     background-image: url(/src/Inicio/Fondo\ footer.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .footer .container-footer h1 {

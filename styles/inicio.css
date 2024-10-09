@@ -20,9 +20,8 @@ div {
     justify-content: space-between;
     background: var(--bgcolor);
     position: relative;
-
     height: 60rem;
-    background-image: url(/src/Inicio/Fondo-banner.jpg);
+    background-image: url(/src/Inicio/Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -698,7 +697,7 @@ div {
 }
 
 .cinta-lema h1 span {
-    color: var(--rojo);
+    color: var(--rojo2);
     font-family: "Allura", system-ui;
     font-weight: 800;
 }
@@ -1552,8 +1551,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 6rem;
-        color: var(--rojo);
-        -webkit-text-stroke: 1px var(--whitecolor);
+        
     }
 
     /*Banner de TOP*/
@@ -2170,7 +2168,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 5rem;
-        color: var(--rojo);
+        
 
     }
 
@@ -2332,6 +2330,8 @@ svg {
     /*Portada de inicio*/
     .banner {
         height: 35rem;
+        background-position: center;
+        background-size: cover;
     }
 
 
@@ -2750,7 +2750,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 4rem;
-        color: var(--rojo);
+    
         -webkit-text-stroke: 1px var(--whitecolor);
     }
 
@@ -2859,6 +2859,8 @@ svg {
 }
 
 @media (max-width:450px) {
+
+    
 
     /*Cinta con lema*/
     .cinta-lema h1 {
@@ -3179,7 +3181,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 3rem;
-        color: var(--rojo);
+        
         -webkit-text-stroke: .5px var(--whitecolor);
     }
 
