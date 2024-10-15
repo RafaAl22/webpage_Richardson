@@ -187,7 +187,7 @@ body {
     .cat-box .info-container a {
         font-size: 1.6rem;
         font-weight: 500;
-        color: var(--textcolor);
+        
         bottom: 1.5rem;
 
     }
@@ -233,7 +233,7 @@ body {
         font-size: 1.4rem;
         font-weight: 500;
 
-        color: var(--textcolor);
+        
         bottom: 1rem;
 
     }
@@ -263,7 +263,7 @@ body {
     .cat-box .info-container a {
         font-size: 1.3rem;
         font-weight: 500;
-        color: var(--textcolor);
+        
         bottom: .8rem;
 
     }
@@ -293,7 +293,7 @@ body {
     .cat-box .info-container a {
         font-size: 1.3rem;
         font-weight: 500;
-        color: var(--textcolor);
+        
         bottom: .5rem;
 
     }
@@ -326,7 +326,7 @@ body {
     .cat-box .info-container a {
         font-size: 1.5rem;
         font-weight: 500;
-        color: var(--textcolor);
+        
         bottom: .4rem;
 
     }
@@ -361,7 +361,7 @@ body {
     .cat-box .info-container a {
         font-size: 1.2rem;
         font-weight: 500;
-        color: var(--textcolor);
+        
         bottom: .3rem;
 
     }
@@ -473,7 +473,7 @@ body {
     .cat-box .info-container a {
         font-size: .9rem;
         font-weight: 550;
-        color: var(--textcolor);
+        
         bottom: .2rem;
     }
 
