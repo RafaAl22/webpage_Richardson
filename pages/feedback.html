@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <!---------------------------css---------------------------------------->
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/feedback.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="/src/Empresa/Logo Richardson simple.png" type="image/x-icon">
+
+      <!--icons-->
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+
+        <nav class="navbar">
+            <a href="/index.html">Inicio</a>
+            <a href="/pages/nosotros.html" class="active">¿Quiénes Somos?</a>
+            <a href="/pages/categorias.html">Categorías</a>
+            <a href="/pages/marcas.html">Productos Truper</a>
+            <a href="/pages/informacion.html">Información al Usuario</a>
+            <a href="/pages/tiendas.html">Nuestras tiendas</a>
+        </nav>
+
+        <div class="btn-menu bx bx-menu" id="menu-icon"></div>
+    </header>
+
+<div class="formulario_feedback">
+    <h1>Tu opinión es importante para nosostros!</h1>
+    <form action="" method="POST">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="name" id="nombre_form">
+
+        <label for="Correo">Correo Electronico</label>
+        <input type="email" name="Email" id="email_form">
+
+        <label for="Asunto">Asunto</label>
+        <input type="text" name="Asunto" id="asunto_form">
+
+        <label for="Comentarios">Comentarios</label>
+        <textarea name="Comentarios" cols="15" rows="5" id="comentarios_form"></textarea>
+
+        <input type="submit" value="Enviar" id="enviar_form">
+    </form>
+</div>
+
+<footer class="footer">
+    <span class="circle-footer"></span>
+    <div class="container-footer">
+        <div class="box-information">
+            <div class="footer-logo">
+                <img src="/src/Empresa/lema_Richardson.png" alt="">
+            </div>
+            <h1>Más información sobre la ferretería</h1>
+            <p>
+                Fundada en 1954, una tradición nicaragüense,<br> 70 años sirviéndoles.
+            </p>
+        </div>
+        <div class="box-socials">
+
+            <div class="socials-details">
+                <h1>Síguenos</h1>
+                <a href="https://www.facebook.com/FerreteriaRichardsonSA?locale=es_LA" target="_blank"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/ferreteriarichardsonoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/ferreteria-richardson-sa-50a1681a6" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+            </div>
+
+
+        </div>
+        <div class="info-contact">
+            <h1>Visítanos</h1>
+            <div class="contact-details">
+                <div class="sucursales-swiper mySwiper2">
+                    <div class="sucursales-box swiper-wrapper">
+                        <div class="sucursales-slide swiper-slide">
+                            <div class="sucursal-box">
+                                <div class="box">
+                                    <h2><i class='bx bxs-map'></i>Sucursal Norte</h2>
+                                    <h3>Kilómetro 4.5 Carretera Norte, <br>contiguo a La Prensa</h3>
+                                </div>
+                                <div class="box">
+                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
+                                    <h3>2249-2308 / 2249-3777</h3>
+                                </div>
+                                <div class="box">
+                                    <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
+                                    <h3>ventas1.norte@gruporichardson.com.ni</h3>
+                                </div>
+                                <a href="/pages/tiendas.html" id="btn1">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="sucursales-slide swiper-slide">
+                            <div class="sucursal-box">
+                                <div class="box">
+                                    <h2><i class='bx bxs-map'></i>Sucursal Sur</h2>
+                                    <h3>Contiguo al Banco Central, <br>By Pass Sur</h3>
+                                </div>
+                                <div class="box">
+                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
+                                    <h3>2265-3111 / 2265-2453</h3>
+                                </div>
+                                <div class="box">
+                                    <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
+                                    <h3>ventassur1@gruporichardson.com.ni</h3>
+                                </div>
+                                <a href="/pages/tiendas.html" id="btn2">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="sucursales-slide swiper-slide">
+                            <div class="sucursal-box">
+                                <div class="box">
+                                    <h2><i class='bx bxs-map'></i>Sucursal León</h2>
+                                    <h3>León, esquina de los bancos, <br>1/2 cuadra al Norte</h3>
+                                </div>
+                                <div class="box">
+                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
+                                    <h3>2311-3950 / 2311-5087</h3>
+                                </div>
+                                <div class="box">
+                                    <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
+                                    <h3>ventasleon1@gruporichardson.com.ni</h3>
+                                </div>
+                                <a href="/pages/tiendas.html" id="btn3">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-text">
+        <p>Derechos de autor &copy; 2024, Grupo Richardson S.A | Todos los derechos reservados</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--Custom JS-->
+<script src="/scripts/scripts.js"></script>
+<script src="/scripts/info.js"></script>
+<script src="/scripts/cards.js"></script>
+<script src="/scripts/footer_swiper.js"></script>
+<script src="/scripts/feedback.js"></script>
+</body>
+
+
+</html>

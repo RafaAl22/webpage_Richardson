@@ -1,0 +1,128 @@
+.formulario_feedback{
+    margin-top: 6%;
+
+}
+
+
+.formulario_feedback h1{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+
+}
+.feedback{
+    bottom: 112px;
+    right: 67px;
+    position: fixed;
+}
+form {
+    width: 500px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: sans-serif;
+    filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+  
+textarea {
+    resize: vertical;
+}
+  
+  
+input[type="submit"] {
+    background-color: #058d09; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #17ca20; 
+}
+  
+@media (max-width:900px ){
+    .formulario_feedback{
+        padding-top: 4%;
+    }
+}
+@media (max-width:800px ){
+    .formulario_feedback{
+        padding-top: 6%;
+    }
+}
+@media (max-width:600px ){
+    .formulario_feedback{
+        padding-top: 9%;
+    }
+    form{
+        width: 80%;
+    }
+}
+@media (max-width:500px ){
+    .formulario_feedback{
+        padding-top: 12%;
+    }
+    label{
+        font-size: 14px;
+    }
+
+}
+@media (max-width:400px ){
+    .formulario_feedback{
+        padding-top: 16%;
+    }
+    .formulario_feedback h1{
+        font-size: 17px;
+    }
+    label{
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 350px){ 
+    .formulario_feedback{
+        padding-top: 18%;
+    }
+    .formulario_feedback h1{
+        font-size: 14px;
+        font-weight: 1000;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 320px){ 
+    .formulario_feedback{
+        padding-top: 20%;
+    }
+    .formulario_feedback h1{
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+}
