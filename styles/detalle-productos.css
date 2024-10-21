@@ -245,7 +245,7 @@ h1 {
     position: relative;
     justify-content: space-between;
     transition: .5s ease;
-
+    border-radius: 3rem;
     padding-left: 2rem;
 
 }

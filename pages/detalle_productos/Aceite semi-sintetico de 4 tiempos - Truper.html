@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/styles/boton_cotizar.css">
     <link rel="stylesheet" href="/styles/ventana_modal.css">
+    <link rel="shortcut icon" href="/src/Empresa/Logo Richardson simple.png" type="image/x-icon">
 
     <!--icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -28,7 +29,7 @@
                     <div class="img-box swiper-wrapper">
                         <div class="img-slide swiper-slide">
                             <img src="/src/Detalle Productos/Automotriz/Aceite semi-sintético, 4 tiempos, 400 ml (14 oz) - Truper/ACT-4T-16.jpg"
-                                alt="">
+                                alt="" onclick="abrir_modal2()">
                         </div>
                         
                     </div>
@@ -57,7 +58,7 @@
             </div>
         </div>
         <div id="miModal" class="modal">
-            <div onclick="cerrar_modal()" class="modal-contenido">
+            <div class="modal-contenido">
                 <div class="img_details-swiper mySwiper2">
                     <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
                     <div class="img_details-box swiper-wrapper">
@@ -65,7 +66,10 @@
                             <img src="/src/Detalle Productos/Automotriz/Aceite semi-sintético, 4 tiempos, 400 ml (14 oz) - Truper/ACT-4T-16+FC1.jpg"
                                 alt="">
                         </div>
-                        
+                        <div  class="img_details-cards swiper-slide">
+                            <img src="/src/Detalle Productos/Automotriz/Aceite semi-sintético, 4 tiempos, 400 ml (14 oz) - Truper/ACT-4T-16.jpg"
+                                alt="">
+                        </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

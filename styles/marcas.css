@@ -10,7 +10,7 @@
 .texts h1 {
     color: var(--orangered);
     font-size: 1.8rem;
-    filter: drop-shadow( 5px 5px 5px #0f0c3d9d);
+    
 }
 
 .texts p {

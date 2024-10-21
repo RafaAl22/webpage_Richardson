@@ -61,7 +61,7 @@
 .pregunta-header {
     display: flex;
     text-align: center;
-    filter: drop-shadow(5px 5px 5px #0000009d);
+    
 }
 
 .pregunta-header i {
@@ -142,7 +142,7 @@
     font-size: 2rem;
     color: var(--textcolor);
     font-weight: 600;
-    filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+    
 }
 
 .numeros-container .numeros-box h3 {

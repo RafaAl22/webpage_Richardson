@@ -106,6 +106,7 @@ div {
     display: block;
     overflow-x: hidden;
     overflow-y: visible;
+    
 }
 
 .top-box {
@@ -344,7 +345,7 @@ div {
     overflow: hidden;
     padding: 0;
     margin: 0;
-
+    
 }
 
 
@@ -355,7 +356,8 @@ div {
     width: 100%;
     overflow: hidden;
     background-image: linear-gradient(to bottom, #006db2, #20609c, #2a5386, #2d4771, #2c3c5c);
-
+    
+    
 }
 
 .container-swiper .box-productos_descuentos .img-promocion {

@@ -50,13 +50,13 @@
     bottom: 50%;
     overflow-x: visible;
     transform: translateY(45%);
+    left: 5%;
 }
 
 .card-wrapper .card-box {
     border-radius: 2rem;
     padding-left: 18rem;
     width: 100%;
-
 }
 
 .card-container .card-slide {
@@ -95,6 +95,8 @@
     height: 50rem;
     top: 50%;
     left: 50%;
+    
+
 }
 
 .product-content .logo-content {
@@ -528,7 +530,7 @@
 
     .card-container .card-wrapper {
         position: relative;
-        width: 60%;
+        width: 55%;
         height: 30rem;
         top: 50%;
         transform: translateY(-50%);
@@ -678,8 +680,8 @@
         border-bottom-left-radius: 0rem;
     }
 
-    .card-wrapper {
-        margin-left: 4%;
+    .card-container .card-wrapper {
+        left: 1%;
     }
 
     .card-wrapper .card-box {

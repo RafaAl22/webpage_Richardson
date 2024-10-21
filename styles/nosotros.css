@@ -34,7 +34,7 @@ h1 {
     margin-bottom: 5rem;
     margin-left: 5rem;
     font-size: 2rem;
-    filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+    
 }
 
 
@@ -80,7 +80,7 @@ h1 {
 }
 
 .nosotros .info-container span {
-    color: var(--rojo2);
+    color: var(--rojo);
     -webkit-text-stroke: .5px var(--whitecolor);
     left: 9%;
     font-size: 9rem;
@@ -210,7 +210,7 @@ h1 {
 .valores h2 {
     font-size: 2rem;
     font-weight: 550;
-    filter: drop-shadow(5px 5px 5px #0f0c3d9d);
+    
 }
 
 .valores p {
@@ -223,7 +223,7 @@ h1 {
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
 
 :root {
     --dur: all 550ms ease-in-out;
@@ -240,8 +240,6 @@ h1 {
     padding: 0px;
     box-sizing: border-box;
     padding-left: 12%;
-
-
 }
 
 .content_mision_vision {
@@ -257,13 +255,13 @@ h1 {
 
 .content_mision_vision P {
     color: white;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .content_mision_vision h2 {
     padding-top: 5%;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     align-items: center;
     text-align: center;
@@ -281,7 +279,7 @@ h1 {
 
     /*border: 10px dotted #1e0de6;*/
 
-    filter: drop-shadow(15px 15px 10px #0f0c3d9d);
+    
     border-radius: 1.8rem;
 }
 

@@ -1,6 +1,6 @@
 @import url(/styles/colores.css);
 
-body{
+body {
     background-image: linear-gradient(to bottom, #006db2, #0d5595, #0f3f78, #0b2a5c, #041741);
 }
 
@@ -28,11 +28,12 @@ body{
     display: grid;
     width: 100%;
     height: auto;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns:20% 20% 20% 20% 20% ;
     column-gap: 1.5rem;
-    row-gap: 6rem;
+    row-gap: 4rem;
     justify-content: center;
     
+
 }
 
 .categoria {
@@ -82,7 +83,7 @@ body{
     color: var(--textcolor);
     font-weight: 600;
     cursor: pointer;
-    
+
 }
 
 
@@ -155,7 +156,7 @@ body{
 @media (max-width:720px) {
     .categoria-section {
         top: 6.5rem;
-        
+
     }
 
     .categoria-container {
@@ -183,7 +184,7 @@ body{
     .categoria-section {
         top: 10rem;
         margin-bottom: 3rem;
-        
+
     }
 
     .categoria-container {
@@ -195,7 +196,7 @@ body{
         grid-template-columns: 50% 50%;
         column-gap: 1.5rem;
         row-gap: 6rem;
-        
+
     }
 
     .categoria {
@@ -210,7 +211,7 @@ body{
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
 
-    .descripcion-categoria{
+    .descripcion-categoria {
         top: 3.5rem;
     }
 
@@ -235,7 +236,7 @@ body{
         font-size: 1.6rem;
     }
 
-    .categoria .icono-box{
+    .categoria .icono-box {
         width: 10rem;
         height: 10rem;
         border: solid transparent;
@@ -246,7 +247,7 @@ body{
         top: -2%;
     }
 
-    .descripcion-categoria{
+    .descripcion-categoria {
         top: 10%;
         width: 10rem;
         height: 7rem;
@@ -266,7 +267,7 @@ body{
 
 }
 
-@media(max-width:350px){
+@media(max-width:350px) {
     .categoria {
         width: auto;
         height: 8.5rem;
