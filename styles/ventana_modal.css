@@ -12,28 +12,28 @@
     overflow-y: visible;
 }
 
-.modal-contenido a {
+.modal-contenido a i {
     color: var(--whitecolor);
     font-size: 6rem;
     font-weight: 800;
     transition: all .5s;
     padding: 0;
-    border-radius: 1.5rem;
+    border-radius: 50%;
     position: absolute;
     z-index: 1200;
-    top: -10%;
+    top: 0;
     right: 0;
     cursor: pointer;
 }
 
-.modal-contenido a:hover {
+.modal-contenido a i:hover{
     background: var(--whitecolor);
     color: var(--textcolor);
     transition: all .5s;
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     right: 0;
@@ -45,8 +45,6 @@
     z-index: 1000;
     margin: 0;
     width: 100%;
-    
-
 }
 
 .img_details-swiper {
@@ -83,6 +81,7 @@
     object-fit: contain;
     position: relative;
     z-index: 1000;
+    border-radius: 3rem;
 }
 
 .img_details-swiper .swiper-button-next {
@@ -114,14 +113,17 @@
     pointer-events: auto;
 }*/
 
-@media (max-width:1440px) {
+@media (max-width:1875px){
+
+}
+
+@media (max-width:1875px) {
     .img_details-cards img {
         left: 50%;
         transform: translateX(-50%);
-        width: 55%;
+        width: 42%;
         object-fit: contain;
         position: relative;
-
     }
 }
 
@@ -160,8 +162,10 @@
 }
 
 @media (max-width:600px) {
-    .modal-contenido a {
-        font-size: 4rem;
+    .modal-contenido a i{
+        font-size: 5rem;
+        top: -9%;
+        right: -3%;
     }
 
     .img_details-cards img {
@@ -170,7 +174,7 @@
 }
 
 @media (max-width:425px) {
-    .modal-contenido a {
-        font-size: 2.5rem;
+    .modal-contenido a i{
+        font-size: 3.5rem;
     }
 }

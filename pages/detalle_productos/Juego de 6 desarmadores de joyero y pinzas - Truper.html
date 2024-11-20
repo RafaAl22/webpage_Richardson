@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
     <link rel="shortcut icon" href="/src/Empresa/Logo Richardson simple.png" type="image/x-icon">
 
     <!--icons-->
@@ -28,7 +29,7 @@
                     <div class="img-box swiper-wrapper">
                         <div class="img-slide swiper-slide">
                             <img src="/src/Detalle Productos/Herramientas de mano/Juego 6 desarmadores de joyero y 4 mini pinzas Comfort Grip - Truper/JGO-MP-DJ.jpg"
-                                alt="">
+                                alt="" onclick="abrir_modal()">
                         </div>
                         
                     </div>
@@ -50,7 +51,22 @@
                 </div>
             </div>
         </div>
-
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                        <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div  class="img_details-box swiper-wrapper">
+                        <div class="img_details-cards swiper-slide">
+                            <img src="/src/Detalle Productos/Herramientas de mano/Juego 6 desarmadores de joyero y 4 mini pinzas Comfort Grip - Truper/JGO-MP-DJ.jpg"
+                                alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>

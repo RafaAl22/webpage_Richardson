@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/detalle-productos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/styles/boton_cotizar.css">
+    <link rel="stylesheet" href="/styles/ventana_modal.css">
     <link rel="shortcut icon" href="/src/Empresa/Logo Richardson simple.png" type="image/x-icon">
 
     <!--icons-->
@@ -28,19 +29,19 @@
                     <div class="img-box swiper-wrapper">
                         <div class="img-slide swiper-slide">
                             <img src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT.jpg"
-                                alt="">
+                                alt="" onclick="abrir_modal()">
                         </div>
                         <div class="img-slide swiper-slide">
                             <img src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT+FC1.jpg"
-                                alt="">
+                                alt="" onclick="abrir_modal2()">
                         </div>
                         <div class="img-slide swiper-slide">
                             <img src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT+FC2.jpg"
-                                alt="">
+                                alt="" onclick="abrir_modal3()">
                         </div>
                         <div class="img-slide swiper-slide">
                             <img src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT+E1.jpg"
-                                alt="">
+                                alt="" onclick="abrir_modal4()">
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -52,24 +53,57 @@
                 <div class="info">
                     <h1 id="encabezado">Compresor de aire, lubricado, horizontal 50L 3½HP, 127 V - Truper</h1>
                     <ul>
-                        <li>Motor monofásico de 3 1/2 HP con bobinas de cobre, 2X mayor durabilidad que las de aluminio</li>
-                        <li>Protector térmico contra sobrecalentamiento de motor y carter de aluminio para mayor disipación de calor</li>
+                        <li>Motor monofásico de 3 1/2 HP con bobinas de cobre, 2X mayor durabilidad que las de aluminio
+                        </li>
+                        <li>Protector térmico contra sobrecalentamiento de motor y carter de aluminio para mayor
+                            disipación de calor</li>
                         <li>Presostato con 2 manómetros (presión máxima del tanque y presión de salida regulable)</li>
-                        <li>Encendido manual y funcionamiento automático para que el compresor siempre mantenga aire y presió</li>
+                        <li>Encendido manual y funcionamiento automático para que el compresor siempre mantenga aire y
+                            presió</li>
                         <li>2 conexiones rápidas de autobloqueo de latón, salida 1/4"</li>
                     </ul>
                 </div>
                 <div class="img-info">
-                    <img style="opacity: 0;"alt="">
-                    <img style="opacity: 0;"alt="">
+                    <img style="opacity: 0;" alt="">
+                    <img style="opacity: 0;" alt="">
                 </div>
             </div>
         </div>
-
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <div class="img_details-swiper mySwiper2">
+                    <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail"
+                                src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT.jpg"
+                                alt="">
+                        </div>
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail"
+                                src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT+FC1.jpg"
+                                alt="">
+                        </div>
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail"
+                                src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT+FC2.jpg"
+                                alt="">
+                        </div>
+                        <div class="img_details-cards swiper-slide">
+                            <img id="img_detail"
+                                src="/src/Detalle Productos/Top productos/Compresor de aire, lubricado, horizontal 50L 3 1s2 HP 127V - Truper/COMP-50LT+E1.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
         <div class="mas_info-container">
             <div class="specs-container">
                 <div>
-                    <a class="specs-header"  id="btn1">
+                    <a class="specs-header" id="btn1">
                         <h1 id="texto">Especificaciones</h2>
                             <i id="flecha1" class='bx bx-chevron-down'></i>
                     </a>

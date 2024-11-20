@@ -3,7 +3,6 @@ var imagen = document.getElementById("imagen")
 /*var img_details = document.getElementById('img_details');*/
 /*var modal2 = document.getElementById("miModal2");*/
 
-
 function abrir_modal() {
   modal.classList.add('visible');
   swiper2.slideTo(0);
@@ -33,7 +32,20 @@ function abrir_modal6() {
   modal.classList.add('visible');
   swiper2.slideTo(5);
 }
+function abrir_modal7() {
+  modal.classList.add('visible');
+  swiper2.slideTo(6);
+}
 
+function abrir_modal8() {
+  modal.classList.add('visible');
+  swiper2.slideTo(7);
+}
+
+function abrir_modal9() {
+  modal.classList.add('visible');
+  swiper2.slideTo(8);
+}
 
 function cerrar_modal() {
   modal.classList.remove('visible');
