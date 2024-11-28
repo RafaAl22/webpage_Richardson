@@ -27,24 +27,25 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Perneria/Bolsa con 1 kg de arandelas planas de 1s4 - Fiero/ARA-1-4.jpg"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Perneria/Bolsa con 1 kg de arandelas planas de 1s4 - Fiero/ARA-1-4+FC1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Perneria/Bolsa con 1 kg de arandelas planas de 1s4 - Fiero/ARA-1-4+FC2.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Perneria/Bolsa con 1 kg de arandelas planas de 1s4 - Fiero/ARA-1-4+E1.jpg"
-                                alt="" onclick="abrir_modal4()">
+                                alt="" onclick="abrir_modal4()" id="myimage4" data-id="myimage4" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                         
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -61,7 +62,7 @@
     
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;"alt="">
                     <img style="opacity: 0;"alt="">
                 </div>

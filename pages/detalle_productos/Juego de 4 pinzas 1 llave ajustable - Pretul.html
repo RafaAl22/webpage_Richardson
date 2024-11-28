@@ -27,13 +27,12 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas de mano/Juego de 4 pinzas y 1 llave ajustable mango de vinil - Pretul/JGO-PIN5.jpg"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        
-                        
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
@@ -48,7 +47,7 @@
                         
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style=" opacity: 0;" alt="">
                     <img style="opacity: 0;" alt="">
                 </div>

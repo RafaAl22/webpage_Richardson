@@ -27,19 +27,20 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Agricolas/Azadón Lane No.3 de 2.1 lb sin mango - Truper/AL-3.jpg"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Agricolas/Azadón Lane No.3 de 2.1 lb sin mango - Truper/AL-3+FC1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Agricolas/Azadón Lane No.3 de 2.1 lb sin mango - Truper/AL-3+FC2.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -56,7 +57,7 @@
                         <li>Uso agrícola y hortícola</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;"alt="">
                     <img style="opacity: 0;"alt="">
                 </div>

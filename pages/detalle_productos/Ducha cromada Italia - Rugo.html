@@ -27,13 +27,14 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Cocinas y baños/Ducha cromada Italia - Rugo/44-IB+D.png"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                         
 
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -50,7 +51,7 @@
                         <li>Chapetón de acero inxidable</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;"alt="">
                     <img style="opacity: 0;"alt="">
                 </div>

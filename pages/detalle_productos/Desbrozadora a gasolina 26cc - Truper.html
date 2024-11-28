@@ -27,39 +27,40 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C.jpg"
-                                alt="" onclick="abrir_modal()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C.jpg"
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+FC1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+FC1.jpg"
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A1.jpg"
-                                alt="" onclick="abrir_modal3()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A1.jpg"
+                                alt="" onclick="abrir_modal3()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A2.jpg"
-                                alt="" onclick="abrir_modal4()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A2.jpg"
+                                alt="" onclick="abrir_modal4()" id="myimage4" data-id="myimage4" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A3.jpg"
-                                alt="" onclick="abrir_modal5()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A3.jpg"
+                                alt="" onclick="abrir_modal5()" id="myimage5" data-id="myimage5" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A4.jpg"
-                                alt="" onclick="abrir_modal6()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A4.jpg"
+                                alt="" onclick="abrir_modal6()" id="myimage6" data-id="myimage6" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A5.jpg"
-                                alt="" onclick="abrir_modal7()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A5.jpg"
+                                alt="" onclick="abrir_modal7()" id="myimage7" data-id="myimage7" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+E1.jpg"
-                                alt="" onclick="abrir_modal8()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+E1.jpg"
+                                alt="" onclick="abrir_modal8()" id="myimage8" data-id="myimage8" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -76,7 +77,7 @@
                         <li>Para corte en césped residencial delgado, hierba y maleza</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;" alt="">
                     <img style="opacity: 0;" alt="">
                 </div>
@@ -89,42 +90,42 @@
                     <div class="img_details-box swiper-wrapper">
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+FC1.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+FC1.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A1.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A1.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A2.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A2.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A3.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A3.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A4.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A4.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+A5.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+A5.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17' - Truper/DES-26C+E1.jpg"
+                                src="/src/Detalle Productos/Jardineria/Desbrozadora a gasolina 26cc mango tipo D, 17 - Truper/DES-26C+E1.jpg"
                                 alt="">
                         </div>
                     </div>

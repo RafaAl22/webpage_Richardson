@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     effect: "fade",
-    grabCursor: true,
+    grabCursor: false,
     keyboard: {
         enabled: false,
     },

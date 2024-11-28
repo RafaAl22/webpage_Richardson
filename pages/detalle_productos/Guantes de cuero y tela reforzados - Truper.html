@@ -27,21 +27,22 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Guantes de cuero y tela reforzados - Truper/GU-235.jpg"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Guantes de cuero y tela reforzados - Truper/GU-235+FC1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Guantes de cuero y tela reforzados - Truper/GU-235+E1.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                         
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -58,7 +59,7 @@
                         <li>Ideales para la construcción y manejo de herramientas manuales y eléctricas</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;"alt="">
                     <img style="opacity: 0;"alt="">
                 </div>

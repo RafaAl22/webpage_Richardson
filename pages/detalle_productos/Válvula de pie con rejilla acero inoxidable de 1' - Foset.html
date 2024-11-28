@@ -26,15 +26,18 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
-                            <img id="img_refe" src="/src/Detalle Productos/Top productos/Valvula de pie - Foset/PICHA-1X.jpg"
-                                alt="" onclick="abrir_modal()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Top productos/Valvula de pie - Foset/PICHA-1X.jpg" alt=""
+                                onclick="abrir_modal()" onclick="abrir_modal()" id="myimage" data-id="myimage"
+                                onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Valvula de pie - Foset/PICHA-1X+E1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" onclick="abrir_modal()" id="myimage2" data-id="myimage2"
+                                onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -51,9 +54,9 @@
                         <li>Evita el retroceso de agua en la línea de succión de la bomba</li>
                     </ul>
                 </div>
-                <div class="img-info">
-                    <img style="opacity: 0;"alt="">
-                    <img style="opacity: 0;"alt="">
+                <div class="img-info" id="img-info">
+                    <img style="opacity: 0;" alt="">
+                    <img style="opacity: 0;" alt="">
                 </div>
             </div>
         </div>
@@ -64,15 +67,14 @@
                     <div class="img_details-box swiper-wrapper">
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
-                                src="/src/Detalle Productos/Top productos/Valvula de pie - Foset/PICHA-1X.jpg"
-                                alt="">
+                                src="/src/Detalle Productos/Top productos/Valvula de pie - Foset/PICHA-1X.jpg" alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
                             <img id="img_detail"
                                 src="/src/Detalle Productos/Top productos/Valvula de pie - Foset/PICHA-1X+E1.jpg"
                                 alt="">
                         </div>
-                        
+
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

@@ -1,27 +1,33 @@
 @import url("colores.css");
 
+body{
+    background-image: linear-gradient(to bottom, #006db2, #0d5595, #0f3f78, #0b2a5c, #041741);
+}
+
 .section-indice {
     margin-top: 8rem;
     position: relative;
     padding: 2rem 7% 1rem;
-}
-
-
-.texts h1 {
-    color: var(--orangered);
-    font-size: 1.8rem;
+    overflow: hidden;
     
 }
 
+.texts h1 {
+    color: var(--orangered);
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
 .texts p {
-    color: var(--textcolor);
+    color: var(--whitecolor);
     font-size: 1.5rem;
     font-weight: 450;
 }
 
 .texts span{
     color: var(--rojo);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .marcas-container {
@@ -65,6 +71,7 @@
     border-radius: 2rem;
     border: .3rem solid var(--plata);
     text-align: center;
+    z-index: 1500;
 }
 
 .marcas-box .marcas a img {
@@ -88,6 +95,41 @@
     font-weight: 500;
     color: var(--whitecolor);
     cursor: pointer;
+}
+
+.section-indice .circle-a {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: var(--shadow-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    top: 20%;
+    left: 10%;
+}
+
+.section-indice .circle-a::after {
+    content: "";
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background: var(--shadow-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    top: 80%;
+    left: 120%;
+}
+
+.section-indice .circle-a::before {
+    content: "";
+    position: absolute;
+    width: 70rem;
+    height: 70rem;
+    border-radius: 50%;
+    background: var(--shadow-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    top: -30%;
+    left: 240%;
 }
 
 .section-truper {
@@ -229,7 +271,7 @@
     
 
     .section-indice{
-        overflow: visible;
+        overflow-y: visible;
         
         height: 100rem;
     }
@@ -288,11 +330,20 @@
     }
 }
 
+@media(max-width:400px){
+    .section-indice{
+        height: auto;
+        min-height: 150vh;
+        max-height: 300vh;
+    }
+}
+
 @media(max-width:375px){
 
     .section-indice{
         height: auto;
-        max-height: 250vh;
+        min-height: 210vh;
+        max-height: 400vh;
     }
 
     .marcas-container .marcas-box:nth-child(1),

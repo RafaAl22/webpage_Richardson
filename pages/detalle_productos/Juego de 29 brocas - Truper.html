@@ -28,16 +28,17 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Ferreteria general/Juego de 29 brocas HSS para metal en estuche - Truper/DESP-BAV-29C.jpg"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Ferreteria general/Juego de 29 brocas HSS para metal en estuche - Truper/DESP-BAV-29C+E1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
 
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -55,7 +56,7 @@
 
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;" alt="">
                     <img style="opacity: 0;" alt="">
                 </div>

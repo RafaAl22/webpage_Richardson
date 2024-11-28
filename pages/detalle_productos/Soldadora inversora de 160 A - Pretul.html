@@ -27,23 +27,24 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Soldadora inversora, 160 A, Bi-voltaje 127s220 V - Pretul/SOIN-120-160P.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Soldadora inversora, 160 A, Bi-voltaje 127s220 V - Pretul/SOIN-120-160P+FC1.jpg"
-                                alt="" onclick="abrir_modal4()">
+                                alt="" onclick="abrir_modal4()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Soldadora inversora, 160 A, Bi-voltaje 127s220 V - Pretul/SOIN-120-160P+D3.jpg"
-                                alt="" onclick="abrir_modal5()">
+                                alt="" onclick="abrir_modal5()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Soldadora inversora, 160 A, Bi-voltaje 127s220 V - Pretul/SOIN-120-160P+E1.jpg"
-                                alt="" onclick="abrir_modal6()">
+                                alt="" onclick="abrir_modal6()" id="myimage4" data-id="myimage4" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -62,7 +63,7 @@
                         <li>Bornes de cambio rápido: 3/8"</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img onclick="abrir_modal()" style="opacity: 1;"
                         src="/src/Detalle Productos/Maquinaria/Soldadora inversora, 160 A, Bi-voltaje 127s220 V - Pretul/SOIN-120-160P+D1.jpg"
                         alt="">

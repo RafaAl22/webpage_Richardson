@@ -27,23 +27,28 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Esmeriladora angular de 800 W - Truper/ESMA-4-1-2A9.jpg"
-                                alt="" onclick="abrir_modal()">
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()"
+                                onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Esmeriladora angular de 800 W - Truper/ESMA-4-1-2A9+FC1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()"
+                                onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Esmeriladora angular de 800 W - Truper/ESMA-4-1-2A9+FC2.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()"
+                                onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Top productos/Esmeriladora angular de 800 W - Truper/ESMA-4-1-2A9+E1.jpg"
-                                alt="" onclick="abrir_modal4()">
+                                alt="" onclick="abrir_modal4()" id="myimage4" data-id="myimage4" onmousemove="zoomIn()"
+                                onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -60,17 +65,17 @@
                         <li>Para esmerilar y cortar acero, ladrillos, azulejos y piedra</li>
                     </ul>
                 </div>
-                <div class="img-info">
-                    <img style="opacity: 0;"alt="">
-                    <img style="opacity: 0;"alt="">
+                <div class="img-info" id="img-info">
+                    <img style="opacity: 0;" alt="">
+                    <img style="opacity: 0;" alt="">
                 </div>
             </div>
         </div>
         <div id="miModal" class="modal">
             <div class="modal-contenido">
                 <div class="img_details-swiper mySwiper2">
-                        <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
-                    <div  class="img_details-box swiper-wrapper">
+                    <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
+                    <div class="img_details-box swiper-wrapper">
                         <div class="img_details-cards swiper-slide">
                             <img src="/src/Detalle Productos/Top productos/Esmeriladora angular de 800 W - Truper/ESMA-4-1-2A9.jpg"
                                 alt="">
@@ -87,7 +92,7 @@
                             <img src="/src/Detalle Productos/Top productos/Esmeriladora angular de 800 W - Truper/ESMA-4-1-2A9+E1.jpg"
                                 alt="">
                         </div>
-                    
+
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -113,7 +118,7 @@
                     </div>
                     <div class="specs">
                         <h1>Velocidad<h1>
-                        <h2>11,000 rpm</h2>
+                                <h2>11,000 rpm</h2>
                     </div>
                     <div class="specs">
                         <h1>Eje</h1>
@@ -168,7 +173,7 @@
                     <div class="specs">
                         <h1>Bridas</h1>
                     </div>
-                    
+
                 </div>
             </div>
 

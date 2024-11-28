@@ -26,20 +26,21 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2+FC1.jpg"
-                                alt="" onclick="abrir_modal4()">
+                                alt="" onclick="abrir_modal4()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2+E1.jpg"
-                                alt="" onclick="abrir_modal5()">
+                                alt="" onclick="abrir_modal5()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                         
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -58,7 +59,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Maquinaria/Bomba periférica 3s4 HP, altura máxima 55 m - Truper/BOAP-3-4A2+FC3.jpg"
                         alt="">

@@ -27,19 +27,20 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas de mano/Juego 6 desarmadores dieléctricos y 1 probador de corriente - Truper/DTJ-7D.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas de mano/Juego 6 desarmadores dieléctricos y 1 probador de corriente - Truper/DTJ-7D+FC1.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas de mano/Juego 6 desarmadores dieléctricos y 1 probador de corriente - Truper/DTJ-7D+E1.jpg"
-                                alt="" onclick="abrir_modal4()">
+                                alt="" onclick="abrir_modal4()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
@@ -55,7 +56,7 @@
                         <li>Para trabajos con voltajes vivos</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style=" opacity: 0;" alt="">
                     <img onclick="abrir_modal()" style="opacity: 1;"
                         src="/src/Detalle Productos/Herramientas de mano/Juego 6 desarmadores dieléctricos y 1 probador de corriente - Truper/DTJ-7D+FC2.jpg"

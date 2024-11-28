@@ -21,22 +21,23 @@
         <div class="detalle-container bg_foset" id="bg">
             <div class="img-container">
                 <div class="marca-container">
-                    <h2 id="codigo">45413 | PVC-563</h2>
+                    <h2>id="codigo">45413 | PVC-563</h2>
                     <img src="/src/Empresa/logo-Richardson.png" alt="">
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1' - Foset/PVC-613.jpg"
-                                alt="" onclick="abrir_modal()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1 - Foset/PVC-613.jpg"
+                                alt="" onclick="abrir_modal()" id="myimage" data-id="myimage" onmousemove="zoomIn()"
+                                onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1' - Foset/PVC-613+FC1.jpg"
-                                alt="" onclick="abrir_modal2()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1 - Foset/PVC-613+FC1.jpg"
+                                alt="" onclick="abrir_modal2()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()"
+                                onmouseout="zoomOut()">
                         </div>
-
-
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -53,23 +54,23 @@
                         <li>No propaga el fuego</li>
                     </ul>
                 </div>
-                <div class="img-info">
-                    <img style="opacity: 0;"alt="">
-                    <img style="opacity: 0;"alt="">
+                <div class="img-info" id="img-info">
+                    <img style="opacity: 0;" alt="">
+                    <img style="opacity: 0;" alt="">
                 </div>
             </div>
         </div>
         <div id="miModal" class="modal">
-            <div  class="modal-contenido">
+            <div class="modal-contenido">
                 <div class="img_details-swiper mySwiper2">
                     <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
                     <div class="img_details-box swiper-wrapper">
-                        <div  class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1' - Foset/PVC-613.jpg"
+                        <div class="img_details-cards swiper-slide">
+                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1 - Foset/PVC-613.jpg"
                                 alt="">
                         </div>
-                        <div  class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1' - Foset/PVC-613+FC1.jpg"
+                        <div class="img_details-cards swiper-slide">
+                            <img src="/src/Detalle Productos/Plomeria/Conector macho de PVC 1 - Foset/PVC-613+FC1.jpg"
                                 alt="">
                         </div>
                     </div>
@@ -130,5 +131,7 @@
     <script src="/scripts/producto_detalle.js"></script>
     <script src="/scripts/boton_cotizar.js"></script>
     <script src="/scripts/ventana_modal.js"></script>
+
+</body>
 
 </html>

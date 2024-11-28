@@ -27,23 +27,24 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas mecanicas/Gato hidráulico de patín 2t, 50 movimientos, maletín - Truper/GAPA-2M.jpg"
-                                alt="" onclick="abrir_modal2()">
+                                alt="" onclick="abrir_modal2()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas mecanicas/Gato hidráulico de patín 2t, 50 movimientos, maletín - Truper/GAPA-2M+FC1.jpg"
-                                alt="" onclick="abrir_modal3()">
+                                alt="" onclick="abrir_modal3()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas mecanicas/Gato hidráulico de patín 2t, 50 movimientos, maletín - Truper/GAPA-2M+A1.jpg"
-                                alt="" onclick="abrir_modal4()">
+                                alt="" onclick="abrir_modal4()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
+                        <div class="img-slide swiper-slide item-img">
                             <img src="/src/Detalle Productos/Herramientas mecanicas/Gato hidráulico de patín 2t, 50 movimientos, maletín - Truper/GAPA-2M+E1.jpg"
-                                alt="" onclick="abrir_modal5()">
+                                alt="" onclick="abrir_modal5()" id="myimage4" data-id="myimage4" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -59,7 +60,7 @@
                         <li>Maneral que controla el levantamiento y descenso</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;"alt="">
                     <img style="opacity: 1;" onclick="abrir_modal()"
                         src="/src/Detalle Productos/Herramientas mecanicas/Gato hidráulico de patín 2t, 50 movimientos, maletín - Truper/GAPA-2M+FC2.jpg"

@@ -44,6 +44,8 @@ h1 {
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
+    z-index: 1000;
+    
 }
 
 .info-container .info {
@@ -91,7 +93,9 @@ h1 {
     padding: 2rem;
     width: 100%;
     overflow: hidden;
-
+    z-index: 20;
+    
+    
 }
 
 .info-container .img-info img {
@@ -103,10 +107,9 @@ h1 {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 2rem;
     transition: .3s ease;
-
+    z-index: 20;
+    cursor: pointer;
 }
-
-
 
 /*---------------------------------------------------------------------------------------*/
 
@@ -164,8 +167,6 @@ h1 {
     text-align: center;
     padding: 1rem;
     position: relative;
-
-
 }
 
 .img-container .img-slide img {
@@ -174,6 +175,7 @@ h1 {
     object-fit: cover;
     border-radius: 3rem;
     transition: 1.25s ease;
+    cursor: pointer;
     -webkit-transition: all .9s ease;
     /* Safari y Chrome */
     -moz-transition: all .9s ease;
@@ -184,16 +186,6 @@ h1 {
     /* Opera */
 }
 
-.img-slide img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    z-index: 1000;
-
-
-}
 
 
 .img-swiper {
@@ -219,10 +211,34 @@ h1 {
     bottom: 50rem;
 }
 
-
-
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+
+.img-zoom-lens {
+    
+    position: absolute;
+    /*set the size of the lens:*/
+    width: 100px;
+    height: 100px;
+    z-index: 3000;
+}
+
+.img-zoom-result {
+    border: .5rem solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: 80%;
+    bottom: -35%;
+    z-index: 3000;
+    display: none;
+    border-radius: 10%;
+}
+
+.visible{
+    display: inline-block;
+}
 
 /*------------------------------------------------------------------------------------------------*/
 
@@ -257,7 +273,6 @@ h1 {
 
 }
 
-
 .specs-container .specs-header h1 {
     font-size: 2.2rem;
     padding-top: .8rem;
@@ -265,8 +280,6 @@ h1 {
     font-weight: 450;
     color: var(--textcolor);
 }
-
-
 
 .specs-container .specs-header i {
     font-size: 5rem;
@@ -420,7 +433,7 @@ h1 {
 
 .rugo {
     background: var(--azulrugo);
-    
+
 }
 
 
@@ -505,7 +518,7 @@ h1 {
 
     .info-container ul li {
         font-size: 1.4rem;
-        
+
     }
 
     .specs-container .specs-header h1 {
@@ -515,12 +528,12 @@ h1 {
 
     .specs-container .specs h1 {
         font-size: 1.4rem;
-        
+
     }
 
     .specs-container .specs h2 {
         font-size: 1.4rem;
-        
+
     }
 }
 
@@ -548,7 +561,7 @@ h1 {
 
     .info-container ul li {
         font-size: 1.25rem;
-        
+
     }
 
     .info-container .img-info {
@@ -592,11 +605,11 @@ h1 {
 
 @media (max-width:768px) {
     .detalle-container {
-        
+
         display: block;
         top: 5rem;
         height: 120rem;
-        
+
     }
 
     .img-container {
@@ -609,11 +622,11 @@ h1 {
 
     .img-container .img-slide img {
         width: 68%;
-        
+
     }
 
     .marca-container {
-        
+
         top: 1%;
     }
 
@@ -658,11 +671,11 @@ h1 {
         height: 100%;
         max-height: 45rem;
         object-fit: cover;
-        
+
     }
 
     .detalle-producto .mas_info-container {
-        
+
         display: block;
         width: 100%;
         top: 6rem;
@@ -723,7 +736,7 @@ h1 {
     section {
         padding: 0;
         margin: 0;
-        
+
     }
 
     .detalle-container {
@@ -742,7 +755,7 @@ h1 {
 @media (max-width:500px) {
 
     section {
-        
+
         padding: 0;
         margin: 0;
         overflow: hidden;
@@ -759,7 +772,7 @@ h1 {
         transform: translateX(-50%);
         border-radius: 0;
         border: none;
-        
+
     }
 
     .img-container .img-slide img {
@@ -795,7 +808,7 @@ h1 {
     }
 
     .detalle-producto .specs-container {
-        padding: .5rem ;
+        padding: .5rem;
     }
 
 }
@@ -811,7 +824,7 @@ h1 {
         transform: translateX(-50%);
         border-radius: 0;
         padding: 0;
-        
+
     }
 }
 

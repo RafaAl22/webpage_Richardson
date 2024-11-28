@@ -27,40 +27,41 @@
                 </div>
                 <div class="img-swiper mySwiper">
                     <div class="img-box swiper-wrapper">
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622.jpg"
-                                alt="" onclick="abrir_modal2()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622.jpg"
+                                alt="" onclick="abrir_modal2()" id="myimage" data-id="myimage" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+FC1.jpg"
-                                alt="" onclick="abrir_modal3()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+FC1.jpg"
+                                alt="" onclick="abrir_modal3()" id="myimage2" data-id="myimage2" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+FC2.jpg"
-                                alt="" onclick="abrir_modal4()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+FC2.jpg"
+                                alt="" onclick="abrir_modal4()" id="myimage3" data-id="myimage3" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A1.jpg"
-                                alt="" onclick="abrir_modal5()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A1.jpg"
+                                alt="" onclick="abrir_modal5()" id="myimage4" data-id="myimage4" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A2.jpg"
-                                alt="" onclick="abrir_modal6()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A2.jpg"
+                                alt="" onclick="abrir_modal6()" id="myimage5" data-id="myimage5" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A3.jpg"
-                                alt="" onclick="abrir_modal7()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A3.jpg"
+                                alt="" onclick="abrir_modal7()" id="myimage6" data-id="myimage6" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A4.jpg"
-                                alt="" onclick="abrir_modal8()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A4.jpg"
+                                alt="" onclick="abrir_modal8()" id="myimage7" data-id="myimage7" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
-                        <div class="img-slide swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+E1.jpg"
-                                alt="" onclick="abrir_modal9()">
+                        <div class="img-slide swiper-slide item-img">
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+E1.jpg"
+                                alt="" onclick="abrir_modal9()" id="myimage8" data-id="myimage8" onmousemove="zoomIn()" onmouseout="zoomOut()">
                         </div>
                     
                     </div>
+                    <div id="myresult" class="img-zoom-result"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
 
@@ -77,10 +78,10 @@
                         <li>Antes de arrancar, agregar aceite para motor de 4 tiempos en el depósito</li>
                     </ul>
                 </div>
-                <div class="img-info">
+                <div class="img-info" id="img-info">
                     <img style="opacity: 0;"alt="">
                     <img onclick="abrir_modal()" style="opacity: 1;"
-                        src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+D1.jpg"
+                        src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+D1.jpg"
                         alt="">
                 </div>
             </div>
@@ -91,39 +92,39 @@
                         <a onclick="cerrar_modal()"><i class='bx bx-x'></i></a>
                     <div  class="img_details-box swiper-wrapper">
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+D1.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+D1.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+FC1.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+FC1.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+FC2.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+FC2.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A1.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A1.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A2.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A2.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A3.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A3.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+A4.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+A4.jpg"
                                 alt="">
                         </div>
                         <div class="img_details-cards swiper-slide">
-                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22' de corte - Truper/P-622+E1.jpg"
+                            <img src="/src/Detalle Productos/Jardineria/Podadora con motor a gasolina de 6 HP, 22 de corte - Truper/P-622+E1.jpg"
                                 alt="">
                         </div>
                     </div>
