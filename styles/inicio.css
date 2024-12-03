@@ -203,7 +203,7 @@ div {
 
 .box-banner .btn_banner {
     position: absolute;
-    z-index: 2000;
+    z-index: 3000;
     width: 18rem;
     height: 18rem;
     border-radius: 50%;
