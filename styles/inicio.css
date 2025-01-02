@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nerko+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Qwitcher+Grypen:wght@400;700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Allura&family=Qwitcher+Grypen:wght@400;700&family=Satisfy&display=swap');
 
 section {
     margin: 0;
@@ -106,7 +108,7 @@ div {
     display: block;
     overflow-x: hidden;
     overflow-y: visible;
-    
+
 }
 
 .top-box {
@@ -345,7 +347,7 @@ div {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    
+
 }
 
 
@@ -356,8 +358,8 @@ div {
     width: 100%;
     overflow: hidden;
     background-image: linear-gradient(to bottom, #006db2, #20609c, #2a5386, #2d4771, #2c3c5c);
-    
-    
+
+
 }
 
 .container-swiper .box-productos_descuentos .img-promocion {
@@ -702,6 +704,62 @@ div {
     color: var(--rojo2);
     font-family: "Allura", system-ui;
     font-weight: 800;
+}
+
+/*Banner navideño*/
+
+.navidad-banner {
+    min-height: 20rem;
+    max-height: 40rem;
+    height: 40rem;
+    width: 100%;
+    background-image: url(/src/Inicio/BanerNavidad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navidad-banner .navidad-box {
+
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(143, 30, 30, 0.7);
+    text-align: center;
+    border-radius: 1.5rem;
+    outline: .3rem solid goldenrod;
+    border: 1rem solid var(--shadow-color);
+    padding: .5rem;
+}
+
+.navidad-box .navidad-text h1 {
+    font-family: "Qwitcher Grypen", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12rem;
+    color: goldenrod;
+}
+
+.navidad-box .navidad-text h2 {
+    font-family: "Satisfy", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:italic;
+    font-variation-settings:
+        "slnt" 0;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.navidad-box .navidad-img img{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 1rem;
+    width: 30%;
+    margin-top: 2rem;
+    border-radius: 2rem;
 }
 
 /*BANNER RUGO*/
@@ -1064,6 +1122,32 @@ svg {
 
     .text .raspadita {
         font-size: 8rem;
+    }
+
+    /*Banner navideño*/
+
+    .navidad-banner {
+    
+        height: 35rem;
+        
+    }
+
+    .navidad-box .navidad-text h1 {
+        
+        font-size: 10rem;
+        
+    }
+    
+    .navidad-box .navidad-text h2 {
+        
+        font-size: 2rem;
+        
+    }
+    
+    .navidad-box .navidad-img img{
+        
+        width: 30%;
+        
     }
 
     /*Contenedor de galería*/
@@ -1553,7 +1637,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 6rem;
-        
+
     }
 
     /*Banner de TOP*/
@@ -1730,6 +1814,32 @@ svg {
 
     }
 
+    /*Banner navideño*/
+
+    .navidad-banner {
+    
+        height: 30rem;
+        
+    }
+
+    .navidad-box .navidad-text h1 {
+        
+        font-size: 8rem;
+        
+    }
+    
+    .navidad-box .navidad-text h2 {
+        
+        font-size: 1.8rem;
+        
+    }
+    
+    .navidad-box .navidad-img img{
+        
+        width: 35%;
+        
+    }
+
     /* BANNER SEGUNDO*/
     /*
     .container-banner {
@@ -1876,6 +1986,36 @@ svg {
     .text .raspadita {
         top: 30%;
         font-size: 5rem;
+    }
+
+    /*Banner navideño*/
+
+    .navidad-banner {
+    
+        height: 26rem;
+        
+    }
+
+    .navidad-banner .navidad-box{
+        width: 60%;
+    }
+
+    .navidad-box .navidad-text h1 {
+        
+        font-size: 6.5rem;
+        
+    }
+    
+    .navidad-box .navidad-text h2 {
+        
+        font-size: 1.5rem;
+        
+    }
+    
+    .navidad-box .navidad-img img{
+        
+        width: 35%;
+        
     }
 
     /*Banner RUGO*/
@@ -2170,7 +2310,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 5rem;
-        
+
 
     }
 
@@ -2556,6 +2696,32 @@ svg {
         font-size: 1rem;
     }
 
+    /*Banner navideño*/
+
+    .navidad-banner {
+        
+        height: 15rem;
+        
+    }
+
+    .navidad-box .navidad-text h1 {
+        
+        font-size: 5.5rem;
+        
+    }
+    
+    .navidad-box .navidad-text h2 {
+        
+        font-size: 1.8rem;
+        
+    }
+    
+    .navidad-box .navidad-img img{
+        display: none;
+        width: 35%;
+        
+    }
+
     /*Banner RUGO*/
     .box-productos_rugo {
         margin: 0;
@@ -2752,7 +2918,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 4rem;
-    
+
         -webkit-text-stroke: 1px var(--whitecolor);
     }
 
@@ -2806,6 +2972,38 @@ svg {
     .container-swiper .banner-asistencia .text span {
         font-size: 1rem;
         color: white;
+    }
+
+    /*Banner navideño*/
+
+    .navidad-banner {
+        min-height: 8rem;
+        height: 15rem;
+        
+    }
+
+    .navidad-banner .navidad-box{
+        width: 80%;
+        outline: .2rem solid goldenrod;
+        border: .7rem solid var(--shadow-color);
+    }
+
+    .navidad-box .navidad-text h1 {
+        
+        font-size: 3.8rem;
+        
+    }
+    
+    .navidad-box .navidad-text h2 {
+        
+        font-size: 1.3rem;
+        
+    }
+    
+    .navidad-box .navidad-img img{
+        
+        width: 20%;
+        
     }
 
     /*Banner RUGO*/
@@ -2862,7 +3060,7 @@ svg {
 
 @media (max-width:450px) {
 
-    
+
 
     /*Cinta con lema*/
     .cinta-lema h1 {
@@ -2962,7 +3160,7 @@ svg {
         color: var(--secondarycolor);
     }
 
-    .direccion_tiendas .info_tienda:nth-child(1){
+    .direccion_tiendas .info_tienda:nth-child(1) {
         border-left: .1rem solid var(--secondarycolor);
     }
 
@@ -3008,6 +3206,25 @@ svg {
 }
 
 @media (max-width:400px) {
+
+    /*Banner navideño*/
+
+    .navidad-banner{
+        height: 13rem;
+        
+    }
+
+    .navidad-box .navidad-text h1 {
+        
+        font-size: 3.1rem;
+        
+    }
+    
+    .navidad-box .navidad-text h2 {
+        
+        font-size: .9rem;
+        
+    }
 
     /*Cinta de direcciones*/
     .direccion_tiendas {
@@ -3183,7 +3400,7 @@ svg {
     .texto-container span {
         margin-left: 2rem;
         font-size: 3rem;
-        
+
         -webkit-text-stroke: .5px var(--whitecolor);
     }
 
