@@ -824,7 +824,7 @@ h1 {
 
     .info-container .info {
         padding: 1rem 2.5rem;
-        height: 100%;
+        height: auto
     }
 
     .detalle-producto .specs-container {
