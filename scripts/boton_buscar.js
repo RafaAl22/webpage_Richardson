@@ -322,7 +322,7 @@ const filtrar = () => {
                 <li>${i.nombre} <a href=${i.url} target="_blank"> Ver Producto</a></li>
             `
         }
-        console.log(texto);
+        
     }
 
     if (resultado.innerHTML === '') {
