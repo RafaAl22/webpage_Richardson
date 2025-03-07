@@ -5,7 +5,7 @@ body{
 }
 
 .section-indice {
-    margin-top: 8rem;
+    margin-top: 10%;
     position: relative;
     padding: 2rem 7% 1rem;
     overflow: hidden;
@@ -203,7 +203,19 @@ body{
 
 }
 
+@media (max-width:1600px){
+    .section-indice {
+        margin-top: 13%;
+        
+        
+    }
+}
+
 @media(max-width:1350px) {
+
+    .section-indice {
+        margin-top: 15%;       
+    }
     
     .marcas-box .marcas p {
         top: 30%;
@@ -221,6 +233,10 @@ body{
 
 @media(max-width:1160px) {
     
+    .section-indice {
+        margin-top: 18%;       
+    }
+    
 
     .marcas-box .marcas p {
         top: 30%;
@@ -234,6 +250,13 @@ body{
     .marcas-box .marcas{
         height: 20rem;
     }
+}
+
+@media (max-width:900px){
+    .section-indice {
+        margin-top: 22%;       
+    }
+    
 }
 
 @media(max-width:840px){
@@ -330,8 +353,15 @@ body{
     }
 }
 
+@media (max-width:500px){
+    .section-indice {
+        margin-top: 28%;       
+    }
+}
+
 @media(max-width:400px){
     .section-indice{
+        margin-top: 33%; 
         height: auto;
         min-height: 150vh;
         max-height: 300vh;
@@ -355,5 +385,11 @@ body{
         justify-content: center;
         gap: 2rem;
         width: 100%; 
+    }
+}
+
+@media (max-width:350px){
+    .section-indice {
+        margin-top: 35%;       
     }
 }

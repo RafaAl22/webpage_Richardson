@@ -21,30 +21,57 @@
     <title>Productos Destacados</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header nav_transparente">
+        <div class="banner">
+            <span class="circle-banner"></span>
+            <div class="banner-superior">
+                <div class="logo-container">
+                    <a href="/pages/nosotros.html" class="logo">
+                        <div class="logo-img">
+                            <img src="/src/Empresa/logo-Richardson.png" alt="Logo" />
+                        </div>
+                    </a>
+                </div>
+                <div class="texto-container">
+                    <h1>Fundada en</h1>
+                    <span>1954</span>
+                </div>
+            </div>
 
-        <nav class="navbar">
-            <a href="/index.html">Inicio</a>
+        </div>
+        <nav class="navbar nav_transparente">
+            <a href="/index.html" >Inicio</a>
             <a href="/pages/nosotros.html">¿Quiénes Somos?</a>
             <a href="/pages/categorias.html">Categorías</a>
-            <a href="/pages/marcas.html">Productos Truper</a>
+            <a href="/pages/marcas.html"  class="active">Productos Truper</a>
             <a href="/pages/informacion.html">Información al Usuario</a>
             <a href="/pages/tiendas.html">Nuestras tiendas</a>
+            
+            <div class="search-box ">
+                <div class="search-container ">
+                    <input type="text" class="btn-search" placeholder="Buscar" name="" id="btn-search"
+                        autocomplete="off" autofocus="on">
+                    <i id="icon-search" class='bx bx-search-alt-2'></i>
+                    <i id="icon-close" class='bx bx-x'></i>
+                </div>
+                <ul id="resultado">
+                </ul>
+            </div>
         </nav>
 
-        <div class="search-box">
+        <div class="btn-menu bx bx-menu" id="menu-icon"></div>
+        
+        <div class="search-box-menu">
             <div class="search-container">
-                <input type="text" class="btn-search" placeholder="Buscar" name="" id="btn-search"
-                    autocomplete="off" autofocus>
-                <i id="icon-search" class='bx bx-search-alt-2'></i>
-                <i id="icon-close" class='bx bx-x'></i>
+                <input type="text" class="btn-search2" placeholder="Buscar" name="" id="btn-search2"
+                    autocomplete="off" autofocus="on">
+                <i id="icon-search2" class='bx bx-search-alt-2'></i>
+                <i id="icon-close2" class='bx bx-x'></i>
             </div>
-            <ul id="resultado">
-
+            <ul id="resultado2">
             </ul>
         </div>
-    <div class="bx bx-menu" id="menu-icon"></div>
-</header>
+    </header>
 <section class="section-top_products">
     <h1>Nuestros productos Truper</h1>
     <div class="producto-container">
@@ -99,7 +126,7 @@
             </div>
             <div class="descripcion-container">
                 <div class="tittle-container">
-                    <h1>Bomba centrífuga para agua modelo europeo, 1 HP</h1>
+                    <h1>Bomba centrífuga para agua, 1 HP</h1>
                     
                 </div>
                 <div class="feature-container">
@@ -124,7 +151,7 @@
             </div>
             <div class="descripcion-container">
                 <div class="tittle-container">
-                    <h1>Equipo hidroneumático 24L, bomba jet inox. 1/2 HP</h1>
+                    <h1>Equipo hidroneumático 24L, 1/2 HP</h1>
                     
                 </div>
                 <div class="feature-container">
@@ -239,7 +266,7 @@
             </div>
             <div class="descripcion-container">
                 <div class="tittle-container">
-                    <h1>Bomba sumergible, tipo bala, 1-1/2 HP, agua limpia</h1>
+                    <h1>Bomba sumergible, tipo bala, 1-1/2 HP</h1>
                     
                 </div>
                 <div class="feature-container">
@@ -353,7 +380,7 @@
             </div>
             <div class="descripcion-container">
                 <div class="tittle-container">
-                    <h1>Carretilla 4.5 ft3 Neumática, bastidor tubular</h1>
+                    <h1>Carretilla 4.5 ft3 Neumática</h1>
                     
                 </div>
                 <div class="feature-container">
@@ -376,7 +403,7 @@
             </div>
             <div class="descripcion-container">
                 <div class="tittle-container">
-                    <h1>Cepillo de alambre 64 pinceles de acero al carbono</h1>
+                    <h1>Cepillo de alambre 64 pinceles de acero </h1>
                     
                 </div>
                 <div class="feature-container">
@@ -434,11 +461,11 @@
     <div class="container-footer">
         <div class="box-information">
             <div class="footer-logo">
-                <img src="/src/Empresa/lema_Richardson.png" alt="">
+                <img src="/src/Empresa/lema_Richardson.png" alt="texto escrito sobre fondo rojo y azul">
             </div>
-            <h1>Más información sobre la ferretería</h1>
+            
             <p>
-                Fundada en 1954, una tradición nicaragüense,<br> 70 años sirviéndoles.
+                Fundada en 1954, una tradición nicaragüense,<br> 71 años sirviéndoles.
             </p>
         </div>
         <div class="box-socials">
@@ -455,86 +482,10 @@
 
 
         </div>
-        <div class="info-contact">
-            <h1>Visítanos</h1>
-            <div class="contact-details">
-                <div class="sucursales-swiper mySwiper2">
-                    <div class="sucursales-box swiper-wrapper">
-                        <div class="sucursales-slide swiper-slide">
-                            <div class="sucursal-box">
-                                <div class="box">
-                                    <h2><i class='bx bxs-map'></i>Sucursal Norte</h2>
-                                    <h3>Kilómetro 4.5 Carretera Norte, <br>contiguo a La Prensa</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
-                                    <h3>2249-2308 / 2249-3777</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
-                                    <h3>ventas1.norte@gruporichardson.com.ni</h3>
-                                </div>
-                                <a href="/pages/tiendas.html" id="btn1">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="sucursales-slide swiper-slide">
-                            <div class="sucursal-box">
-                                <div class="box">
-                                    <h2><i class='bx bxs-map'></i>Sucursal Sur</h2>
-                                    <h3>Contiguo al Banco Central, <br>By Pass Sur</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
-                                    <h3>2265-3111 / 2265-2453</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
-                                    <h3>ventassur1@gruporichardson.com.ni</h3>
-                                </div>
-                                <a href="/pages/tiendas.html" id="btn2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="sucursales-slide swiper-slide">
-                            <div class="sucursal-box">
-                                <div class="box">
-                                    <h2><i class='bx bxs-map'></i>Sucursal León</h2>
-                                    <h3>León, esquina de los bancos, <br>1/2 cuadra al Norte</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
-                                    <h3>2311-3950 / 2311-5087</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-envelope'></i>Correos Electrónicos</h2>
-                                    <h3>ventasleon1@gruporichardson.com.ni</h3>
-                                </div>
-                                <a href="/pages/tiendas.html" id="btn3">Ver más</a>
-                            </div>
-                        </div>
-                        <!--<div class="sucursales-slide swiper-slide">
-                            <div class="sucursal-box">
-                                <div class="box">
-                                    <h2><i class='bx bxs-map'></i>Centro de Distribución (CEDIS)</h2>
-                                    <h3>Intersección Cuesta el Plomo, <br>400 mts. abajo</h3>
-                                </div>
-                                <div class="box">
-                                    <h2><i class='bx bxs-phone'></i>Teléfonos</h2>
-                                    <h3>2269-2248</h3>
-                                </div>
-
-                                <a href="/pages/tiendas.html" id="btn4">Ver más</a>
-                            </div>
-                        </div>-->
-                    </div>
-                </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
+        
     </div>
     <div class="footer-text">
-        <p>Derechos de autor &copy; 2024, Grupo Richardson S.A | Todos los derechos reservados</p>
+        <p>Derechos de autor &copy; 2025, Grupo Richardson S.A | Todos los derechos reservados</p>
     </div>
 </footer>
 <!-- Swiper JS -->

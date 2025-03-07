@@ -14,6 +14,7 @@ menuIcon.onclick = () => {
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+let button = document.getElementById('btn5');
 
 
 window.onscroll = () => {
@@ -35,6 +36,7 @@ window.onscroll = () => {
 
     let header = document.querySelector('.header');
     header.classList.toggle('sticky', window.scrollY > 50);
+    button.classList.toggle('sticky', window.scrollY > 200);
 
     /*remove menu icon when click navbar link*/
 
@@ -48,10 +50,10 @@ window.onscroll = () => {
 
 ScrollReveal({
     reset: false,
-    distance: '100px',
+    distance: '50px',
 });
 
-ScrollReveal().reveal('.producto, .tittle-container h1', { interval: 60, duration: 900 });
+ScrollReveal().reveal('.producto, .tittle-container h1', { origin: 'bottom', interval: 10, duration: 500 });
 ScrollReveal().reveal('.scroll_card, .cat-box', { interval: 45, duration: 500 });
 ScrollReveal().reveal('.valores-box', { scale: .95, duration: 1100 });
 ScrollReveal().reveal('.tags, .nosotros h1, .navidad-text h1', { origin: 'left', duration: 1000 });
@@ -59,7 +61,7 @@ ScrollReveal().reveal('.marcas, .cards-box, .logo-img, .navidad-img', { scale: .
 ScrollReveal().reveal('.texto-container, .valores-box, .info-container span', { origin: 'bottom', duration: 2100, });
 ScrollReveal().reveal('.cinta-lema, .text-rugo h1, .texts h1', { origin: 'left', duration: 2500, });
 ScrollReveal().reveal('.img_banner', { origin: 'right', duration: 2000, });
-ScrollReveal().reveal('.search-box', { origin: 'top', duration: 3500, });
+
 ScrollReveal().reveal('.section-cat h1, .categoria-section h1, .text-container_banner, .section-top_products h1', { origin: 'top', duration: 500, });
 ScrollReveal().reveal('.item, .navidad-text h2', { scale: .95, duration: 700 });
 

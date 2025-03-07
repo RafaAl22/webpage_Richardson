@@ -49,12 +49,11 @@
     /* Color de fondo */
     cursor: pointer;
     position: fixed;
-    bottom: 2%;
-    right: 2%;
+    bottom: 1%;
+    right: 1%;
     padding: .5rem;
     transition: all 300ms ease 400ms;
     z-index: 1001;
-
 }
 
 .btn_norte i,

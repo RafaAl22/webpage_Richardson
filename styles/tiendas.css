@@ -145,7 +145,7 @@ iframe {
     width: 100%;
     position: relative;
     height: 100%;
-    margin-top: 0;
+    margin-top: 2%;
     overflow: hidden;
     background: var(--indigo);
     padding: 18rem 7% 1rem;
@@ -293,19 +293,7 @@ iframe {
     left: 240%;
 }
 
-.nav_transparente {
-    background: transparent;
-    color: var(--whitecolor);
-}
 
-.header.sticky {
-    background: #000000a6;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.header.sticky .navbar a {
-    color: var(--whitecolor);
-}
 
 .footer {
     top: 0;

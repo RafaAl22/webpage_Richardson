@@ -2,10 +2,20 @@ var btn_search = document.getElementById('icon-search');
 var search_bar = document.getElementById('btn-search');
 var btn_close = document.getElementById('icon-close');
 
+var btn_search2 = document.getElementById('icon-search2');
+var search_bar2 = document.getElementById('btn-search2');
+var btn_close2 = document.getElementById('icon-close2');
+
 btn_search.addEventListener('click', function () {
     search_bar.setAttribute("style", "display:flex");
     btn_search.setAttribute("style", "display:none");
     btn_close.setAttribute("style", "display:block")
+});
+
+btn_search2.addEventListener('click', function () {
+    search_bar2.setAttribute("style", "display:flex");
+    btn_search2.setAttribute("style", "display:none");
+    btn_close2.setAttribute("style", "display:block")
 });
 
 btn_close.addEventListener('click', function () {
@@ -16,9 +26,19 @@ btn_close.addEventListener('click', function () {
     buscar.value = '';
 })
 
+btn_close2.addEventListener('click', function () {
+    search_bar2.setAttribute("style", "display:none");
+    btn_search2.setAttribute("style", "display:block");
+    btn_close2.setAttribute("style", "display:none");
+    resultado2.setAttribute("style", "display:none");
+    buscar2.value = '';
+})
+
 //Para filtrar cada producto
 const buscar = document.querySelector('#btn-search');
 const resultado = document.querySelector('#resultado');
+const buscar2 = document.querySelector('#btn-search2');
+const resultado2 = document.querySelector('#resultado2');
 const productos = [
     { nombre: "Brida reforzada 3/4 - 1-1/16", url: "/pages/detalle_productos/Abrazadera%20sin%20fin%20reforzada%2010%20-%20Fiero.html" },
     { nombre: "Brida reforzada 3-5/16, 4-1/4", url: "/pages/detalle_productos/Abrazadera%20sin%20fin%20reforzada%2060%20-%20Fiero.html" },
@@ -312,6 +332,7 @@ const productos = [
 const filtrar = () => {
     resultado.setAttribute("style", "display:block")
     resultado.innerHTML = '';
+    
     const texto = buscar.value.toLowerCase();
     
     for (let i of productos) {
@@ -334,6 +355,36 @@ const filtrar = () => {
     if (buscar.value == '') {
         resultado.setAttribute("style", "display:none")
     }
+
+}
+
+const flitrar2 = () => {
+    resultado2.setAttribute("style", "display:block")
+    resultado2.innerHTML = '';
+
+    const texto2 = buscar2.value.toLowerCase();
+
+    for (let j of productos) {
+        
+        let producto2 = j.nombre.toLowerCase();
+        if (producto2.indexOf(texto2) !== -1) {
+            resultado2.innerHTML += `
+                <li>${j.nombre} <a href=${j.url} target="_blank"> Ver Producto</a></li>
+            `
+        }
+        
+    }
+
+    if (resultado2.innerHTML === '') {
+        resultado2.innerHTML += `
+                <li>No se encuentran coincidencias</li>
+            `
+    }
+
+    if (buscar2.value == '') {
+        resultado2.setAttribute("style", "display:none")
+    }
+
 }
 
 window.addEventListener("keyup", function (event) {
@@ -343,8 +394,14 @@ window.addEventListener("keyup", function (event) {
         btn_close.setAttribute("style", "display:none");
         resultado.setAttribute("style", "display:none");
         buscar.value = '';
+        search_bar2.setAttribute("style", "display:none");
+        btn_search2.setAttribute("style", "display:block");
+        btn_close2.setAttribute("style", "display:none");
+        resultado2.setAttribute("style", "display:none");
+        buscar2.value = '';
     }
 });
 
 search_bar.addEventListener('keyup', filtrar);
+search_bar2.addEventListener('keyup', flitrar2);
 

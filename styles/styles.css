@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moulpali&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moulpali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('colores.css');
@@ -12,23 +13,34 @@
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
+    scrollbar-width: thin;
 }
+
+/**/
 
 /*Para barra de búsqueda*/
 
-.search-box {
-    position: absolute;
-    top: 12%;
+.search-box,
+.search-box-menu{
+    position: fixed;
+    top: 50%;
+    
     right: 1%;
     margin: 0;
     width: auto;
-    max-width: 13%;
-    z-index: 2000;
+    max-width: 15%;
+    z-index: 4000;
     transition-duration: .5s;
     transition-timing-function: linear;
 }
 
-.search-container {
+.search-box-menu{
+    display: none;
+}
+
+
+.search-box .search-container,
+.search-box-menu .search-container {
     display: flex;
     position: relative;
     border-radius: 1.5rem;
@@ -42,13 +54,14 @@
     transition-timing-function: linear;
 }
 
-.btn-search {
+.search-box .btn-search,
+.search-box-menu .btn-search2 {
     display: none;
     border: 0;
     outline: 0;
     background: transparent;
     color: var(--textcolor);
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 100%;
     padding: .2rem 1rem;
     transition-property: width;
@@ -57,49 +70,64 @@
 }
 
 #icon-search,
-#icon-close {
-    width: 15%;
+#icon-close,
+#icon-search2,
+#icon-close2 {
+    width: 18%;
     font-size: 4rem;
     cursor: pointer;
     color: var(--textcolor);
     transition: all 0.6s ease;
 }
 
-#icon-close {
+#icon-close,
+#icon-close2 {
     display: none;
 }
 
-#resultado {
+#resultado,
+#resultado2 {
     color: var(--whitecolor);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     list-style: none;
     height: auto;
-    max-height: 25rem;
+    max-height: 28rem;
     overflow-y: auto;
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    padding: .5rem .5rem;
+    padding: .5rem;
     transition: .5s ease-in-out;
     border-radius: 1.5rem;
     background: var(--textcolor);
     display: none;
 }
 
-#resultado li {
+#resultado li,
+#resultado2 li {
     border-bottom: .1rem solid var(--whitecolor);
     padding: .5rem 0;
     font-size: 1.5rem;
+    z-index: 5000;
+    overflow-y: visible;
+    
 }
 
-#resultado a {
+#resultado a,
+#resultado2 a {
+    font-size: 1.5rem;
     color: var(--whitecolor);
     font-weight: 600;
 }
 
 /*para realizar boton flotante*/
 .btn-flotante i {
+    transition: all 300ms ease 0ms;
+    display: none;
+}
+
+.btn-flotante.sticky i{
     border-radius: 50%;
-    font-size: 7rem;
+    font-size: 6rem;
     /* Cambiar el tamaño de la tipografia */
     color: var(--azulvolteck);
     /* Color del texto */
@@ -107,11 +135,12 @@
     /* Color de fondo */
 
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 1%;
+    right: .5%;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    z-index: 4000;
+    display: block;
+    z-index: 5000;
 }
 
 .btn-flotante i:hover {
@@ -195,9 +224,7 @@ div {
 }
 
 @media(max-width:1660px) {
-    .search-box {
-        top: 15%;
-    }
+    
 }
 
 @media(max-width:1500px) {
@@ -215,7 +242,7 @@ div {
 @media (max-width:1100px) {
 
     .search-box {
-        top: 18%;
+        
         max-width: 19%;
     }
 
@@ -231,112 +258,152 @@ div {
     #resultado li {
         font-size: 1.2rem;
     }
+
+    #resultado li a{
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width:900px) {
-    .search-box {
-        top: 18%;
+    .search-box,
+    .search-box-menu {
+        
         max-width: 20%;
     }
 
-    .btn-search {
+    .btn-search,
+    .btn-search2 {
         font-size: 1.3rem;
     }
 
     #icon-search,
-    #icon-close {
+    #icon-close,
+    #icon-search2,
+    #icon-close2  {
         font-size: 3rem;
     }
 
-    #resultado {
+    #resultado,
+    #resultado2 {
         font-size: 1rem;
         
         max-height: 20rem;
     }
 
-    #resultado li {
+    #resultado li,
+    #resultado2 li {
+        font-size: 1rem;
+    }
+
+    #resultado li a,
+    #resultado2 li a{
         font-size: 1rem;
     }
 }
 
 
 @media(max-width:800px) {
-    .search-box {
-        top: 21%;
+    .search-box-menu {
+        z-index: 5000;
+        display: block;
+        top: 13%;
         max-width: 22%;
+        
+    }
+
+    .navbar .search-box{
+        display: none;
     }
 }
 
 @media(max-width:700px) {
-    .search-box {
-        top: 24%;
-        max-width: 25%;
+    .search-box-menu {
+        top: 13%;
+        max-width: 28%;
     }
 
-    #icon-search,
-    #icon-close {
+    #icon-search2,
+    #icon-close2 {
         font-size: 2.7rem;
     }
 
-    #resultado {
+    #resultado2 {
         font-size: .9rem;
         
         max-height: 18rem;
     }
 
-    #resultado li {
+    #resultado2 li {
+        font-size: .9rem;
+    }
+
+    #resultado2 li a{
         font-size: .9rem;
     }
 }
 
-@media(max-width:700px) {
-    .search-box {
-        top: 26%;
-        max-width: 27%;
-    }
-}
+
 
 @media(max-width:500px) {
-    .search-box {
-        top: 28%;
+    .search-box-menu {
+        top: 11%;
         max-width: 30%;
     }
 
-    #resultado {
+    #resultado2 {
         
         max-height: 15rem;
     }
 }
 
 @media(max-width:400px) {
-    .search-box {
-        top: 28%;
-        max-width: 31%;
+    .search-box-menu {
+        
+        max-width: 38%;
     }
 
-    .btn-search {
+    .btn-search-2 {
         font-size: 1rem;
     }
 
-    #icon-search,
-    #icon-close {
-        font-size: 2rem;
+    .search-box-menu .btn-search2 {
+        font-size: 1.2rem;
     }
 
-    #resultado {
+    #icon-search2,
+    #icon-close2 {
+        font-size: 2.5rem;
+    }
+
+    #resultado2 {
         font-size: .7rem;
         
         max-height: 15rem;
     }
 
-    #resultado li {
+    #resultado2 li {
+        font-size: .7rem;
+    }
+    #resultado2 li a {
         font-size: .7rem;
     }
 }
 
 @media(max-width:320px){
-    .search-box {
-        top: 30%;
-        max-width: 34%;
+    .search-box-menu {
+        
+        max-width: 50%;
     }
+    #icon-search2,
+    #icon-close2 {
+        font-size: 2.2rem;
+    }
+
+    #resultado2 {
+        font-size: .5rem;
+        
+        max-height: 15rem;
+    }
+
+    
 }
