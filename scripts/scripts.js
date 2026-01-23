@@ -53,8 +53,10 @@ ScrollReveal({
     distance: '50px',
 });
 
+
+
 ScrollReveal().reveal('.producto, .tittle-container h1', { origin: 'bottom', interval: 10, duration: 500 });
-ScrollReveal().reveal('.scroll_card, .cat-box', { interval: 45, duration: 500 });
+ScrollReveal().reveal('.scroll_card', { interval: 45, duration: 500 });
 ScrollReveal().reveal('.valores-box', { scale: .95, duration: 1100 });
 ScrollReveal().reveal('.tags, .nosotros h1, .navidad-text h1', { origin: 'left', duration: 1000 });
 ScrollReveal().reveal('.marcas, .cards-box, .logo-img, .navidad-img', { scale: .45, duration: 1000, });
@@ -62,8 +64,29 @@ ScrollReveal().reveal('.texto-container, .valores-box, .info-container span', { 
 ScrollReveal().reveal('.cinta-lema, .text-rugo h1, .texts h1', { origin: 'left', duration: 2500, });
 ScrollReveal().reveal('.img_banner', { origin: 'right', duration: 2000, });
 
-ScrollReveal().reveal('.section-cat h1, .categoria-section h1, .text-container_banner, .section-top_products h1', { origin: 'top', duration: 500, });
+ScrollReveal().reveal(' .text-container_banner, .section-top_products h1', { origin: 'top', duration: 500, });
 ScrollReveal().reveal('.item, .navidad-text h2', { scale: .95, duration: 700 });
 
 
+//inserción de botón de tiktok
+
+const enlace = document.createElement('a');
+enlace.href = 'https://www.tiktok.com/@ferretera.richardson';
+enlace.target = '_blank';
+enlace.rel = 'noopener noreferrer';
+enlace.className = 'tiktok-button';
+const icono = document.createElement('i');
+icono.className = 'bx bxl-tiktok';
+enlace.appendChild(icono);
+document.body.appendChild(enlace);
+
+document.getElementsByClassName("socials-details").item(0).appendChild(enlace);
+
+
+//modificación de footer
+
+const textoFooter = document.createElement('p');
+textoFooter.className = 'footer-text';
+textoFooter.textContent = 'Derechos de autor © 2026, Grupo Richardson S.A | Todos los derechos reservados';
+document.getElementsByClassName("footer-text").item(0).replaceWith(textoFooter);   
 

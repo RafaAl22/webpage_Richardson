@@ -11,8 +11,6 @@ var pregunta4 = document.getElementById("p4");
 
 if (btn2.classList.contains("seleccion")) {
 
-
-
 } else if (btn3.classList.contains("seleccion")) {
     pregunta1.classList.add("ocultar");
     pregunta3.classList.add("ocultar");
